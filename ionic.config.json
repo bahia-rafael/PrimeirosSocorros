@@ -1,5 +1,7 @@
 {
   "name": "PrimeirosSocorros",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
