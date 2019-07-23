@@ -1,0 +1,19 @@
+<ion-header translucent>
+  <ion-toolbar>
+    <ion-avatar style="width: 50px; height: 50px;" slot="start">
+      <img src="assets/hospital.png">
+    </ion-avatar>
+    <ion-title>PRIMEIROS SOCORROS</ion-title>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-searchbar id="busca" (ionChange)="getItems($event)"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let item of items">
+      {{ item }}
+    </ion-item>
+  </ion-list>
+</ion-content>

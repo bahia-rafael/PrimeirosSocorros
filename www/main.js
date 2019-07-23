@@ -437,6 +437,10 @@ var map = {
 	"./home/home.module": [
 		"./src/app/home/home.module.ts",
 		"home-home-module"
+	],
+	"./search/search.module": [
+		"./src/app/search/search.module.ts",
+		"search-search-module"
 	]
 };
 function webpackAsyncContext(req) {
@@ -480,6 +484,7 @@ __webpack_require__.r(__webpack_exports__);
 var routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: 'home', loadChildren: './home/home.module#HomePageModule' },
+    { path: 'search', loadChildren: './search/search.module#SearchPageModule' },
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
