@@ -24,9 +24,16 @@
     <feature name="Keyboard">
         <param name="android-package" onload="true" value="io.ionic.keyboard.IonicKeyboard" />
     </feature>
-    <name>MyApp</name>
-    <description>An awesome Ionic/Cordova app.</description>
-    <author email="hi@ionicframework.com" href="http://ionicframework.com/">Ionic Framework Team</author>
+    <name>Primeiros Socorros</name>
+    <description>Público alvo: crianças e adolescentes 
+
+O app terá orientações básicas para reconhecer  uma situação de Emergência  e acionar corretamente o serviço médico.
+Orienta sobre a conduta em 20 situações, exemplo: quedas,  engasgo, convulsão, desmaios, parada cardiorrespiratória entre outras. 
+
+As crianças e adolecentes também são capazes de reconhecer situações de urgência e emergências. O grande diferencial deste App é a linguagem, a qual é muito simples e por isso de fácil entendimento.
+
+A ideia foi desenvolvida por Andréia Sousa - professora do ensino básico ( rede pública do governo da Bahia) que ao estudar o tema verificou que muitas crianças tem vontade de ajudar um colega, porém faltava conhecimento, e quando  procuravam estudar o tema não entendiam os termos técnicos.</description>
+    <author email="rafael.bahia@email.com" href="">Rafael Bahia Team</author>
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />

@@ -3,71 +3,26 @@
     <ion-title>PRIMEIROS SOCORROS</ion-title>
   </ion-toolbar>
   <ion-toolbar>
-    <ion-searchbar></ion-searchbar>
+    <ion-searchbar (ionchange)="handleInput()"></ion-searchbar>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-grid>
-    <ion-row>
-      <ion-col size='6'>
-        <ion-card>
-          <img src="assets/parada_cardiorrespiratoria.jpg" />
-          <ion-card-header>
-            <ion-card-title>Parada Cardiorrespiratória</ion-card-title>
-          </ion-card-header>
-          <ion-card-content>
-            Inconsciência, ausência de movimentos respiratórios e batimentos cardíacos.
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-
-      <ion-col size='6'>
-        <ion-card style="height: 324.188px">
-          <img style="width: 145px" src="assets/desobstrucao_vias_aereas.jpg" />
-          <ion-card-header>
-
-            <ion-card-title>Desobstrução das Vias Aéreas</ion-card-title>
-          </ion-card-header>
-          <ion-card-content>
-            Dificuldade Respiratória, ansiedade, Ronco – Queda de língua, gorgolejo – Sangue, saliva e vômito, pequenos
-            objetos, Prótese e dentes, cianose
-
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-
-      <ion-col size='6'>
-        <ion-card style="height: 324.188px">
-          <img style="width: 145px" src="assets/convulsao.jpg" />
-          <ion-card-header>
-            <ion-card-title>Convulsão</ion-card-title>
-          </ion-card-header>
-          <ion-card-content>
-            Inconsciência, Queda abrupta da vitima, Salivação abundante e vômito, Contração brusca e involuntária dos
-            músculos, Enrijecimento da mandíbula, travando os dentes, Relaxamento dos esfíncteres (urina e/ou fezes
-            soltas), Esquecimento.
-
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-
-      <ion-col size='6'>
-        <ion-card style="height: 324.188px">
-          <img style="width: 145px" src="assets/epilepsia.jpg" />
-          <ion-card-header>
-
-            <ion-card-title>Epilepsia</ion-card-title>
-          </ion-card-header>
-          <ion-card-content>
-            Inconsciência, Queda abrupta da vitima, Salivação abundante e vômito, Contração brusca e involuntária dos
-            músculos, Enrijecimento da mandíbula, travando os dentes, Relaxamento dos esfíncteres (urina e/ou fezes
-            soltas), Esquecimento.
-
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-
-    </ion-row>
+    <ion-list>
+      <ion-row>
+        <ion-col size='6' *ngFor="let topico of topicosApp">
+          <ion-card style="height: 300px;">
+            <img src="assets/default.jpg" />
+            <ion-card-header>
+              <ion-card-title style="font-size: 15px">{{topico.title}}</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              {{topico.definicao}}
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-list>
   </ion-grid>
 </ion-content>
