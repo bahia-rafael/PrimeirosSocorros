@@ -57,7 +57,7 @@ var HomePageModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header translucent>\r\n  <ion-toolbar>\r\n    <ion-avatar style=\"width: 40px; height: 40px;\" slot=\"start\">\r\n      <img src=\"assets/hospital.png\">\r\n    </ion-avatar>\r\n    <ion-title style=\"text-align: left; font-size: 15px;padding-left: 1px;\">\r\n      <strong>FIQUE CALMO! PEÇA AJUDA - 192</strong>\r\n    </ion-title>\r\n  </ion-toolbar>\r\n  <ion-toolbar>\r\n    <ion-searchbar (click)=\"openBusca()\"></ion-searchbar>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n  <ion-list>\r\n    <ion-item data-toggle=\"collapse\" data-target=\"#{{topico.title}}\" *ngFor=\"let topico of topicosApp\">\r\n      <ion-avatar slot=\"start\">\r\n        <img src=\"{{topico.icon}}\">\r\n      </ion-avatar>\r\n      <ion-label>\r\n        <h2 style=\"font-size: 18px;font-family: 'Comic Sans MS', cursive, sans-serif;\">{{topico.title}}</h2>\r\n      </ion-label>\r\n      <p id=\"{{topico.title}}\" class=\"collapse\" ngClass=\"collapse\">\r\n        Lorem ipsum dolor sit amet, consectetur adipisicing elit,\r\n      </p>\r\n    </ion-item>\r\n\r\n  </ion-list>\r\n</ion-content>"
+module.exports = "<ion-header translucent>\r\n  <ion-toolbar>\r\n    <ion-avatar style=\"width: 40px; height: 40px;\" slot=\"start\">\r\n      <img src=\"assets/hospital.png\">\r\n    </ion-avatar>\r\n    <ion-title style=\"text-align: center;font-size: 15px;padding-left: 1px;\">\r\n      <strong>FIQUE CALMO! PEÇA AJUDA - 192</strong>\r\n    </ion-title>\r\n  </ion-toolbar>\r\n  <ion-toolbar>\r\n    <ion-searchbar (click)=\"openBusca()\"></ion-searchbar>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content (click)=\"teste()\">\r\n  <ion-list>\r\n    <ion-item data-toggle=\"collapse\" data-target=\"#{{topico.title}}\" *ngFor=\"let topico of topicosApp\">\r\n      <ion-avatar slot=\"start\">\r\n        <img src=\"{{topico.icon}}\">\r\n      </ion-avatar>\r\n      <ion-label>\r\n        <h2 style=\"font-size: 18px;font-family: 'Comic Sans MS', cursive, sans-serif;\">{{topico.title}}</h2>\r\n        <p id=\"{{topico.title}}\" class=\"collapse\" ngClass=\"collapse\">\r\n          Lorem ipsum dolor sit amet, consectetur adipisicing elit,\r\n        </p>\r\n      </ion-label>\r\n\r\n    </ion-item>\r\n\r\n  </ion-list>\r\n</ion-content>"
 
 /***/ }),
 
@@ -68,7 +68,7 @@ module.exports = "<ion-header translucent>\r\n  <ion-toolbar>\r\n    <ion-avatar
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "ion-toolbar {\n  font-family: \"Arial Black\", Gadget, sans-serif;\n  --color: #fe3d3d;\n  --background: var(--ion-color-primary-contrast, #fff); }\n\nion-card-content {\n  overflow: hidden;\n  text-overflow: ellipsis; }\n\nion-card-title {\n  font-family: \"Comic Sans MS\", cursive, sans-serif;\n  --color: darkgray; }\n\nion-avatar {\n  --border-radius: 1px; }\n\nion-item {\n  --background: #fdfbd8;\n  --border-color: #ffffff;\n  --color: rgb(207, 93, 93); }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaG9tZS9DOlxcVXNlcnNcXFJhZmFcXERvY3VtZW50c1xcR2l0SHViXFxQcmltZWlyb3NTb2NvcnJvcy9zcmNcXGFwcFxcaG9tZVxcaG9tZS5wYWdlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSw4Q0FBOEM7RUFDOUMsZ0JBQVE7RUFDUixxREFBYSxFQUFBOztBQUlmO0VBQ0UsZ0JBQWdCO0VBQ2hCLHVCQUF1QixFQUFBOztBQUd6QjtFQUNFLGlEQUFpRDtFQUNqRCxpQkFBUSxFQUFBOztBQUdWO0VBQ0Usb0JBQWdCLEVBQUE7O0FBR2xCO0VBQ0UscUJBQWE7RUFDYix1QkFBZTtFQUNmLHlCQUFRLEVBQUEiLCJmaWxlIjoic3JjL2FwcC9ob21lL2hvbWUucGFnZS5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiaW9uLXRvb2xiYXIge1xyXG4gIGZvbnQtZmFtaWx5OiBcIkFyaWFsIEJsYWNrXCIsIEdhZGdldCwgc2Fucy1zZXJpZjtcclxuICAtLWNvbG9yOiAjZmUzZDNkO1xyXG4gIC0tYmFja2dyb3VuZDogdmFyKC0taW9uLWNvbG9yLXByaW1hcnktY29udHJhc3QsICNmZmYpO1xyXG59XHJcblxyXG5cclxuaW9uLWNhcmQtY29udGVudCB7XHJcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcclxuICB0ZXh0LW92ZXJmbG93OiBlbGxpcHNpcztcclxufVxyXG5cclxuaW9uLWNhcmQtdGl0bGUge1xyXG4gIGZvbnQtZmFtaWx5OiBcIkNvbWljIFNhbnMgTVNcIiwgY3Vyc2l2ZSwgc2Fucy1zZXJpZjtcclxuICAtLWNvbG9yOiBkYXJrZ3JheTtcclxufVxyXG5cclxuaW9uLWF2YXRhciB7XHJcbiAgLS1ib3JkZXItcmFkaXVzOiAxcHg7XHJcbn1cclxuXHJcbmlvbi1pdGVtIHtcclxuICAtLWJhY2tncm91bmQ6ICNmZGZiZDg7XHJcbiAgLS1ib3JkZXItY29sb3I6ICNmZmZmZmY7XHJcbiAgLS1jb2xvcjogcmdiKDIwNywgOTMsIDkzKTtcclxufSJdfQ== */"
+module.exports = "ion-toolbar {\n  font-family: \"Arial Black\", Gadget, sans-serif;\n  --color: #fe3d3d;\n  --background: var(--ion-color-primary-contrast, #fff); }\n\nion-card-content {\n  overflow: hidden;\n  text-overflow: ellipsis; }\n\nion-card-title {\n  font-family: \"Comic Sans MS\", cursive, sans-serif;\n  --color: darkgray; }\n\nion-avatar {\n  --border-radius: 1px; }\n\nion-item {\n  --background: #f7f5d3;\n  --color: rgb(207, 93, 93); }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaG9tZS9DOlxcVXNlcnNcXFJBRkFFTERFT0xJVkVJUkFCQUhJXFxEb2N1bWVudHNcXEdpdEh1YlxcUHJpbWVpcm9zU29jb3Jyb3Mvc3JjXFxhcHBcXGhvbWVcXGhvbWUucGFnZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsOENBQThDO0VBQzlDLGdCQUFRO0VBQ1IscURBQWEsRUFBQTs7QUFJZjtFQUNFLGdCQUFnQjtFQUNoQix1QkFBdUIsRUFBQTs7QUFHekI7RUFDRSxpREFBaUQ7RUFDakQsaUJBQVEsRUFBQTs7QUFHVjtFQUNFLG9CQUFnQixFQUFBOztBQUdsQjtFQUNFLHFCQUFhO0VBRWIseUJBQVEsRUFBQSIsImZpbGUiOiJzcmMvYXBwL2hvbWUvaG9tZS5wYWdlLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJpb24tdG9vbGJhciB7XHJcbiAgZm9udC1mYW1pbHk6IFwiQXJpYWwgQmxhY2tcIiwgR2FkZ2V0LCBzYW5zLXNlcmlmO1xyXG4gIC0tY29sb3I6ICNmZTNkM2Q7XHJcbiAgLS1iYWNrZ3JvdW5kOiB2YXIoLS1pb24tY29sb3ItcHJpbWFyeS1jb250cmFzdCwgI2ZmZik7XHJcbn1cclxuXHJcblxyXG5pb24tY2FyZC1jb250ZW50IHtcclxuICBvdmVyZmxvdzogaGlkZGVuO1xyXG4gIHRleHQtb3ZlcmZsb3c6IGVsbGlwc2lzO1xyXG59XHJcblxyXG5pb24tY2FyZC10aXRsZSB7XHJcbiAgZm9udC1mYW1pbHk6IFwiQ29taWMgU2FucyBNU1wiLCBjdXJzaXZlLCBzYW5zLXNlcmlmO1xyXG4gIC0tY29sb3I6IGRhcmtncmF5O1xyXG59XHJcblxyXG5pb24tYXZhdGFyIHtcclxuICAtLWJvcmRlci1yYWRpdXM6IDFweDtcclxufVxyXG5cclxuaW9uLWl0ZW0ge1xyXG4gIC0tYmFja2dyb3VuZDogI2Y3ZjVkMztcclxuICBcclxuICAtLWNvbG9yOiByZ2IoMjA3LCA5MywgOTMpO1xyXG59Il19 */"
 
 /***/ }),
 
@@ -86,12 +86,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+/* harmony import */ var _ionic_native_file_opener_ngx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic-native/file-opener/ngx */ "./node_modules/@ionic-native/file-opener/ngx/index.js");
+
 
 
 
 
 var HomePage = /** @class */ (function () {
-    function HomePage(router, actionSheetController) {
+    function HomePage(fileOpener, router, actionSheetController) {
+        this.fileOpener = fileOpener;
         this.router = router;
         this.actionSheetController = actionSheetController;
         this.topicosApp = [];
@@ -101,6 +104,9 @@ var HomePage = /** @class */ (function () {
         this.calor = [];
         this.isItemAvailable = false; // initialize the items with false
         this.getList();
+        this.fileOpener.open('assets/texto.txt', 'application/txt')
+            .then(function () { return console.log('File is opened'); })
+            .catch(function (e) { return console.log('Error opening file', e); });
     }
     HomePage.prototype.openBusca = function () {
         this.router.navigate(['/search']);
@@ -337,7 +343,7 @@ var HomePage = /** @class */ (function () {
             }
         ];
     };
-    HomePage.prototype.presentActionOptions = function (id_conta) {
+    HomePage.prototype.presentActionOptions = function () {
         return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function () {
             var actionSheet;
             return tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"](this, function (_a) {
@@ -367,7 +373,7 @@ var HomePage = /** @class */ (function () {
             });
         });
     };
-    HomePage.prototype.liberarSubMenus = function (id) {
+    HomePage.prototype.liberarSubMenus = function () {
     };
     HomePage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -375,7 +381,7 @@ var HomePage = /** @class */ (function () {
             template: __webpack_require__(/*! ./home.page.html */ "./src/app/home/home.page.html"),
             styles: [__webpack_require__(/*! ./home.page.scss */ "./src/app/home/home.page.scss")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"], _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["ActionSheetController"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_native_file_opener_ngx__WEBPACK_IMPORTED_MODULE_4__["FileOpener"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"], _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["ActionSheetController"]])
     ], HomePage);
     return HomePage;
 }());

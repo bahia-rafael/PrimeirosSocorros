@@ -12,7 +12,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content (click)="teste()">
   <ion-list>
     <ion-item data-toggle="collapse" data-target="#{{topico.title}}" *ngFor="let topico of topicosApp">
       <ion-avatar slot="start">

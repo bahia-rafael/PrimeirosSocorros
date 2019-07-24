@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { ActionSheetController } from '@ionic/angular';
+import { FileOpener } from '@ionic-native/file-opener/ngx';
 
 @Component({
   selector: 'app-home',
@@ -21,8 +22,14 @@ export class HomePage {
 
   isItemAvailable = false; // initialize the items with false
 
-  constructor(private router: Router, public actionSheetController: ActionSheetController) {
+  constructor(private fileOpener: FileOpener, private router: Router, public actionSheetController: ActionSheetController) {
+
     this.getList();
+
+    this.fileOpener.open('assets/texto.txt', 'application/txt')
+    .then(() => console.log('File is opened'))
+    .catch(e => console.log('Error opening file', e));
+
   }
 
   openBusca() {
@@ -268,7 +275,7 @@ export class HomePage {
   }
 
 
-  async presentActionOptions(id_conta: number) {
+  async presentActionOptions() {
     const actionSheet = await this.actionSheetController.create({
       header: 'Opções',
       buttons: [{
@@ -289,7 +296,7 @@ export class HomePage {
     await actionSheet.present();
   }
 
-  liberarSubMenus(id: number) {
+  liberarSubMenus() {
 
   }
 

@@ -58,7 +58,7 @@ var SearchPageModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header translucent>\r\n  <ion-toolbar>\r\n    <ion-avatar style=\"width: 50px; height: 50px;\" slot=\"start\">\r\n      <img src=\"assets/hospital.png\">\r\n    </ion-avatar>\r\n    <ion-title>PRIMEIROS SOCORROS</ion-title>\r\n  </ion-toolbar>\r\n  <ion-toolbar>\r\n    <ion-searchbar id=\"busca\" (ionChange)=\"getItems($event)\"></ion-searchbar>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>  \r\n  <ion-list>\r\n    <ion-item *ngFor=\"let item of items\">\r\n      {{ item }}\r\n      <p data-toggle=\"collapse\">Testando</p>\r\n    </ion-item>\r\n  </ion-list>\r\n</ion-content>"
+module.exports = "<ion-header translucent>\r\n  <ion-toolbar>\r\n    <ion-avatar style=\"width: 50px; height: 50px;\" slot=\"start\">\r\n      <img src=\"assets/hospital.png\">\r\n    </ion-avatar>\r\n    <ion-title>PRIMEIROS SOCORROS</ion-title>\r\n  </ion-toolbar>\r\n  <ion-toolbar>\r\n    <ion-searchbar id=\"busca\" (ionChange)=\"getItems($event)\"></ion-searchbar>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>  \r\n  <ion-list>\r\n    <ion-item *ngFor=\"let item of items\">\r\n      {{ item }}\r\n    </ion-item>\r\n  </ion-list>\r\n</ion-content>"
 
 /***/ }),
 
@@ -69,7 +69,7 @@ module.exports = "<ion-header translucent>\r\n  <ion-toolbar>\r\n    <ion-avatar
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "ion-toolbar {\n  font-family: \"Arial Black\", Gadget, sans-serif;\n  --color: #fe3d3d;\n  --background: var(--ion-color-primary-contrast, #fff); }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc2VhcmNoL0M6XFxVc2Vyc1xcUmFmYVxcRG9jdW1lbnRzXFxHaXRIdWJcXFByaW1laXJvc1NvY29ycm9zL3NyY1xcYXBwXFxzZWFyY2hcXHNlYXJjaC5wYWdlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSw4Q0FBOEM7RUFDOUMsZ0JBQVE7RUFDUixxREFBYSxFQUFBIiwiZmlsZSI6InNyYy9hcHAvc2VhcmNoL3NlYXJjaC5wYWdlLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJpb24tdG9vbGJhciB7XHJcbiAgICBmb250LWZhbWlseTogXCJBcmlhbCBCbGFja1wiLCBHYWRnZXQsIHNhbnMtc2VyaWY7XHJcbiAgICAtLWNvbG9yOiAjZmUzZDNkO1xyXG4gICAgLS1iYWNrZ3JvdW5kOiB2YXIoLS1pb24tY29sb3ItcHJpbWFyeS1jb250cmFzdCwgI2ZmZik7XHJcbiAgfVxyXG5cclxuICAiXX0= */"
+module.exports = "ion-toolbar {\n  font-family: \"Arial Black\", Gadget, sans-serif;\n  --color: #fe3d3d;\n  --background: var(--ion-color-primary-contrast, #fff); }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc2VhcmNoL0M6XFxVc2Vyc1xcUkFGQUVMREVPTElWRUlSQUJBSElcXERvY3VtZW50c1xcR2l0SHViXFxQcmltZWlyb3NTb2NvcnJvcy9zcmNcXGFwcFxcc2VhcmNoXFxzZWFyY2gucGFnZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksOENBQThDO0VBQzlDLGdCQUFRO0VBQ1IscURBQWEsRUFBQSIsImZpbGUiOiJzcmMvYXBwL3NlYXJjaC9zZWFyY2gucGFnZS5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiaW9uLXRvb2xiYXIge1xyXG4gICAgZm9udC1mYW1pbHk6IFwiQXJpYWwgQmxhY2tcIiwgR2FkZ2V0LCBzYW5zLXNlcmlmO1xyXG4gICAgLS1jb2xvcjogI2ZlM2QzZDtcclxuICAgIC0tYmFja2dyb3VuZDogdmFyKC0taW9uLWNvbG9yLXByaW1hcnktY29udHJhc3QsICNmZmYpO1xyXG4gIH1cclxuXHJcbiAgIl19 */"
 
 /***/ }),
 
