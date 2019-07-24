@@ -57,7 +57,7 @@ var HomePageModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header translucent>\r\n  <ion-toolbar>\r\n    <ion-avatar style=\"width: 50px; height: 50px;\" slot=\"start\">\r\n      <img src=\"assets/hospital.png\">\r\n    </ion-avatar>\r\n    <ion-title style=\"text-align: center\">PRIMEIROS SOCORROS</ion-title>\r\n  </ion-toolbar>\r\n  <ion-toolbar>\r\n    <ion-searchbar (click)=\"openBusca()\"></ion-searchbar>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n  <!-- <ion-grid> -->\r\n  <ion-list *ngFor=\"let topico of topicosApp\">\r\n    <!-- <ion-row *ngFor=\"let topico of topicosApp\"> -->\r\n    <!-- <ion-col size='6' *ngFor=\"let topico of topicosApp\"> -->\r\n    <!-- <ion-card style=\"height: 300px;\">\r\n            <img src=\"assets/default.jpg\" />\r\n            <ion-card-header>\r\n              <ion-card-title style=\"font-size: 15px\">{{topico.title}}</ion-card-title>\r\n            </ion-card-header>\r\n            <ion-card-content>\r\n              {{topico.definicao}}\r\n            </ion-card-content>\r\n          </ion-card> -->\r\n    <ion-item>\r\n      <ion-avatar slot=\"start\">\r\n        <img src=\"{{topico.icon}}\">\r\n      </ion-avatar>\r\n      <ion-label>\r\n        <h2 style=\"font-size: 15px;font-family: 'Arial', Gadget, sans-serif;\">{{topico.title}}</h2>\r\n      </ion-label>\r\n    </ion-item>\r\n    <!-- </ion-col> -->\r\n    <!-- </ion-row> -->\r\n  </ion-list>\r\n  <!-- </ion-grid> -->\r\n</ion-content>"
+module.exports = "<ion-header translucent>\r\n  <ion-toolbar>\r\n    <ion-avatar style=\"width: 40px; height: 40px;\" slot=\"start\">\r\n      <img src=\"assets/hospital.png\">\r\n    </ion-avatar>\r\n    <ion-title style=\"text-align: left; font-size: 15px;padding-left: 1px;\">\r\n      <strong>FIQUE CALMO! PEÇA AJUDA - 192</strong>\r\n    </ion-title>\r\n  </ion-toolbar>\r\n  <ion-toolbar>\r\n    <ion-searchbar (click)=\"openBusca()\"></ion-searchbar>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n  <ion-list>\r\n    <ion-item data-toggle=\"collapse\" data-target=\"#{{topico.title}}\" *ngFor=\"let topico of topicosApp\">\r\n      <ion-avatar slot=\"start\">\r\n        <img src=\"{{topico.icon}}\">\r\n      </ion-avatar>\r\n      <ion-label>\r\n        <h2 style=\"font-size: 18px;font-family: 'Comic Sans MS', cursive, sans-serif;\">{{topico.title}}</h2>\r\n      </ion-label>\r\n      <p id=\"{{topico.title}}\" class=\"collapse\" ngClass=\"collapse\">\r\n        Lorem ipsum dolor sit amet, consectetur adipisicing elit,\r\n      </p>\r\n    </ion-item>\r\n\r\n  </ion-list>\r\n</ion-content>"
 
 /***/ }),
 
@@ -68,7 +68,7 @@ module.exports = "<ion-header translucent>\r\n  <ion-toolbar>\r\n    <ion-avatar
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "ion-toolbar {\n  font-family: \"Arial Black\", Gadget, sans-serif;\n  --color: #fe3d3d;\n  --background: var(--ion-color-primary-contrast, #fff); }\n\nion-card-content {\n  overflow: hidden;\n  text-overflow: ellipsis; }\n\nion-card-title {\n  font-family: \"Arial Black\", Gadget, sans-serif;\n  --color: darkgray; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaG9tZS9DOlxcVXNlcnNcXFJhZmFcXERvY3VtZW50c1xcR2l0SHViXFxQcmltZWlyb3NTb2NvcnJvcy9zcmNcXGFwcFxcaG9tZVxcaG9tZS5wYWdlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSw4Q0FBOEM7RUFDOUMsZ0JBQVE7RUFDUixxREFBYSxFQUFBOztBQUlmO0VBQ0UsZ0JBQWdCO0VBQ2hCLHVCQUF1QixFQUFBOztBQUd6QjtFQUNFLDhDQUE4QztFQUM5QyxpQkFBUSxFQUFBIiwiZmlsZSI6InNyYy9hcHAvaG9tZS9ob21lLnBhZ2Uuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbImlvbi10b29sYmFyIHtcclxuICBmb250LWZhbWlseTogXCJBcmlhbCBCbGFja1wiLCBHYWRnZXQsIHNhbnMtc2VyaWY7XHJcbiAgLS1jb2xvcjogI2ZlM2QzZDtcclxuICAtLWJhY2tncm91bmQ6IHZhcigtLWlvbi1jb2xvci1wcmltYXJ5LWNvbnRyYXN0LCAjZmZmKTtcclxufVxyXG5cclxuXHJcbmlvbi1jYXJkLWNvbnRlbnQge1xyXG4gIG92ZXJmbG93OiBoaWRkZW47XHJcbiAgdGV4dC1vdmVyZmxvdzogZWxsaXBzaXM7XHJcbn1cclxuXHJcbmlvbi1jYXJkLXRpdGxlIHtcclxuICBmb250LWZhbWlseTogXCJBcmlhbCBCbGFja1wiLCBHYWRnZXQsIHNhbnMtc2VyaWY7XHJcbiAgLS1jb2xvcjogZGFya2dyYXk7XHJcbn1cclxuIl19 */"
+module.exports = "ion-toolbar {\n  font-family: \"Arial Black\", Gadget, sans-serif;\n  --color: #fe3d3d;\n  --background: var(--ion-color-primary-contrast, #fff); }\n\nion-card-content {\n  overflow: hidden;\n  text-overflow: ellipsis; }\n\nion-card-title {\n  font-family: \"Comic Sans MS\", cursive, sans-serif;\n  --color: darkgray; }\n\nion-avatar {\n  --border-radius: 1px; }\n\nion-item {\n  --background: #fdfbd8;\n  --border-color: #ffffff;\n  --color: rgb(207, 93, 93); }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaG9tZS9DOlxcVXNlcnNcXFJhZmFcXERvY3VtZW50c1xcR2l0SHViXFxQcmltZWlyb3NTb2NvcnJvcy9zcmNcXGFwcFxcaG9tZVxcaG9tZS5wYWdlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSw4Q0FBOEM7RUFDOUMsZ0JBQVE7RUFDUixxREFBYSxFQUFBOztBQUlmO0VBQ0UsZ0JBQWdCO0VBQ2hCLHVCQUF1QixFQUFBOztBQUd6QjtFQUNFLGlEQUFpRDtFQUNqRCxpQkFBUSxFQUFBOztBQUdWO0VBQ0Usb0JBQWdCLEVBQUE7O0FBR2xCO0VBQ0UscUJBQWE7RUFDYix1QkFBZTtFQUNmLHlCQUFRLEVBQUEiLCJmaWxlIjoic3JjL2FwcC9ob21lL2hvbWUucGFnZS5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiaW9uLXRvb2xiYXIge1xyXG4gIGZvbnQtZmFtaWx5OiBcIkFyaWFsIEJsYWNrXCIsIEdhZGdldCwgc2Fucy1zZXJpZjtcclxuICAtLWNvbG9yOiAjZmUzZDNkO1xyXG4gIC0tYmFja2dyb3VuZDogdmFyKC0taW9uLWNvbG9yLXByaW1hcnktY29udHJhc3QsICNmZmYpO1xyXG59XHJcblxyXG5cclxuaW9uLWNhcmQtY29udGVudCB7XHJcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcclxuICB0ZXh0LW92ZXJmbG93OiBlbGxpcHNpcztcclxufVxyXG5cclxuaW9uLWNhcmQtdGl0bGUge1xyXG4gIGZvbnQtZmFtaWx5OiBcIkNvbWljIFNhbnMgTVNcIiwgY3Vyc2l2ZSwgc2Fucy1zZXJpZjtcclxuICAtLWNvbG9yOiBkYXJrZ3JheTtcclxufVxyXG5cclxuaW9uLWF2YXRhciB7XHJcbiAgLS1ib3JkZXItcmFkaXVzOiAxcHg7XHJcbn1cclxuXHJcbmlvbi1pdGVtIHtcclxuICAtLWJhY2tncm91bmQ6ICNmZGZiZDg7XHJcbiAgLS1ib3JkZXItY29sb3I6ICNmZmZmZmY7XHJcbiAgLS1jb2xvcjogcmdiKDIwNywgOTMsIDkzKTtcclxufSJdfQ== */"
 
 /***/ }),
 
@@ -85,13 +85,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+
 
 
 
 var HomePage = /** @class */ (function () {
-    function HomePage(router) {
+    function HomePage(router, actionSheetController) {
         this.router = router;
+        this.actionSheetController = actionSheetController;
         this.topicosApp = [];
+        this.queimaduras = [];
+        this.hemorragia = [];
+        this.traumas = [];
+        this.calor = [];
         this.isItemAvailable = false; // initialize the items with false
         this.getList();
     }
@@ -99,14 +106,145 @@ var HomePage = /** @class */ (function () {
         this.router.navigate(['/search']);
     };
     HomePage.prototype.getList = function () {
+        this.calor = [
+            {
+                id: 11,
+                title: 'Insolação',
+                definicao: 'Ocorre devido à ação direta dos raios solares sobre o indivíduo.',
+                sintomas: 'Temperatura do corpo elevada,  Pele quente, avermelhada e seca, Diferentes níveis de consciência, ' +
+                    'Desidratação, Dor de cabeça, náuseas e tontura.',
+                icon: 'assets/sol.png'
+            },
+            {
+                id: 12,
+                title: 'Intermação',
+                definicao: 'Ocorre devido à ação do calor em lugares fechados e não arejados (nas fundições, padarias, caldeiras etc.) intenso trabalho muscular.',
+                sintomas: 'Temperatura do corpo elevada, Pele quente, avermelhada e seca, Diferentes níveis de consciência, ' +
+                    'Falta de ar, Desidratação, Dor de cabeça, náuseas e tontura, Insuficiência respiratória.',
+                icon: 'assets/aquecimento.png'
+            }
+        ];
+        this.hemorragia = [
+            {
+                id: 8,
+                title: 'Hemorragia Externa',
+                definicao: 'É a perda de sangue devido ao rompimento de um vaso sanguíneo (artérias, veias e capilares). Toda hemorragia deve ser controlada imediatamente.',
+                sintomas: 'Sangramento visível, Nível de consciência variável decorrente da perda sanguínea, Palidez de pele e mucosa.',
+                icon: 'assets/default.jpg'
+            },
+            {
+                id: 9,
+                title: 'Hemorragia Interna',
+                definicao: 'É a perda de sangue devido ao rompimento de um vaso sanguíneo (artérias, veias e capilares). Toda hemorragia deve ser controlada imediatamente.',
+                sintomas: 'Sangramento geralmente não visível, Nível de consciência variável dependente da intensidade e local do sangramento, Sangramento pela urina, ' +
+                    'Sangramento pelo ouvido, Dor com rigidez abdominal, Pele fria e pegajosa, Vômitos ou tosse com sangue.',
+                icon: 'assets/default.jpg'
+            },
+            {
+                id: 10,
+                title: 'Hemorragia Nasal',
+                definicao: 'É a perda de sangue devido ao rompimento de um vaso sanguíneo (artérias, veias e capilares). Toda hemorragia deve ser controlada imediatamente.',
+                sintomas: 'Sangramento nasal visível.',
+                icon: 'assets/nariz.png'
+            }
+        ];
+        this.traumas = [
+            {
+                id: 21,
+                title: 'Trauma Abdominal',
+                definicao: 'Pode-se destacar como lesões mais freqüentes: a ruptura de baço ou fígado, lesão renal, lesão da coluna lombar, lesão pancreática e lesão de grandes vasos abdominais.',
+                sintomas: 'A ruptura de baço ou fígado, lesão renal, lesão da coluna lombar, lesão pancreática e lesão de grandes vasos abdominais.',
+                icon: 'assets/barriga.png'
+            }, {
+                id: 22,
+                title: 'Trauma de face',
+                definicao: 'Os fragmentos ósseos e o sangue podem provocar obstruções nas vias aéreas no caso de traumas de face.',
+                sintomas: 'Os fragmentos ósseos e o sangue podem provocar obstruções nas vias aéreas no caso de traumas de face.',
+                icon: 'assets/face.png'
+            }, {
+                id: 23,
+                title: 'Trauma Músculo Esquelético',
+                definicao: 'O trauma é o resultado de uma força externa composta de um impacto negativo sobre o corpo. Algumas lesões podem ser resultados de certas condições clínicas o no processo de envelhecimento do corpo.',
+                sintomas: 'Dor local intensa, Dificuldade em movimentar a região afetada, Hematoma, ' +
+                    'Deformidade da articulação, Inchaço.',
+                icon: 'assets/esqueleto.png'
+            }, {
+                id: 24,
+                title: 'Trauma Ocular',
+                definicao: 'No caso de trauma ocular com objeto empalado, não remover o objeto, cubra o olho bom e estabilize o objeto.',
+                sintomas: 'No caso de trauma ocular com objeto empalado, não remover o objeto, cubra o olho bom e estabilize o objeto',
+                icon: 'assets/eye.png'
+            },
+            {
+                id: 25,
+                title: 'Trauma Raquimedular',
+                definicao: 'As lesões da coluna vertebrais mal conduzidas podem produzir lesões graves e irreversíveis de medula, com comprometimento neurológico definitivo (tetraplégica ou paraplegia).',
+                sintomas: 'Dor, Formigamento, Pênis ereto, Perda do controle esfincteriano(urina e/ou fezes soltas), Queimação (ou paralisia) nas pernas e nos braços.',
+                icon: 'assets/esqueleto.png'
+            }, {
+                id: 26,
+                title: 'Trauma Torácico',
+                definicao: 'Avaliação física: DeFaFI, Observar também cianose, agitação e palidez, Imobilizar a vítima, ' +
+                    'Encaminhar para emergência.',
+                sintomas: 'Avaliação física: DeFaFI, Observar também cianose, agitação e palidez, Imobilizar a vítima, ' +
+                    'Encaminhar para emergência.',
+                icon: 'assets/peito.png'
+            },
+            {
+                id: 28,
+                title: 'Traumatismo Crânio Encefálico',
+                definicao: 'Equimose atrás da orelha e ao redor dos olhos, Pupilas diferentes, Dor de cabeça intensa, ' + 'Desorientação, Alteração na responsividade, Crises convulsivas, Distúrbios visuais.',
+                sintomas: 'Equimose atrás da orelha e ao redor dos olhos, Pupilas diferentes, Dor de cabeça intensa, ' + 'Desorientação, Alteração na responsividade, Crises convulsivas, Distúrbios visuais.',
+                icon: 'assets/cranio.png'
+            }
+        ];
+        this.queimaduras = [
+            {
+                id: 15,
+                title: 'Queimaduras 1º Grau',
+                definicao: 'É uma lesão produzida no tecido de revestimento do organismo, por agentes térmicos, elétricos, produtos químicos, irradiação ionizante e animais peçonhentos.',
+                sintomas: 'Atinge somente a epiderme, Dor local e vermelhidão da área atingida.',
+                icon: 'assets/fire_primeira.png'
+            },
+            {
+                id: 16,
+                title: 'Queimaduras 2º Grau (<20%)',
+                definicao: 'É uma lesão produzida no tecido de revestimento do organismo, por agentes térmicos, elétricos, produtos químicos, irradiação ionizante e animais peçonhentos.',
+                sintomas: 'Atinge a epiderme e a derme, Apresenta dor local, vermelhidão e bolhas d’água, Tecidos úmidos minando fluídos.',
+                icon: 'assets/fire_terceira.png'
+            },
+            {
+                id: 17,
+                title: 'Queimaduras 2º Grau (>20%)',
+                definicao: 'É uma lesão produzida no tecido de revestimento do organismo, por agentes térmicos, elétricos, produtos químicos, irradiação ionizante e animais peçonhentos.',
+                sintomas: 'Atinge a epiderme e a derme, Apresenta dor local, vermelhidão e bolhas d’água, Tecidos úmidos minando fluídos.',
+                icon: 'assets/fire_terceira.png'
+            },
+            {
+                id: 18,
+                title: 'Queimaduras 3º Grau',
+                definicao: 'É uma lesão produzida no tecido de revestimento do organismo, por agentes térmicos, elétricos, produtos químicos, irradiação ionizante e animais peçonhentos.',
+                sintomas: 'Atinge a epiderme, derme e alcança os tecidos mais profundos, podendo chegar até o osso. Terminais nervosos mortos. ' +
+                    'Pele com textura e aparência de couro ou cera.',
+                icon: 'assets/fire_segunda.png'
+            }, {
+                id: 19,
+                title: 'Queimaduras elétricas',
+                definicao: 'Choque Elétrico é o fenômeno da passagem da corrente elétrica pelo corpo quando em contato com partes energizadas. Podendo ocasionar parada cardiorrespiratória,queimaduras e lesões traumáticas.',
+                sintomas: 'Parada cardiorrespiratória, Queimaduras e lesões Traumáticas.',
+                icon: 'assets/eletricidade.png'
+            }
+        ];
         this.topicosApp = [
             {
+                id: 1,
                 title: 'Animais Peçonhentos',
                 definicao: 'Animais peçonhentos são aqueles que produzem peçonha (veneno) e têm condições naturais para injetá-la em presas ou predadores. Essa condição é dada naturalmente por meio de dentes modificados, aguilhão, ferrão, quelíceras, cerdas urticantes, nematocistos entre outros.',
                 sintomas: 'Dor, Eritema, Inchaço, Febre, Dor de cabeça.',
                 icon: 'assets/snake.png'
             },
             {
+                id: 2,
                 title: 'Convulsão',
                 definicao: 'Expressão clinica decorrente de uma descarga elétrica anormal e excessiva do tecido cerebral.',
                 sintomas: 'Inconsciência, Queda abrupta da vitima, Salivação abundante e vômito, Contração brusca e involuntária dos músculos, ' +
@@ -115,17 +253,20 @@ var HomePage = /** @class */ (function () {
                 icon: 'assets/head.png'
             },
             {
+                id: 3,
                 title: 'Corpo Estranho nos Olhos',
                 definicao: 'É a introdução acidental de poeira, grãos diversos etc. na cavidade dos glóbulos oculares.',
                 sintomas: 'Dor, Ardência, Vermelhidão, Lacrimejamento',
                 icon: 'assets/eye.png'
             }, {
+                id: 4,
                 title: 'Desmaio',
                 definicao: 'É a perda súbita e temporária da consciência e da força muscular, geralmente devido à diminuição de oxigênio e da irrigação sanguínea no cérebro, tendo como causas: hipoglicemia, fator emocional, dor extrema, ambiente confinado etc.',
                 sintomas: 'Tontura, Sensação de mal estar, Pulso rápido e fraco, Respiração presente de ritmos variados, ' +
                     'Tremor nas sobrancelhas, Pele fria, pálida e úmida, Inconsciência superficial.',
                 icon: 'assets/sleep.png'
             }, {
+                id: 5,
                 title: 'Desobstrução das Vias Aéreas',
                 definicao: 'As vias aéreas podem ser obstruídas por objetos, próteses, fluídos com sangue, saliva e vômitos.',
                 sintomas: 'Dificuldade Respiratória, Ansiedade, Ronco – '
@@ -134,52 +275,39 @@ var HomePage = /** @class */ (function () {
                 icon: 'assets/nariz.png'
             },
             {
+                id: 6,
                 title: 'Epilepsia',
                 definicao: 'Doença neurológica que se caracteriza por crises convulsivas espontânea recorrentes.',
                 sintomas: 'Inconsciência, Queda abrupta da vitima, Salivação abundante e vômito, Contração brusca e involuntária dos músculos, ' +
                     'Enrijecimento da mandíbula, travando os dentes, Relaxamento dos esfíncteres(urina e/ ou fezes soltas), ' +
                     'Esquecimento.',
                 icon: 'assets/head.png'
-            }, {
+            },
+            {
+                id: 31,
+                title: 'Emergência relacionada ao calor',
+                definicao: '',
+                sintomas: 'Inconsciência, Queda abrupta da vitima, Salivação abundante e vômito, Contração brusca e involuntária dos músculos, ' +
+                    'Enrijecimento da mandíbula, travando os dentes, Relaxamento dos esfíncteres(urina e/ ou fezes soltas), ' +
+                    'Esquecimento.',
+                icon: 'assets/sol.png'
+            },
+            {
+                id: 7,
                 title: 'Ferimentos Externos',
                 definicao: 'São lesões que acometem as estruturas superficiais ou profundas do organismo com grau de sangramento, laceração e contaminação variável.',
                 sintomas: 'Dor e edema local, Sangramento, Laceração em graus variáveis, Contaminação se não adequadamente tratado.',
                 icon: 'assets/corte_mao.png'
             },
             {
-                title: 'Hemorragia Externa',
-                definicao: 'É a perda de sangue devido ao rompimento de um vaso sanguíneo (artérias, veias e capilares). Toda hemorragia deve ser controlada imediatamente.',
-                sintomas: 'Sangramento visível, Nível de consciência variável decorrente da perda sanguínea, Palidez de pele e mucosa.',
+                id: 30,
+                title: 'Hemorragias',
+                definicao: 'É a perda de sangue devido ao rompimento de um vaso sanguíneo (artérias, veias e capilares).',
+                sintomas: '',
                 icon: 'assets/default.jpg'
             },
             {
-                title: 'Hemorragia Interna',
-                definicao: 'É a perda de sangue devido ao rompimento de um vaso sanguíneo (artérias, veias e capilares). Toda hemorragia deve ser controlada imediatamente.',
-                sintomas: 'Sangramento geralmente não visível, Nível de consciência variável dependente da intensidade e local do sangramento, Sangramento pela urina, ' +
-                    'Sangramento pelo ouvido, Dor com rigidez abdominal, Pele fria e pegajosa, Vômitos ou tosse com sangue.',
-                icon: 'assets/default.jpg'
-            },
-            {
-                title: 'Hemorragia Nasal',
-                definicao: 'É a perda de sangue devido ao rompimento de um vaso sanguíneo (artérias, veias e capilares). Toda hemorragia deve ser controlada imediatamente.',
-                sintomas: 'Sangramento nasal visível.',
-                icon: 'assets/nariz.png'
-            },
-            {
-                title: 'Insolação',
-                definicao: 'Ocorre devido à ação direta dos raios solares sobre o indivíduo.',
-                sintomas: 'Temperatura do corpo elevada,  Pele quente, avermelhada e seca, Diferentes níveis de consciência, ' +
-                    'Desidratação, Dor de cabeça, náuseas e tontura.',
-                icon: 'assets/sol.png'
-            },
-            {
-                title: 'Intermação',
-                definicao: 'Ocorre devido à ação do calor em lugares fechados e não arejados (nas fundições, padarias, caldeiras etc.) intenso trabalho muscular.',
-                sintomas: 'Temperatura do corpo elevada, Pele quente, avermelhada e seca, Diferentes níveis de consciência, ' +
-                    'Falta de ar, Desidratação, Dor de cabeça, náuseas e tontura, Insuficiência respiratória.',
-                icon: 'assets/aquecimento.png'
-            },
-            {
+                id: 13,
                 title: 'Intoxicações e envenenamentos',
                 definicao: 'O envenenamento ou intoxicação resulta da penetração de substância tóxica/nociva no organismo através da pele, aspiração e ingestão.',
                 sintomas: 'Dor e sensação de queimação nas vias de penetração e sistemas correspondentes, Hálito com odor estranho, ' +
@@ -187,86 +315,59 @@ var HomePage = /** @class */ (function () {
                     'Alterações da respiração e do pulso.',
                 icon: 'assets/veneno.png'
             }, {
+                id: 14,
                 title: 'Parada Cardiorrespiratória',
                 definicao: 'É a ausência das funções vitais, movimentos respiratórios e batimentos cardíacos. A ocorrência isolada de uma delas só existe em curto espaço de tempo; a parada de uma acarreta a parada da outra.',
                 sintomas: 'Inconsciência, ausência de movimentos respiratórios e batimentos cardíacos.',
                 icon: 'assets/heart.png'
-            }, {
-                title: 'Queimaduras 1º Grau',
-                definicao: 'É uma lesão produzida no tecido de revestimento do organismo, por agentes térmicos, elétricos, produtos químicos, irradiação ionizante e animais peçonhentos.',
-                sintomas: 'Atinge somente a epiderme, Dor local e vermelhidão da área atingida.',
-                icon: 'assets/fire_primeira.png'
             },
             {
-                title: 'Queimaduras 2º Grau (<20%)',
+                id: 29,
+                title: 'Queimaduras',
                 definicao: 'É uma lesão produzida no tecido de revestimento do organismo, por agentes térmicos, elétricos, produtos químicos, irradiação ionizante e animais peçonhentos.',
-                sintomas: 'Atinge a epiderme e a derme, Apresenta dor local, vermelhidão e bolhas d’água, Tecidos úmidos minando fluídos.',
+                sintomas: '',
                 icon: 'assets/fire_terceira.png'
             },
             {
-                title: 'Queimaduras 2º Grau (>20%)',
-                definicao: 'É uma lesão produzida no tecido de revestimento do organismo, por agentes térmicos, elétricos, produtos químicos, irradiação ionizante e animais peçonhentos.',
-                sintomas: 'Atinge a epiderme e a derme, Apresenta dor local, vermelhidão e bolhas d’água, Tecidos úmidos minando fluídos.',
-                icon: 'assets/fire_terceira.png'
-            },
-            {
-                title: 'Queimaduras 3º Grau',
-                definicao: 'É uma lesão produzida no tecido de revestimento do organismo, por agentes térmicos, elétricos, produtos químicos, irradiação ionizante e animais peçonhentos.',
-                sintomas: 'Atinge a epiderme, derme e alcança os tecidos mais profundos, podendo chegar até o osso. Terminais nervosos mortos. ' +
-                    'Pele com textura e aparência de couro ou cera.',
-                icon: 'assets/fire_segunda.png'
-            }, {
-                title: 'Queimaduras elétricas',
-                definicao: 'Choque Elétrico é o fenômeno da passagem da corrente elétrica pelo corpo quando em contato com partes energizadas. Podendo ocasionar parada cardiorrespiratória,queimaduras e lesões traumáticas.',
-                sintomas: 'Parada cardiorrespiratória, Queimaduras e lesões Traumáticas.',
-                icon: 'assets/eletricidade.png'
-            },
-            {
-                title: 'Trauma Abdominal',
-                definicao: 'Pode-se destacar como lesões mais freqüentes: a ruptura de baço ou fígado, lesão renal, lesão da coluna lombar, lesão pancreática e lesão de grandes vasos abdominais.',
-                sintomas: 'A ruptura de baço ou fígado, lesão renal, lesão da coluna lombar, lesão pancreática e lesão de grandes vasos abdominais.',
-                icon: 'assets/barriga.png'
-            }, {
-                title: 'Trauma de face',
-                definicao: 'Os fragmentos ósseos e o sangue podem provocar obstruções nas vias aéreas no caso de traumas de face.',
-                sintomas: 'Os fragmentos ósseos e o sangue podem provocar obstruções nas vias aéreas no caso de traumas de face.',
-                icon: 'assets/face.png'
-            }, {
-                title: 'Trauma Músculo Esquelético',
-                definicao: 'O trauma é o resultado de uma força externa composta de um impacto negativo sobre o corpo. Algumas lesões podem ser resultados de certas condições clínicas o no processo de envelhecimento do corpo.',
-                sintomas: 'Dor local intensa, Dificuldade em movimentar a região afetada, Hematoma, ' +
-                    'Deformidade da articulação, Inchaço.',
-                icon: 'assets/esqueleto.png'
-            }, {
-                title: 'Trauma Ocular',
-                definicao: 'No caso de trauma ocular com objeto empalado, não remover o objeto, cubra o olho bom e estabilize o objeto.',
-                sintomas: 'No caso de trauma ocular com objeto empalado, não remover o objeto, cubra o olho bom e estabilize o objeto',
-                icon: 'assets/eye.png'
-            },
-            {
-                title: 'Trauma Raquimedular',
-                definicao: 'As lesões da coluna vertebrais mal conduzidas podem produzir lesões graves e irreversíveis de medula, com comprometimento neurológico definitivo (tetraplégica ou paraplegia).',
-                sintomas: 'Dor, Formigamento, Pênis ereto, Perda do controle esfincteriano(urina e/ou fezes soltas), Queimação (ou paralisia) nas pernas e nos braços.',
-                icon: 'assets/esqueleto.png'
-            }, {
-                title: 'Trauma Torácico',
-                definicao: 'Avaliação física: DeFaFI, Observar também cianose, agitação e palidez, Imobilizar a vítima, ' +
-                    'Encaminhar para emergência.',
-                sintomas: 'Avaliação física: DeFaFI, Observar também cianose, agitação e palidez, Imobilizar a vítima, ' +
-                    'Encaminhar para emergência.',
-                icon: 'assets/peito.png'
-            }, {
+                id: 27,
                 title: 'Traumas',
                 definicao: 'É uma situação de lesão corporal provocada por agentes externos que causam repercussão locais ou sistêmicas dependendo da região afetada.',
                 sintomas: 'Perda de pulso, Dificuldade ou Perda da capacidade de respiração, Diminuição ou perda de consciência ou Sangramento em grande escala.',
                 icon: 'assets/default.jpg'
-            }, {
-                title: 'Traumatismo Crânio Encefálico',
-                definicao: 'Equimose atrás da orelha e ao redor dos olhos, Pupilas diferentes, Dor de cabeça intensa, ' + 'Desorientação, Alteração na responsividade, Crises convulsivas, Distúrbios visuais.',
-                sintomas: 'Equimose atrás da orelha e ao redor dos olhos, Pupilas diferentes, Dor de cabeça intensa, ' + 'Desorientação, Alteração na responsividade, Crises convulsivas, Distúrbios visuais.',
-                icon: 'assets/cranio.png'
             }
         ];
+    };
+    HomePage.prototype.presentActionOptions = function (id_conta) {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function () {
+            var actionSheet;
+            return tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"](this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.actionSheetController.create({
+                            header: 'Opções',
+                            buttons: [{
+                                    text: 'Editar',
+                                    role: 'destructive',
+                                    icon: 'create',
+                                    handler: function () {
+                                    }
+                                }, {
+                                    text: 'Excluir',
+                                    icon: 'trash',
+                                    handler: function () {
+                                    }
+                                }]
+                        })];
+                    case 1:
+                        actionSheet = _a.sent();
+                        return [4 /*yield*/, actionSheet.present()];
+                    case 2:
+                        _a.sent();
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    HomePage.prototype.liberarSubMenus = function (id) {
     };
     HomePage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -274,7 +375,7 @@ var HomePage = /** @class */ (function () {
             template: __webpack_require__(/*! ./home.page.html */ "./src/app/home/home.page.html"),
             styles: [__webpack_require__(/*! ./home.page.scss */ "./src/app/home/home.page.scss")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"], _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["ActionSheetController"]])
     ], HomePage);
     return HomePage;
 }());
