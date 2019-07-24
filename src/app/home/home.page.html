@@ -1,39 +1,42 @@
 <ion-header translucent>
   <ion-toolbar>
-    <ion-avatar style="width: 50px; height: 50px;" slot="start">
+    <ion-avatar style="width: 40px; height: 40px;" slot="start">
       <img src="assets/hospital.png">
     </ion-avatar>
-    <ion-title style="text-align: center">PRIMEIROS SOCORROS</ion-title>
+    <ion-title style="text-align: left; font-size: 15px;padding-left: 1px;">
+      <strong>FIQUE CALMO! PEÇA AJUDA - 192</strong>
+    </ion-title>
   </ion-toolbar>
   <ion-toolbar>
     <ion-searchbar (click)="openBusca()"></ion-searchbar>
   </ion-toolbar>
 </ion-header>
 
+<div class="container">
+  <h2>Simple Collapsible</h2>
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Simple collapsible</button>
+  <div id="demo" ngClass="collapse">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </div>
+</div>
+
 <ion-content>
-  <!-- <ion-grid> -->
-  <ion-list *ngFor="let topico of topicosApp">
-    <!-- <ion-row *ngFor="let topico of topicosApp"> -->
-    <!-- <ion-col size='6' *ngFor="let topico of topicosApp"> -->
-    <!-- <ion-card style="height: 300px;">
-            <img src="assets/default.jpg" />
-            <ion-card-header>
-              <ion-card-title style="font-size: 15px">{{topico.title}}</ion-card-title>
-            </ion-card-header>
-            <ion-card-content>
-              {{topico.definicao}}
-            </ion-card-content>
-          </ion-card> -->
-    <ion-item>
+  <ion-list>
+    <ion-item data-toggle="collapse" data-target="#demo" (click)="presentActionOptions(topico.id_conta)"
+      *ngFor="let topico of topicosApp">
       <ion-avatar slot="start">
         <img src="{{topico.icon}}">
       </ion-avatar>
       <ion-label>
-        <h2 style="font-size: 15px;font-family: 'Arial', Gadget, sans-serif;">{{topico.title}}</h2>
+        <h2 style="font-size: 18px;font-family: 'Comic Sans MS', cursive, sans-serif;">{{topico.title}}</h2>
       </ion-label>
+      <ion-item id="demo" ngClass="{collapse: liberarSubMenus(topico.id), no: !liberarSubMenus(topico.id)}">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </ion-item>
     </ion-item>
-    <!-- </ion-col> -->
-    <!-- </ion-row> -->
   </ion-list>
-  <!-- </ion-grid> -->
 </ion-content>
