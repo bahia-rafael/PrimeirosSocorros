@@ -12,31 +12,19 @@
   </ion-toolbar>
 </ion-header>
 
-<div class="container">
-  <h2>Simple Collapsible</h2>
-  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Simple collapsible</button>
-  <div id="demo" ngClass="collapse">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-  </div>
-</div>
-
 <ion-content>
   <ion-list>
-    <ion-item data-toggle="collapse" data-target="#demo" (click)="presentActionOptions(topico.id_conta)"
-      *ngFor="let topico of topicosApp">
+    <ion-item data-toggle="collapse" data-target="#{{topico.title}}" *ngFor="let topico of topicosApp">
       <ion-avatar slot="start">
         <img src="{{topico.icon}}">
       </ion-avatar>
       <ion-label>
         <h2 style="font-size: 18px;font-family: 'Comic Sans MS', cursive, sans-serif;">{{topico.title}}</h2>
       </ion-label>
-      <ion-item id="demo" ngClass="{collapse: liberarSubMenus(topico.id), no: !liberarSubMenus(topico.id)}">
+      <p id="{{topico.title}}" class="collapse" ngClass="collapse">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      </ion-item>
+      </p>
     </ion-item>
+
   </ion-list>
 </ion-content>
