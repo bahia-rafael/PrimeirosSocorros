@@ -3,7 +3,7 @@
     <ion-avatar style="width: 40px; height: 40px;" slot="start">
       <img src="assets/hospital.png">
     </ion-avatar>
-    <ion-title style="text-align: left; font-size: 15px;padding-left: 1px;">
+    <ion-title style="text-align: center;font-size: 15px;padding-left: 1px;">
       <strong>FIQUE CALMO! PEÇA AJUDA - 192</strong>
     </ion-title>
   </ion-toolbar>
@@ -20,10 +20,11 @@
       </ion-avatar>
       <ion-label>
         <h2 style="font-size: 18px;font-family: 'Comic Sans MS', cursive, sans-serif;">{{topico.title}}</h2>
+        <p id="{{topico.title}}" class="collapse" ngClass="collapse">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        </p>
       </ion-label>
-      <p id="{{topico.title}}" class="collapse" ngClass="collapse">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-      </p>
+
     </ion-item>
 
   </ion-list>
