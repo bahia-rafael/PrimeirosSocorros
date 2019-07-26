@@ -86,15 +86,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
-/* harmony import */ var _ionic_native_file_opener_ngx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic-native/file-opener/ngx */ "./node_modules/@ionic-native/file-opener/ngx/index.js");
+/* harmony import */ var _ionic_native_File_ngx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic-native/File/ngx */ "./node_modules/@ionic-native/File/ngx/index.js");
 
 
 
 
 
 var HomePage = /** @class */ (function () {
-    function HomePage(fileOpener, router, actionSheetController) {
-        this.fileOpener = fileOpener;
+    function HomePage(file, router, actionSheetController) {
+        this.file = file;
         this.router = router;
         this.actionSheetController = actionSheetController;
         this.topicosApp = [];
@@ -104,9 +104,9 @@ var HomePage = /** @class */ (function () {
         this.calor = [];
         this.isItemAvailable = false; // initialize the items with false
         this.getList();
-        this.fileOpener.open('assets/texto.txt', 'application/txt')
-            .then(function () { return console.log('File is opened'); })
-            .catch(function (e) { return console.log('Error opening file', e); });
+        this.file.checkDir(this.file.dataDirectory, 'mydir').then(function (_) { return console.log('Directory exists'); }).catch(function (err) {
+            return console.log('Directory doesnt exist');
+        });
     }
     HomePage.prototype.openBusca = function () {
         this.router.navigate(['/search']);
@@ -381,7 +381,7 @@ var HomePage = /** @class */ (function () {
             template: __webpack_require__(/*! ./home.page.html */ "./src/app/home/home.page.html"),
             styles: [__webpack_require__(/*! ./home.page.scss */ "./src/app/home/home.page.scss")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_native_file_opener_ngx__WEBPACK_IMPORTED_MODULE_4__["FileOpener"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"], _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["ActionSheetController"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_native_File_ngx__WEBPACK_IMPORTED_MODULE_4__["File"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"], _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["ActionSheetController"]])
     ], HomePage);
     return HomePage;
 }());

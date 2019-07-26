@@ -1,7 +1,8 @@
+
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { ActionSheetController } from '@ionic/angular';
-import { FileOpener } from '@ionic-native/file-opener/ngx';
+import { File } from '@ionic-native/File/ngx';
 
 @Component({
   selector: 'app-home',
@@ -22,13 +23,12 @@ export class HomePage {
 
   isItemAvailable = false; // initialize the items with false
 
-  constructor(private fileOpener: FileOpener, private router: Router, public actionSheetController: ActionSheetController) {
+  constructor(private file: File, private router: Router, public actionSheetController: ActionSheetController) {
 
     this.getList();
 
-    this.fileOpener.open('assets/texto.txt', 'application/txt')
-    .then(() => console.log('File is opened'))
-    .catch(e => console.log('Error opening file', e));
+    this.file.checkDir(this.file.dataDirectory, 'mydir').then(_ => console.log('Directory exists')).catch(err =>
+      console.log('Directory doesnt exist'));
 
   }
 
