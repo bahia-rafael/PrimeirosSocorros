@@ -1,7 +1,7 @@
 <ion-header translucent>
   <ion-toolbar>
     <ion-avatar style="width: 40px; height: 40px;" slot="start">
-      <img src="assets/hospital.png">
+      <img src="assets/img/hospital.png">
     </ion-avatar>
     <ion-title style="text-align: center;font-size: 15px;padding-left: 1px;">
       <strong>FIQUE CALMO! PEÇA AJUDA - 192</strong>
@@ -12,7 +12,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content (click)="teste()">
+<ion-content>
   <ion-list>
     <ion-item data-toggle="collapse" data-target="#{{topico.title}}" *ngFor="let topico of topicosApp">
       <ion-avatar slot="start">
