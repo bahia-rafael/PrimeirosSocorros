@@ -37,8 +37,6 @@ export class HomePage {
         xmlDoc = parser.parseFromString(texto, "text/xml");
         this.armazenarTopicos(xmlDoc);
       });
-
-    document.getElementsByTagName('ion-item')[1].style.backgroundColor = this.gera_cor();
   }
 
   armazenarTopicos(teste: any) {
