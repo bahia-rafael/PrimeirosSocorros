@@ -13,19 +13,20 @@
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-item data-toggle="collapse" data-target="#{{topico.title}}" *ngFor="let topico of topicosApp">
-      <ion-avatar slot="start">
-        <img src="{{topico.icon}}">
-      </ion-avatar>
-      <ion-label>
-        <h2 style="font-size: 18px;font-family: 'Comic Sans MS', cursive, sans-serif;">{{topico.title}}</h2>
-        <p id="{{topico.title}}" class="collapse" ngClass="collapse">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-        </p>
-      </ion-label>
+  <ion-grid>
+    <ion-row>
+      <ion-col size='6' *ngFor="let topico of topicosApp">
+        <ion-card data-toggle="collapse" data-target="#{{topico.title}}">
+          <ion-item lines=none>
+          <ion-img style="width: 50px; margin-left: auto; margin-right: auto; background-color: rgb(118, 243, 243); border-radius: 50%;" [src]="topico.icon"></ion-img>
+        </ion-item>
+          <ion-card-header>
+            <ion-card-title style="font-size: 16px;font-family: 'Comic Sans MS', cursive, sans-serif;">{{topico.title}}
+            </ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
-    </ion-item>
-
-  </ion-list>
 </ion-content>
