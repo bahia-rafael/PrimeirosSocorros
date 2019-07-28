@@ -16,10 +16,13 @@
   <ion-grid>
     <ion-row>
       <ion-col size='6' *ngFor="let topico of topicosApp">
-        <ion-card data-toggle="collapse" data-target="#{{topico.title}}">
-          <ion-item lines=none>
-          <ion-img style="width: 50px; margin-left: auto; margin-right: auto; background-color: rgb(118, 243, 243); border-radius: 50%;" [src]="topico.icon"></ion-img>
-        </ion-item>
+        <ion-card data-toggle="collapse" data-target="#{{topico.title}}" style="height: 165px">
+          <ion-item lines=none
+            style="height: 100px;--background: rgb(118, 243, 243);background-color: rgb(118, 243, 243)">
+            <ion-img
+              style="margin-top: 20%;width: 50px; margin-left: auto; margin-right: auto; background-color: rgb(118, 243, 243); border-radius: 50%;"
+              [src]="topico.icon"></ion-img>
+          </ion-item>
           <ion-card-header>
             <ion-card-title style="font-size: 16px;font-family: 'Comic Sans MS', cursive, sans-serif;">{{topico.title}}
             </ion-card-title>

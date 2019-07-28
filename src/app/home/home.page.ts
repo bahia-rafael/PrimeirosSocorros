@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { ActionSheetController } from '@ionic/angular';
@@ -38,6 +37,8 @@ export class HomePage {
         xmlDoc = parser.parseFromString(texto, "text/xml");
         this.armazenarTopicos(xmlDoc);
       });
+
+    document.getElementsByTagName('ion-item')[1].style.backgroundColor = this.gera_cor();
   }
 
   armazenarTopicos(teste: any) {
@@ -312,5 +313,16 @@ export class HomePage {
 
   }
 
+  // gera uma cor aleatória em hexadecimal
+  gera_cor() {
+    var hexadecimais = '0123456789ABCDEF';
+    var cor = '#';
 
+    // Pega um número aleatório no array acima
+    for (var i = 0; i < 6; i++) {
+      //E concatena à variável cor
+      cor += hexadecimais[Math.floor(Math.random() * 16)];
+    }
+    return cor;
+  }
 }
