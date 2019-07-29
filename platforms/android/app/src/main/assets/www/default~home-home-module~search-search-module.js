@@ -43,7 +43,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var HomePage = /** @class */ (function () {
-    function HomePage(file, router, actionSheetController) {
+    function HomePage(platform, file, router, actionSheetController) {
+        var _this = this;
+        this.platform = platform;
         this.file = file;
         this.router = router;
         this.actionSheetController = actionSheetController;
@@ -51,6 +53,9 @@ var HomePage = /** @class */ (function () {
         this.isItemAvailable = false; // initialize the items with false
         this.getList();
         HomePage_1.topicosTotais = this.topicosApp;
+        this.platform.backButton.subscribe(function () {
+            _this.router.navigate(['/exit']);
+        });
     }
     HomePage_1 = HomePage;
     HomePage.prototype.openTopico = function (titulo, icone) {
@@ -282,7 +287,7 @@ var HomePage = /** @class */ (function () {
             template: __webpack_require__(/*! ./home.page.html */ "./src/app/home/home.page.html"),
             styles: [__webpack_require__(/*! ./home.page.scss */ "./src/app/home/home.page.scss")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_native_File_ngx__WEBPACK_IMPORTED_MODULE_4__["File"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"], _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["ActionSheetController"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_3__["Platform"], _ionic_native_File_ngx__WEBPACK_IMPORTED_MODULE_4__["File"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"], _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["ActionSheetController"]])
     ], HomePage);
     return HomePage;
 }());

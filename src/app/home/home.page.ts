@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { ActionSheetController } from '@ionic/angular';
+import { ActionSheetController, Platform } from '@ionic/angular';
 import { File } from '@ionic-native/File/ngx';
 
 @Component({
@@ -16,11 +16,15 @@ export class HomePage {
 
   isItemAvailable = false; // initialize the items with false
 
-  constructor(private file: File, private router: Router, public actionSheetController: ActionSheetController) {
+  constructor(private platform: Platform, private file: File, private router: Router, public actionSheetController: ActionSheetController) {
 
     this.getList();
 
     HomePage.topicosTotais = this.topicosApp;
+
+    this.platform.backButton.subscribe(() => {
+      this.router.navigate(['/exit']);
+    });
 
   }
 

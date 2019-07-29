@@ -157,7 +157,7 @@
    <topico>
       <titulo>Traumatismo Cranio encefálico</titulo>
       <definicao>Disfunção cerebral causada por uma força externa, geralmente um golpe violento na cabeça.</definicao>
-      <sintomas>Dor de cabeça persistente;Amnésia;Confusão mental;Dificuldade de concentração;Dificuldade em pensar e compreender;Incapacidade de reconhecer coisas comuns ou perda de memória recente;desmaio;distúrbio do equilíbrio ou tontura;náusea ou vômito;Sangramento;Pupilas diferentes;Crises convulsivas;</sintomas>
+      <sintomas>Dor de cabeça persistente;Amnésia;Confusão mental;Dificuldade de concentração;Dificuldade em pensar e compreender;Incapacidade de reconhecer coisas comuns ou perda de memória recente;desmaio;distúrbio do equilíbrio ou tontura;náusea ou vômito;Sangramento;Pupilas diferentes;Crises convulsivas</sintomas>
       <textoAdicional>Sempre suspeitar de trauma raquimedular;monitoramento contínuo;apenas movimentar se tiver certeza que está imobilizado;procurar assistência médica imediata.</textoAdicional>
       <atendimento>Chamar uma ambulância;Observar se a pessoa está consciente(Caso o indivíduo esteja inconsciente e não respire, deve iniciar massagem cardíaca);Mantenha a vítima imobilizada;Em caso de hemorragias, aplicar ligeira pressão sobre o local com um pano, gaze ou compressa limpa;Observar a vítima até a chegada da ambulância.</atendimento>
       <anexo>Não</anexo>
@@ -167,7 +167,7 @@
       <definicao>Trata-se de qualquer ferimento físico localizado na face, podendo afetar, consecutivamente, sua pele, gordura, músculos, nervos e ossos e, nos casos mais graves, se associar a dano cerebral.</definicao>
       <sintomas>Dor variável, de leve a intensa, dependendo do tipo de trauma de face e do local acometido;Dormência do queixo, lábios, língua, gengiva, dentes, bochechas, nariz e testa, dependendo do tipo de trauma de face e local de acometimento;Dificuldades em movimentar a mandíbula (dor e limitação dos movimentos por impedimento mecânico);Alterações da oclusão, ou seja, modificações na mordida;Cortes e lacerações;Hematoma, equimose e edema (áreas arroxeadas e inchadas).</sintomas>
       <textoAdicional>Os fragmentos ósseos e o sangue podem provocar obstruções nas vias aéreas no caso de traumas de face.</textoAdicional>
-      <atendimento>Verificar a permeabilidade das vias aéreas;Manter a coluna alinhada;Não retirar objetos encravados;Considerar a possibilidade de Trauma Crânio Encefálico;Aplicar curativos sem exercer forte pressão;</atendimento>
+      <atendimento>Verificar a permeabilidade das vias aéreas;Manter a coluna alinhada;Não retirar objetos encravados;Considerar a possibilidade de Trauma Crânio Encefálico;Aplicar curativos sem exercer forte pressão</atendimento>
       <anexo>Não</anexo>
    </topico>
    <topico>
@@ -181,7 +181,7 @@
    <topico>
       <titulo>Trauma Raquimedular</titulo>
       <definicao>Lesão da medula espinhal que provoca alterações, temporárias ou permanentes, na função motora, sensibilidade ou função autonômica.</definicao>
-      <sintomas>Vítimas inconscientes que sofreram algum tipo de trauma;Dor em qualquer região da coluna vertebral;Traumatismo facial grave ou traumatismo de crânio fechado;"Formigamento" (anestesia) ou paralizia de qualquer parte do corpo abaixo do pescoço;Pênis ereto;Perda do controle esfincteriano (urina e/ou fezes soltas);</sintomas>
+      <sintomas>Vítimas inconscientes que sofreram algum tipo de trauma;Dor em qualquer região da coluna vertebral;Traumatismo facial grave ou traumatismo de crânio fechado;"Formigamento" (anestesia) ou paralizia de qualquer parte do corpo abaixo do pescoço;Pênis ereto;Perda do controle esfincteriano (urina e/ou fezes soltas)</sintomas>
       <textoAdicional>A coluna vertebral é composta de 33 vértebras sobrepostas, localizada do crânio ao cóccix, e no seu interior há a medula espinhal, que realiza a condução dos impulsos nervosos. As lesões da coluna vertebrais malconduzidas podem produzir lesões graves e irreversíveis de medula, com comprometimento neurológico definitivo (tetraplégica ou paraplegia). Todo o cuidado deverá ser tomado com estas vítimas para não surgirem lesões adicionais.
 				Deverá suspeitar de trauma raquimedular no caso de politraumatismo, devendo assim utilizar todos os protocolos de imobilização para evitar riscos de agravamento da lesão.</textoAdicional>
       <atendimento>Cuidado especial com a vítima inconsciente;Imobilizar o pescoço antes do transporte, utilizando o colar cervical;Movimentar a vítima em bloco, impedindo particularmente movimentos bruscos do pescoço e do tronco;Colocar em prancha de madeira;Encaminhar para atendimento hospitalar</atendimento>
@@ -225,7 +225,7 @@
       <definicao>Comumente essas picadas são cometidas por abelha, Viúva negra, aranha marrom, escorpião e carrapato.</definicao>
       <sintomas>Dor;Eritema;Inchaço;Febre;Dor de cabeça.</sintomas>
       <textoAdicional>A aplicação de uma atadura de imobilização por pressão, com pressão entre 40 e 70 mmHg na extremidade superior e 55 e 70 mmHg na extremidade inferior, em torno de toda a extensão da extremidade picada, é uma maneira eficaz e segura de retardar o fluxo linfático e, por conseguinte, a disseminação do veneno. </textoAdicional>
-      <atendimento>Manter a vítima deitada. Evite que ela se movimente para não favorecer a absorção de veneno;Se a picada for na perna ou braço, mantenha-os em posição mais baixa que o coração;Lavar a picada com água abundante;Remover anéis, relógios, prevenindo assim complicações decorrentes do inchaço;Encaminhar a vítima imediatamente ao serviço de saúde mais próximo, para avaliar a necessidade de soro específico;Não fazer torniquete e não cortar ou perfurar o local da picada;</atendimento>
+      <atendimento>Manter a vítima deitada. Evite que ela se movimente para não favorecer a absorção de veneno;Se a picada for na perna ou braço, mantenha-os em posição mais baixa que o coração;Lavar a picada com água abundante;Remover anéis, relógios, prevenindo assim complicações decorrentes do inchaço;Encaminhar a vítima imediatamente ao serviço de saúde mais próximo, para avaliar a necessidade de soro específico;Não fazer torniquete e não cortar ou perfurar o local da picada</atendimento>
       <anexo>Sim</anexo>
    </topico>
    <topico>

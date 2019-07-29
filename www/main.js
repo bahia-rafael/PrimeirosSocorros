@@ -438,6 +438,10 @@ var map = {
 		"./src/app/blank/blank.module.ts",
 		"blank-blank-module"
 	],
+	"./exit/exit.module": [
+		"./src/app/exit/exit.module.ts",
+		"exit-exit-module"
+	],
 	"./home/home.module": [
 		"./src/app/home/home.module.ts",
 		"default~home-home-module~search-search-module",
@@ -494,6 +498,7 @@ var routes = [
     { path: 'home', loadChildren: './home/home.module#HomePageModule' },
     { path: 'search', loadChildren: './search/search.module#SearchPageModule' },
     { path: 'blank', loadChildren: './blank/blank.module#BlankPageModule' },
+    { path: 'exit', loadChildren: './exit/exit.module#ExitPageModule' },
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
