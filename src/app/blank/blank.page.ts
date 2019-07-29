@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-blank',
@@ -23,7 +24,7 @@ export class BlankPage implements OnInit {
 
   arquivoTotal: any;
 
-  constructor(private http: HttpClient, private route: ActivatedRoute) {
+  constructor(private router: Router, private http: HttpClient, private route: ActivatedRoute) {
 
     let id = this.definirTopico(this.route.snapshot.paramMap.get('name'));
 
@@ -58,6 +59,10 @@ export class BlankPage implements OnInit {
 
   guardarCarregamento(xml: any) {
     this.arquivoTotal = xml;
+  }
+
+  openBusca() {
+    this.router.navigate(['/search']);
   }
 
   definirTopico(name: string): number {

@@ -1,9 +1,9 @@
 <ion-header translucent>
-  <ion-toolbar>
-    <ion-title style="margin-top: 20px;margin-inline: 5px;text-align: center;font-size: 15px;padding-right: 0px;">
-      <strong>BUSCA</strong>
-    </ion-title>
-    <ion-searchbar id="busca" (ionChange)="getItems($event)"></ion-searchbar>
+  <ion-toolbar >
+    <ion-buttons style="margin-top: 20px" slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-input placeholder="Busca" style="--placeholder-color: rgb(65, 65, 65);margin-top: 10px;background-color: beige;width: 90%;border-radius: 10px" id="busca" (ionChange)="getItems($event)"></ion-input>
   </ion-toolbar>
 </ion-header>
 

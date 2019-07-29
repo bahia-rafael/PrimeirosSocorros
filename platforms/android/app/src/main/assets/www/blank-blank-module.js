@@ -58,7 +58,7 @@ var BlankPageModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header translucent>\n  <ion-toolbar>\n    <ion-buttons slot=\"start\">\n      <ion-back-button defaultHref=\"/\"></ion-back-button>\n    </ion-buttons>\n    <ion-title style=\"text-align: center;font-size: 17px;padding-left: 1px;\">\n      <strong>{{topicoEscolhido.titulo}}</strong>\n    </ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-card>\n    <img style=\"width: 165px;height: 100px;margin: 5px auto\" src=\"{{icon}}\" />\n    <ion-card-header>\n      <ion-card-title>Definição</ion-card-title>\n    </ion-card-header>\n    <ion-card-content name=\"definicao\" style=\"text-align: justify;\">\n      {{topicoEscolhido.definicao}}\n    </ion-card-content>\n    <ion-card-header>\n      <ion-card-title>Sintomas</ion-card-title>\n    </ion-card-header>\n    <ion-card-content name=\"sintomas\" style=\"text-align: justify;\">\n    </ion-card-content>\n    <ion-card-header>\n      <ion-card-title>Atendimento</ion-card-title>\n    </ion-card-header>\n    <ion-card-content name=\"atendimento\" style=\"text-align: justify;\">\n      {{topicoEscolhido.textoAdicional}}\n    </ion-card-content>\n  </ion-card>\n</ion-content>"
+module.exports = "<ion-header translucent>\n  <ion-toolbar>\n    <ion-buttons slot=\"start\">\n      <ion-back-button defaultHref=\"/\"></ion-back-button>\n    </ion-buttons>\n    <h1\n      style=\"font-family: 'Comic Sans MS', cursive, sans-serif;text-align: center;font-size: 17px;\">\n      <div><strong>{{topicoEscolhido.titulo}}</strong></div>\n    </h1>\n    <ion-icon (click)=\"openBusca()\" name=\"search\" slot=\"end\" style=\"color: darkslategray;width: 40px;height: 30px;margin-right: 15px\">\n    </ion-icon>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-card>\n    <img style=\"width: 165px;height: 100px;margin: 5px auto\" src=\"{{icon}}\" />\n    <ion-card-header>\n      <ion-card-title>Definição</ion-card-title>\n    </ion-card-header>\n    <ion-card-content name=\"definicao\" style=\"text-align: justify;\">\n      {{topicoEscolhido.definicao}}\n    </ion-card-content>\n    <ion-card-header>\n      <ion-card-title>Sintomas</ion-card-title>\n    </ion-card-header>\n    <ion-card-content name=\"sintomas\" style=\"text-align: justify;\">\n    </ion-card-content>\n    <ion-card-header>\n      <ion-card-title>Atendimento</ion-card-title>\n    </ion-card-header>\n    <ion-card-content name=\"atendimento\" style=\"text-align: justify;\">\n      {{topicoEscolhido.textoAdicional}}\n    </ion-card-content>\n  </ion-card>\n</ion-content>"
 
 /***/ }),
 
@@ -91,9 +91,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 var BlankPage = /** @class */ (function () {
-    function BlankPage(http, route) {
+    function BlankPage(router, http, route) {
         var _this = this;
+        this.router = router;
         this.http = http;
         this.route = route;
         this.topicoEscolhido = {
@@ -126,6 +128,9 @@ var BlankPage = /** @class */ (function () {
     }
     BlankPage.prototype.guardarCarregamento = function (xml) {
         this.arquivoTotal = xml;
+    };
+    BlankPage.prototype.openBusca = function () {
+        this.router.navigate(['/search']);
     };
     BlankPage.prototype.definirTopico = function (name) {
         var indice;
@@ -268,7 +273,7 @@ var BlankPage = /** @class */ (function () {
             template: __webpack_require__(/*! ./blank.page.html */ "./src/app/blank/blank.page.html"),
             styles: [__webpack_require__(/*! ./blank.page.scss */ "./src/app/blank/blank.page.scss")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"], _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"]])
     ], BlankPage);
     return BlankPage;
 }());
