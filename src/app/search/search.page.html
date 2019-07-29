@@ -1,12 +1,13 @@
 <ion-header translucent>
   <ion-toolbar>
-    <ion-title style="text-align: center;font-size: 15px;padding-left: 1px;">
-      <strong>FIQUE CALMO! PEÇA AJUDA - 192</strong>
+    <ion-title style="margin-top: 20px;margin-inline: 5px;text-align: center;font-size: 15px;padding-right: 0px;">
+      <strong>BUSCA</strong>
     </ion-title>
+    <ion-searchbar id="busca" (ionChange)="getItems($event)"></ion-searchbar>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>  
+<ion-content>
   <ion-list>
     <ion-item *ngFor="let item of items" (click)="openTopico(item)">
       {{ item }}

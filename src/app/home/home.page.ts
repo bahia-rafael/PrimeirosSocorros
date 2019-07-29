@@ -56,7 +56,7 @@ export class HomePage {
       {
         "id": 2,
         "titulo": "Animais Peçonhentos (Cobras)",
-        "icon": "assets/img/Animais Peçonhentos (Cobras).PNG"
+        "icon": "assets/img/Animais Peçonhentos (Cobras).png"
       },
       {
         "id": 3,
@@ -71,7 +71,7 @@ export class HomePage {
       {
         "id": 5,
         "titulo": "Desmaio",
-        "icon": "assets/img/Desmaio.png"
+        "icon": "assets/img/desmaio.png"
       },
       {
         "id": 6,
