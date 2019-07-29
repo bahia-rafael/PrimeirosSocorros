@@ -1,4 +1,6 @@
+import { HomePage } from './../home/home.page';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-search',
@@ -7,12 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class SearchPage implements OnInit {
-  
+
   ngOnInit() {
   }
 
 
-  constructor() {
+  constructor(private router: Router) {
     this.initializeItems();
   }
 
@@ -21,35 +23,47 @@ export class SearchPage implements OnInit {
 
   initializeItems() {
     this.items = [
-      'Animais Peçonhentos',
+      'Animais Peçonhentos (Aranhas)',
+      'Animais Peçonhentos (Cobras)',
       'Convulsão',
       'Corpo Estranho nos Olhos',
       'Desmaio',
-      'Desobstrução das Vias Aéreas',
+      'Desobstrução das vias aéreas',
+      'Insolação',
+      'Intermação',
       'Epilepsia',
-      'Ferimentos Externos',
       'Hemorragia Externa',
       'Hemorragia Interna',
       'Hemorragia Nasal',
-      'Insolação',
-      'Intermação',
-      'Intoxicações e envenenamentos',
-      'Parada Cardiorrespiratória',
-      'Queimaduras 1º Grau',
-      'Queimaduras 2º Grau (<20%)',
-      'Queimaduras 2º Grau (>20%)',
-      'Queimaduras 3º Grau',
-      'Queimaduras elétricas',
+      'Intoxicações e Envenenamentos (Aspiração)',
+      'Intoxicãções e Envenenamentos (Ingestão)',
+      'Intoxicações e Envenenamentos (Pele)',
+      'Parada Cardíaca',
+      'Queimaduras: 1° Grau',
+      'Queimaduras: 2° Grau (Profunda)',
+      'Queimaduras: 2° Grau (Superficial)',
+      'Queimaduras: 3° Grau',
+      'Queimaduras Elétricas',
+      'Transporte de acidentados (Duas Pessoas)',
+      'Transporte de acidentados (Quatro Pessoas)',
+      'Transporte de acidentados (Três Pessoas)',
+      'Transporte de acidentados (Uma pessoa)',
       'Trauma Abdominal',
-      'Trauma de face',
+      'Trauma de Face',
       'Trauma Músculo Esquelético',
       'Trauma Ocular',
       'Trauma Raquimedular',
       'Trauma Torácico',
-      'Traumas',
-      'Traumatismo Crânio Encefálico',
+      'Traumatismo Cranio encefálico'
     ];
   }
+
+  openTopico(titulo: string) {
+    var icone = HomePage.searchTopico(titulo);
+
+    this.router.navigate(['/blank', { name: titulo, icon: icone }]);
+  }
+
 
   getItems(ev: any) {
     // Reset items back to all of the items

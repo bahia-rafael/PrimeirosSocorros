@@ -1,13 +1,33 @@
-<ion-header>
+<ion-header translucent>
   <ion-toolbar>
-    <ion-title>blank</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title style="text-align: center;font-size: 17px;padding-left: 1px;">
+      <strong>{{topicoEscolhido.titulo}}</strong>
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <video id="player_webtv_html5_api" class="vjs-tech" autoplay="" poster="" preload="auto"
-    data-setup="{ 'fluid':true,'aspectRatio':'16:9' }" tabindex="-1"
-    src="blob:http://playerv.justweb.pt/49c79782-361c-42dd-991d-81a3cce1f705">
-    <source src="http://stmv1.justweb.pt/novumcanal/novumcanal/playlist.m3u8" type="application/x-mpegURL">
-  </video>
+  <ion-card>
+    <img style="width: 165px;height: 100px;margin: 5px auto" src="{{icon}}" />
+    <ion-card-header>
+      <ion-card-title>Definição</ion-card-title>
+    </ion-card-header>
+    <ion-card-content name="definicao" style="text-align: justify;">
+      {{topicoEscolhido.definicao}}
+    </ion-card-content>
+    <ion-card-header>
+      <ion-card-title>Sintomas</ion-card-title>
+    </ion-card-header>
+    <ion-card-content name="sintomas" style="text-align: justify;">
+    </ion-card-content>
+    <ion-card-header>
+      <ion-card-title>Atendimento</ion-card-title>
+    </ion-card-header>
+    <ion-card-content name="atendimento" style="text-align: justify;">
+      {{topicoEscolhido.textoAdicional}}
+    </ion-card-content>
+  </ion-card>
 </ion-content>

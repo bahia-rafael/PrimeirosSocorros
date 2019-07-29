@@ -1,6 +1,8 @@
 ion-toolbar {
   font-family: "Arial Black", Gadget, sans-serif;
-  --color: #fe3d3d;
+  --color: #FFFF;
+  --background: rgb(248, 63, 63);
+  height: 70px;
 }
 
 
@@ -12,5 +14,5 @@ ion-card-content {
 ion-card-title {
   text-overflow: ellipsis;
   font-family: "Comic Sans MS", cursive, sans-serif;
-  --color: darkgray;
+
 }

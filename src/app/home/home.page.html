@@ -1,30 +1,26 @@
 <ion-header translucent>
   <ion-toolbar>
-    <ion-avatar style="width: 40px; height: 40px;" slot="start">
-      <img src="assets/img/hospital.png">
-    </ion-avatar>
+
     <ion-title style="text-align: center;font-size: 15px;padding-left: 1px;">
       <strong>FIQUE CALMO! PEÇA AJUDA - 192</strong>
     </ion-title>
-  </ion-toolbar>
-  <ion-toolbar>
-    <ion-searchbar (click)="openBusca()"></ion-searchbar>
+    <ion-icon (click)="openBusca()" name="search" slot="end" style="width: 40px;height: 30px;margin-right: 15px">
+    </ion-icon>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-grid>
     <ion-row>
-      <ion-col size='6' *ngFor="let topico of topicosApp">
-        <ion-card data-toggle="collapse" data-target="#{{topico.title}}" style="height: 165px">
-          <ion-item lines=none
-            style="height: 100px;--background: rgb(118, 243, 243);background-color: rgb(118, 243, 243)">
-            <ion-img
-              style="margin-top: 20%;width: 50px; margin-left: auto; margin-right: auto; background-color: rgb(118, 243, 243); border-radius: 50%;"
-              [src]="topico.icon"></ion-img>
-          </ion-item>
-          <ion-card-header>
-            <ion-card-title style="font-size: 16px;font-family: 'Comic Sans MS', cursive, sans-serif;">{{topico.title}}
+      <ion-col size='6' *ngFor="let topico of topicosApp" (click)="openTopico(topico.titulo, topico.icon)">
+        <ion-card style="height: 175px;padding-top: 0px;">
+          <ion-img style="margin-top: 0px;width: 165px;height: 100px; margin-left: auto; margin-right: auto;"
+            [src]="topico.icon"></ion-img>
+
+          <ion-card-header style="padding-top: 5px;">
+            <ion-card-title
+              style="text-align: center;font-size: 15px;font-family: 'Comic Sans MS', cursive, sans-serif;">
+              {{topico.titulo}}
             </ion-card-title>
           </ion-card-header>
         </ion-card>
