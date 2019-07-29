@@ -58,7 +58,7 @@ var SearchPageModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header translucent>\r\n  <ion-toolbar>\r\n    <ion-avatar style=\"width: 50px; height: 50px;\" slot=\"start\">\r\n      <img src=\"assets/hospital.png\">\r\n    </ion-avatar>\r\n    <ion-title>PRIMEIROS SOCORROS</ion-title>\r\n  </ion-toolbar>\r\n  <ion-toolbar>\r\n    <ion-searchbar id=\"busca\" (ionChange)=\"getItems($event)\"></ion-searchbar>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>  \r\n  <ion-list>\r\n    <ion-item *ngFor=\"let item of items\">\r\n      {{ item }}\r\n    </ion-item>\r\n  </ion-list>\r\n</ion-content>"
+module.exports = "<ion-header translucent>\r\n  <ion-toolbar>\r\n    <ion-title style=\"text-align: center;font-size: 15px;padding-left: 1px;\">\r\n      <strong>FIQUE CALMO! PEÇA AJUDA - 192</strong>\r\n    </ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>  \r\n  <ion-list>\r\n    <ion-item *ngFor=\"let item of items\" (click)=\"openTopico(item)\">\r\n      {{ item }}\r\n    </ion-item>\r\n  </ion-list>\r\n</ion-content>"
 
 /***/ }),
 
@@ -84,11 +84,16 @@ module.exports = "ion-toolbar {\n  font-family: \"Arial Black\", Gadget, sans-se
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SearchPage", function() { return SearchPage; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _home_home_page__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../home/home.page */ "./src/app/home/home.page.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+
+
 
 
 var SearchPage = /** @class */ (function () {
-    function SearchPage() {
+    function SearchPage(router) {
+        this.router = router;
         this.searchQuery = '';
         this.initializeItems();
     }
@@ -96,34 +101,43 @@ var SearchPage = /** @class */ (function () {
     };
     SearchPage.prototype.initializeItems = function () {
         this.items = [
-            'Animais Peçonhentos',
+            'Animais Peçonhentos (Aranhas)',
+            'Animais Peçonhentos (Cobras)',
             'Convulsão',
             'Corpo Estranho nos Olhos',
             'Desmaio',
-            'Desobstrução das Vias Aéreas',
+            'Desobstrução das vias aéreas',
+            'Insolação',
+            'Intermação',
             'Epilepsia',
-            'Ferimentos Externos',
             'Hemorragia Externa',
             'Hemorragia Interna',
             'Hemorragia Nasal',
-            'Insolação',
-            'Intermação',
-            'Intoxicações e envenenamentos',
-            'Parada Cardiorrespiratória',
-            'Queimaduras 1º Grau',
-            'Queimaduras 2º Grau (<20%)',
-            'Queimaduras 2º Grau (>20%)',
-            'Queimaduras 3º Grau',
-            'Queimaduras elétricas',
+            'Intoxicações e Envenenamentos (Aspiração)',
+            'Intoxicãções e Envenenamentos (Ingestão)',
+            'Intoxicações e Envenenamentos (Pele)',
+            'Parada Cardíaca',
+            'Queimaduras: 1° Grau',
+            'Queimaduras: 2° Grau (Profunda)',
+            'Queimaduras: 2° Grau (Superficial)',
+            'Queimaduras: 3° Grau',
+            'Queimaduras Elétricas',
+            'Transporte de acidentados (Duas Pessoas)',
+            'Transporte de acidentados (Quatro Pessoas)',
+            'Transporte de acidentados (Três Pessoas)',
+            'Transporte de acidentados (Uma pessoa)',
             'Trauma Abdominal',
-            'Trauma de face',
+            'Trauma de Face',
             'Trauma Músculo Esquelético',
             'Trauma Ocular',
             'Trauma Raquimedular',
             'Trauma Torácico',
-            'Traumas',
-            'Traumatismo Crânio Encefálico',
+            'Traumatismo Cranio encefálico'
         ];
+    };
+    SearchPage.prototype.openTopico = function (titulo) {
+        var icone = _home_home_page__WEBPACK_IMPORTED_MODULE_1__["HomePage"].searchTopico(titulo);
+        this.router.navigate(['/blank', { name: titulo, icon: icone }]);
     };
     SearchPage.prototype.getItems = function (ev) {
         // Reset items back to all of the items
@@ -138,12 +152,12 @@ var SearchPage = /** @class */ (function () {
         }
     };
     SearchPage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"])({
             selector: 'app-search',
             template: __webpack_require__(/*! ./search.page.html */ "./src/app/search/search.page.html"),
             styles: [__webpack_require__(/*! ./search.page.scss */ "./src/app/search/search.page.scss")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]])
     ], SearchPage);
     return SearchPage;
 }());

@@ -1,7 +1,259 @@
-<bookstore>
-<book>
-<title>Everyday Italian</title>
-<author>Giada De Laurentiis</author>
-<year>2005</year>
-</book>
-</bookstore>
+<?xml version="1.0" encoding="UTF-8"?>
+<totais>
+   <topico>
+      <titulo>Parada Cardiorrespiratória</titulo>
+      <definicao>É a ausência das funções vitais, movimentos respiratórios e batimentos cardíacos. A ocorrência isolada de uma delas só existe em curto espaço de tempo, visto que a parada de uma acarreta a parada da outra.</definicao>
+      <sintomas>Inconsciência;ausência de movimentos respiratórios e batimentos cardíacos</sintomas>
+      <textoAdicional>Chame o Serviço de Emergências Médicas da sua localidade ou peça para alguém chamar.
+			Realizar somente quando tiver certeza de que o coração da vítima parou.</textoAdicional>
+      <atendimento>Colocar a vítima sobre uma superfície rígida em decúbito dorsal;Ajoelhar-se ao lado da vítima;Usando a mão próxima da cintura da vítima, deslize os dedos pela lateral das costelas próximas a você, em direção ao centro do peito acima do apêndice xifoide ou na linha mamária no meio do externo;Colocar a base da sua outra mão (que está mais próxima da cabeça da vítima) ao lado do dedo indicador;Remover a mão que localizou o osso esterno, colocando-a sobre a que está no peito;Entrelaçar os seus dedos, estendendo-os de forma que não toquem no peito da vítima;Posicionar seus ombros diretamente acima de suas mãos sobre o peito da vítima;Manter os braços retos e os cotovelos estendidos;Pressionar o osso esterno para baixo, com profundidade de compressão mínima de 2 polegadas (5 cm), em adultos, e de, no mínimo um terço do diâmetro anteroposterior do tórax, em bebes e crianças (aproximadamente, 1,5 polegadas {4cm}em bebês e 2 polegadas {5 cm} em crianças);Pince o nariz da vítima. Respire normalmente e então sele sua boca sobre a boca da vítima e aplique duas insuflações com duração de um segundo cada, observando se ocorre elevação torácica (para segurança do socorrista, usar o Equipamento de Proteção Individual). OBS: todos os socorristas leigos treinados devem, no mínimo, aplicar compressões torácicas em vítimas de Parada Cardiorrespiratória – PCR. Além disso, se o socorrista leigo treinado puder realizar ventilações de resgate, as compressões e as ventilações devem ser aplicadas na relação de 30 compressões para cada 2 ventilações;Executar 30 compressões. Contar as compressões à medida que você executar;Fazer as compressões uniformemente e com ritmo;Durante as compressões, flexionar o tronco ao invés dos joelhos;Evitar que os seus dedos apertem o peito da vítima durante as compressões;Continue aplicando as compressões e insuflações na proporção de 30 compressões para 2 insuflações, até o resgate chegar, verificando pulso a cada cinco ciclos sendo a velocidade recomendada para as compressões torácicas de 100 a 120/min</atendimento>
+      <anexo>Sim</anexo>
+   </topico>
+   <topico>
+      <titulo>Desobstrução das vias aéreas</titulo>
+      <definicao>As vias aéreas podem ser obstruídas por objetos, próteses, fluídos com sangue, saliva e vômitos. Para a remoção de tais causas em geral se fará necessário a lateralização da vítima. Nosso objetivo é conseguir com ajuda de movimentos mecânicos e da gravidade a remoção do objeto sem que o mesmo venha a se aprofundar em direção as vias aéreas inferiores. As manobras de desengasgo são muito usadas na remoção de objetos presos na traqueia tanto em adultos quanto em crianças.
+			A queda da língua que acontece em vítimas inconscientes, sendo corrigida com manobras de levantamento de queixo e tração da mandíbula.</definicao>
+      <sintomas>Dificuldade Respiratória;Ansiedade;Ronco;Gorgolejo;Cianose</sintomas>
+      <textoAdicional />
+      <atendimento>Remover dentadura, pontes dentárias, excesso de secreção, dentes soltos etc.;Colocar uma das mãos sobre a testa da vítima e com a outra abra a boca mantendo o queixo elevado.;Estender levemente o queixo até alinhar em direção ao peito.;Em caso de Parada Cardiorrespiratória realizar ciclos de 30 compressões(na velocidade de 100 compressões por minuto) e 2 ventilações, verificando o pulso a cada cinco ciclos.</atendimento>
+      <anexo>Não</anexo>
+   </topico>
+   <topico>
+      <titulo>Convulsão</titulo>
+      <definicao>Expressão clínica decorrente de uma descarga elétrica anormal e excessiva do tecido cerebral.</definicao>
+      <sintomas>Inconsciência;Queda abrupta da vítima;Salivação abundante e vômito;Constração bruscae involuntária dos músculos;	Enrijecimento da mandíbula, travando os dentes;	Relaxamento dos esfíncteres (urina e/ou fezes soltas);Esquecimento.</sintomas>
+      <textoAdicional />
+      <atendimento>Colocar a vítima em local arejado, calmo e seguro;	Proteger a cabeça e o corpo de modo que os movimentos involuntários não causem lesões;Afastar objetos existentes ao redor da vítima;Lateralizar a cabeça em caso de vômitos;Afrouxar as roupas e deixar a vítima debater-se livremente;Nas convulsões por febre alta diminuir a temperatura do corpo, envolvendo-o com pano embebido por água;Encaminhar para atendimento hospitalar.</atendimento>
+      <anexo />
+   </topico>
+   <topico>
+      <titulo>Epilepsia</titulo>
+      <definicao>Doença neurológica que se caracteriza por crises convulsivas espontâneas recorrentes.</definicao>
+      <sintomas>Inconsciência;Queda abrupta da vítima;Salivação abundante e vômito;Constração bruscae involuntária dos músculos;	Enrijecimento da mandíbula, travando os dentes;	Relaxamento dos esfíncteres (urina e/ou fezes soltas);Esquecimento.</sintomas>
+      <textoAdicional />
+      <atendimento>Realizar a avaliação primaria;Não tente segurar os movimentos do paciente;Proteja-o de traumas afastando objetos que estejam próximos;Não tente desobstruir as vias áreas durante a convulsão;Após a crise, verifique a respiração, libere as via s aérea com lateralizarão ou aspiração;	Verifique o pulso;	Mantenha ABC.</atendimento>
+      <anexo>Não</anexo>
+   </topico>
+   <topico>
+      <titulo>Desmaio</titulo>
+      <definicao>É a perda súbita e temporária da consciência e da força muscular, geralmente devido à diminuição de oxigênio e da irrigação sanguínea no cérebro, tendo como causas: hipoglicemia, fator emocional, dor extrema, ambiente confinado etc.</definicao>
+      <sintomas>Tontura;Sensação de mal-estar;Pulso rápido e fraco;Respiração presente de ritmos variados;Tremor nas sobrancelhas;Pele fria, pálida e úmida;Inconsciência superficial.</sintomas>
+      <textoAdicional />
+      <atendimento>Colocar a vítima em local arejado e afastar curiosos;Deitar a vítima se possível com a cabeça mais baixa que o corpo, nunca eleve a perna mais que 30 cm;Afrouxar as roupas;Não de liquido à vítima logo após o desmaio;Encaminhar para atendimento médico.</atendimento>
+      <anexo>Sim</anexo>
+   </topico>
+   <topico>
+      <titulo>Corpo Estranho nos Olhos</titulo>
+      <definicao>É a introdução acidental de poeira, grãos diversos etc. na cavidade dos glóbulos oculares.</definicao>
+      <sintomas>Dor;Ardência;Vermelhidão;Lacrimejamento.</sintomas>
+      <textoAdicional />
+      <atendimento>Não esfregar os olhos;Lavar o olho com água limpa;Não remover o corpo estranho manualmente;Se o corpo estranho não sair com a lavagem, cobrir os dois olhos com pano limpo;Encaminhar para atendimento hospitalar.</atendimento>
+      <anexo>Não</anexo>
+   </topico>
+   <topico>
+      <titulo>Intoxicações e Envenenamentos (Pele)</titulo>
+      <definicao>O envenenamento ou intoxicação resulta da penetração de substância tóxica/nociva no organismo através da pele.</definicao>
+      <sintomas>Dor e sensação de queimação nas vias de penetração e sistemas correspondentes;Hálito com odor estranho;Sonolência, confusão mental, alucinações e delírios, estado de coma;Lesões cutâneas;Náuseas e vômitos;Alterações da respiração e do pulso.</sintomas>
+      <textoAdicional>Realizar a avaliação para melhor informar a equipe de socorristas, identificando quem é o paciente( Homem, Mulher ou Criança), o que causou a intoxicação ou envenenamento( Que produto), como ocorreu (Ingerido, inalado, olhos ou pele), quando, e o estado atual da vítima.</textoAdicional>
+      <atendimento>Retirar a roupa impregnada;Lavar a região atingida com água em abundância;Substâncias sólidas devem ser retiradas antes de lavar com água;Agasalhar a vítima;Encaminhar para atendimento hospitalar.</atendimento>
+      <anexo>Não</anexo>
+   </topico>
+   <topico>
+      <titulo>Intoxicações e Envenenamentos (Aspiração)</titulo>
+      <definicao>O envenenamento ou intoxicação resulta da penetração de substância tóxica/nociva no organismo através da aspiração.</definicao>
+      <sintomas>Dor e sensação de queimação nas vias de penetração e sistemas correspondentes;Hálito com odor estranho;Sonolência, confusão mental, alucinações e delírios, estado de coma;Lesões cutâneas;Náuseas e vômitos;Alterações da respiração e do pulso.</sintomas>
+      <textoAdicional>Realizar a avaliação para melhor informar a equipe de socorristas, identificando quem é o paciente( Homem, Mulher ou Criança), o que causou a intoxicação ou envenenamento( Que produto), como ocorreu (Ingerido, inalado, olhos ou pele), quando, e o estado atual da vítima.</textoAdicional>
+      <atendimento>Proporcionar a ventilação;Abrir as vias áreas respiratórias;Encaminhar para atendimento hospitalar.</atendimento>
+      <anexo>Não</anexo>
+   </topico>
+   <topico>
+      <titulo>Intoxicãções e Envenenamentos (Ingestão)</titulo>
+      <definicao>O envenenamento ou intoxicação resulta da penetração de substância tóxica/nociva no organismo através da ingestão.</definicao>
+      <sintomas>Dor e sensação de queimação nas vias de penetração e sistemas correspondentes;Hálito com odor estranho;Sonolência, confusão mental, alucinações e delírios, estado de coma;Lesões cutâneas;Náuseas e vômitos;Alterações da respiração e do pulso.</sintomas>
+      <textoAdicional>Realizar a avaliação para melhor informar a equipe de socorristas, identificando quem é o paciente( Homem, Mulher ou Criança), o que causou a intoxicação ou envenenamento( Que produto), como ocorreu (Ingerido, inalado, olhos ou pele), quando, e o estado atual da vítima.</textoAdicional>
+      <atendimento>Identificar o tipo de veneno ingerido;Provocar vômito somente quando a vítima se apresentar consciente, oferecendo água;Não provocar vômitos nos casos de inconsciência, ingestão de soda cáustica, ácidos ou produtos derivados de petróleo;Encaminhar para atendimento hospitalar.</atendimento>
+      <anexo>Não</anexo>
+   </topico>
+   <topico>
+      <titulo>Queimaduras de 1° Grau</titulo>
+      <definicao>É uma lesão produzida no tecido de revestimento do organismo, por agentes térmicos, elétricos, produtos químicos, irradiação ionizante e animais peçonhentos, atingindo somente a epiderme.</definicao>
+      <sintomas>Dor local e vermelhidão da área atingida.</sintomas>
+      <textoAdicional />
+      <atendimento>Isolar a vítima do agente agressor;Esfriar com água em temperatura ambiente;Não aplique nada na área queimada;Dê água pra vítima.</atendimento>
+      <anexo>Sim</anexo>
+   </topico>
+   <topico>
+      <titulo>Queimaduras de 2° Grau (Superficial)</titulo>
+      <definicao>É uma lesão produzida no tecido de revestimento do organismo, por agentes térmicos, elétricos, produtos químicos, irradiação ionizante e animais peçonhentos, atingindo a epiderme e a parte mais superficial da derme.</definicao>
+      <sintomas>Apresenta dor local, vermelhidão e bolhas d’água;Tecidos úmidos minando fluídos.</sintomas>
+      <textoAdicional />
+      <atendimento>Siga as instruções de primeiros socorros para queimaduras de primeiro grau e cubra a queimadura com gaze estéril seca não aderente;Retirar anéis e pulseiras, para não provocar estrangulamento ao inchar;Encaminhar para emergência.</atendimento>
+      <anexo>Sim</anexo>
+   </topico>
+   <topico>
+      <titulo>Queimaduras de 2° Grau (Profunda)</titulo>
+      <definicao>É uma lesão produzida no tecido de revestimento do organismo, por agentes térmicos, elétricos, produtos químicos, irradiação ionizante e animais peçonhentos, atingindo a epiderme e toda a derme.</definicao>
+      <sintomas>Apresenta dor local, vermelhidão e bolhas d’água;Tecidos úmidos minando fluídos.</sintomas>
+      <textoAdicional />
+      <atendimento>Isolar a vítima do agente agressor;Não esfriar com água;Cubra a queimadura com gaze estéril seca não aderente;Retirar anéis e pulseiras, para não provocar estrangulamento ao inchar;Procurar atendimento médico imediato.</atendimento>
+      <anexo>Sim</anexo>
+   </topico>
+   <topico>
+      <titulo>Queimaduras de 3° Grau</titulo>
+      <definicao>É uma lesão produzida no tecido de revestimento do organismo, por agentes térmicos, elétricos, produtos químicos, irradiação ionizante e animais peçonhentos, atingindo a epiderme, derme e alcança os tecidos mais profundos, podendo chegar até o osso.</definicao>
+      <sintomas>Terminais nervosos mortos;Pele com textura e aparência de couro ou cera</sintomas>
+      <textoAdicional />
+      <atendimento>Isolar a vítima do agente agressor;Cubra a queimadura com gaze estéril seca não aderente;Atenda para choque;Retirar anéis e pulseiras, para não provocar estrangulamento ao inchar;Procurar atendimento médico imediato</atendimento>
+      <anexo>Sim</anexo>
+   </topico>
+   <topico>
+      <titulo>Queimaduras Elétricas</titulo>
+      <definicao>Choque Elétrico é o fenômeno da passagem da corrente elétrica pelo corpo quando em contato com partes energizadas. Podendo ocasionar parada cardiorrespiratória, queimaduras e lesões traumáticas.</definicao>
+      <sintomas>Intensa dor e vermelhidão local;Palidez na pele ao tocar;Podem ocorrer contrações musculares involuntárias graves, convulsões, fibrilação ventricular ou parada respiratória.</sintomas>
+      <textoAdicional />
+      <atendimento>Antes de tocar na vítima, interromper imediatamente o contato da vítima com a corrente elétrica, utilizando luvas isolantes de borracha, com luvas de cobertura ou bastão isolante;Certificar-se de estar pisando em chão seco, se não estiver usando botas com solado isolante;Realizar avaliação primária (grau de consciência, respiração e pulsação);Aplicar as condutas preconizadas para parada cardiorrespiratória, queimaduras e lesões traumáticas;Encaminhar para atendimento hospitalar;Se necessário aplicar técnica de Ressuscitação Cardiopulmonar</atendimento>
+      <anexo>Não</anexo>
+   </topico>
+   <topico>
+      <titulo>Emergências relacionadas ao calor (Insolação)</titulo>
+      <definicao>Ocorre devido à ação direta dos raios solares sobre o indivíduo.</definicao>
+      <sintomas>Temperatura do corpo elevada;Pele quente, avermelhada e seca;Diferentes níveis de consciência;Desidratação;Dor de cabeça, náuseas e tontura.</sintomas>
+      <textoAdicional />
+      <atendimento>Remover a vítima para lugar fresco e arejado;Baixar a temperatura do corpo de modo progressivo, envolvendo-a com toalhas umedecidas;Oferecer líquidos em pequenas quantidades e de forma frequente;Mantê-la deitada;Avaliar nível de consciência, pulso e respiração;Providenciar transporte adequado;Encaminhar para atendimento hospitalar.</atendimento>
+      <anexo>Não</anexo>
+   </topico>
+   <topico>
+      <titulo>Emergências relacionadas ao calor (Intermação)</titulo>
+      <definicao>Ocorre devido à ação do calor em lugares fechados e não arejados (nas fundições, padarias, caldeiras etc.) intenso trabalho muscular.</definicao>
+      <sintomas>Temperatura do corpo elevada;Pele quente, avermelhada e seca;Diferentes níveis de consciência;Falta de ar;Desidratação;Dor de cabeça, náuseas e tontura;Insuficiência respiratória.</sintomas>
+      <textoAdicional />
+      <atendimento>Remover a vítima para lugar fresco e arejado;Baixar a temperatura do corpo de modo progressivo, aplicando compressas de pano umedecido com água;Mantê-la deitada com o tronco ligeiramente elevado;Avaliar nível de consciência, pulso e respiração;Encaminhar para atendimento hospitalar.</atendimento>
+      <anexo>Não</anexo>
+   </topico>
+   <topico>
+      <titulo>Hemorragia Externa</titulo>
+      <definicao>É a perda de sangue devido ao rompimento de um vaso sanguíneo (artérias, veias e capilares).</definicao>
+      <sintomas>Sangramento visível;Nível de consciência variável decorrente da perda sanguínea;Palidez de pele e mucosa.</sintomas>
+      <textoAdicional>Toda hemorragia deve ser controlada imediatamente. A hemorragia abundante e não controlada pode causar a morte em 3 a 5 minutos.</textoAdicional>
+      <atendimento>Comprimir o local usando um pano limpo (quantidade excessiva de pano pode mascarar o sangramento);Manter a compressão até os cuidados definitivos;Se possível, elevar o membro que está sangrando;Não utilizar qualquer substância estranha para coibir o sangramento;Encaminhar para atendimento hospitalar.</atendimento>
+      <anexo>Sim</anexo>
+   </topico>
+   <topico>
+      <titulo>Hemorragia Interna</titulo>
+      <definicao>É a perda de sangue devido ao rompimento de um vaso sanguíneo (artérias, veias e capilares).</definicao>
+      <sintomas>Sangramento geralmente não visível;Nível de consciência variável dependente da intensidade e local do sangramento;Sangramento pela urina;Sangramento pelo ouvido;Dor com rigidez abdominal;Pele fria e pegajosa;Vômitos ou tosse com sangue</sintomas>
+      <textoAdicional>Toda hemorragia deve ser controlada imediatamente. A hemorragia abundante e não controlada pode causar a morte em 3 a 5 minutos. OBS: Nos casos de traumatismos devemos suspeitar de hemorragia interna.</textoAdicional>
+      <atendimento>Manter a vítima aquecida e deitada, acompanhando os sinais vitais;Agilizar o encaminhamento para o atendimento hospitalar.</atendimento>
+      <anexo>Sim</anexo>
+   </topico>
+   <topico>
+      <titulo>Hemorragia Nasal</titulo>
+      <definicao>É a perda de sangue devido ao rompimento de um vaso sanguíneo (artérias, veias e capilares).</definicao>
+      <sintomas>Sangramento nasal visível</sintomas>
+      <textoAdicional>Toda hemorragia deve ser controlada imediatamente. A hemorragia abundante e não controlada pode causar a morte em 3 a 5 minutos.</textoAdicional>
+      <atendimento>Colocar a vítima sentada, com a cabeça ligeiramente voltada para frente, e apertar-lhe a(s) narina (s) durante cinco minutos;Caso a hemorragia não ceda, comprimir externamente o lado da narina que está sangrando e colocar um pano ou toalha fria sobre o nariz. Se possível, usar um saco com gelo;Encaminhar para atendimento hospitalar</atendimento>
+      <anexo>Sim</anexo>
+   </topico>
+   <topico>
+      <titulo>Traumatismo Cranio encefálico</titulo>
+      <definicao>Disfunção cerebral causada por uma força externa, geralmente um golpe violento na cabeça.</definicao>
+      <sintomas>Dor de cabeça persistente;Amnésia;Confusão mental;Dificuldade de concentração;Dificuldade em pensar e compreender;Incapacidade de reconhecer coisas comuns ou perda de memória recente;desmaio;distúrbio do equilíbrio ou tontura;náusea ou vômito;Sangramento;Pupilas diferentes;Crises convulsivas;</sintomas>
+      <textoAdicional>Sempre suspeitar de trauma raquimedular;monitoramento contínuo;apenas movimentar se tiver certeza que está imobilizado;procurar assistência médica imediata.</textoAdicional>
+      <atendimento>Chamar uma ambulância;Observar se a pessoa está consciente(Caso o indivíduo esteja inconsciente e não respire, deve iniciar massagem cardíaca);Mantenha a vítima imobilizada;Em caso de hemorragias, aplicar ligeira pressão sobre o local com um pano, gaze ou compressa limpa;Observar a vítima até a chegada da ambulância.</atendimento>
+      <anexo>Não</anexo>
+   </topico>
+   <topico>
+      <titulo>Trauma de Face</titulo>
+      <definicao>Trata-se de qualquer ferimento físico localizado na face, podendo afetar, consecutivamente, sua pele, gordura, músculos, nervos e ossos e, nos casos mais graves, se associar a dano cerebral.</definicao>
+      <sintomas>Dor variável, de leve a intensa, dependendo do tipo de trauma de face e do local acometido;Dormência do queixo, lábios, língua, gengiva, dentes, bochechas, nariz e testa, dependendo do tipo de trauma de face e local de acometimento;Dificuldades em movimentar a mandíbula (dor e limitação dos movimentos por impedimento mecânico);Alterações da oclusão, ou seja, modificações na mordida;Cortes e lacerações;Hematoma, equimose e edema (áreas arroxeadas e inchadas).</sintomas>
+      <textoAdicional>Os fragmentos ósseos e o sangue podem provocar obstruções nas vias aéreas no caso de traumas de face.</textoAdicional>
+      <atendimento>Verificar a permeabilidade das vias aéreas;Manter a coluna alinhada;Não retirar objetos encravados;Considerar a possibilidade de Trauma Crânio Encefálico;Aplicar curativos sem exercer forte pressão;</atendimento>
+      <anexo>Não</anexo>
+   </topico>
+   <topico>
+      <titulo>Trauma Ocular</titulo>
+      <definicao>Um termo abrangente usado para descrever uma ferida física ou química na cavidade ocular ou no olho.</definicao>
+      <sintomas>Dor;Irritação;Ardência;Visão turva;Feridas abertas.</sintomas>
+      <textoAdicional>Em traumatismos pode haver exteriorização do globo ocular.</textoAdicional>
+      <atendimento>Exame primário - ABC da vida;Irrigação ocular com soro fisiológico ou água durante vários minutos em caso de lesão por agentes químicos ou na presença de corpos estranhos;Não utilizar medicamentos tópicos (colírios ou anestésicos) sem prescrição;Não remova objetos empalados. Estabilize-os com curativo apropriado não-compressivo;Oclua os dois olhos com gaze umedecida, mesmo em lesões de um olho;	Em caso de exteriorização do globo ocular, não tente recolocá-lo, proteja o olho com um copinho descartável ou bandagem circular</atendimento>
+      <anexo>Não</anexo>
+   </topico>
+   <topico>
+      <titulo>Trauma Raquimedular</titulo>
+      <definicao>Lesão da medula espinhal que provoca alterações, temporárias ou permanentes, na função motora, sensibilidade ou função autonômica.</definicao>
+      <sintomas>Vítimas inconscientes que sofreram algum tipo de trauma;Dor em qualquer região da coluna vertebral;Traumatismo facial grave ou traumatismo de crânio fechado;"Formigamento" (anestesia) ou paralizia de qualquer parte do corpo abaixo do pescoço;Pênis ereto;Perda do controle esfincteriano (urina e/ou fezes soltas);</sintomas>
+      <textoAdicional>A coluna vertebral é composta de 33 vértebras sobrepostas, localizada do crânio ao cóccix, e no seu interior há a medula espinhal, que realiza a condução dos impulsos nervosos. As lesões da coluna vertebrais malconduzidas podem produzir lesões graves e irreversíveis de medula, com comprometimento neurológico definitivo (tetraplégica ou paraplegia). Todo o cuidado deverá ser tomado com estas vítimas para não surgirem lesões adicionais.
+				Deverá suspeitar de trauma raquimedular no caso de politraumatismo, devendo assim utilizar todos os protocolos de imobilização para evitar riscos de agravamento da lesão.</textoAdicional>
+      <atendimento>Cuidado especial com a vítima inconsciente;Imobilizar o pescoço antes do transporte, utilizando o colar cervical;Movimentar a vítima em bloco, impedindo particularmente movimentos bruscos do pescoço e do tronco;Colocar em prancha de madeira;Encaminhar para atendimento hospitalar</atendimento>
+      <anexo>Não</anexo>
+   </topico>
+   <topico>
+      <titulo>Trauma Torácico</titulo>
+      <definicao>Trauma torácico, ou lesão no peito, é qualquer forma de lesão física no peito, incluindo as costelas, o coração e os pulmões.</definicao>
+      <sintomas>Falta de ar;Taquipnéia;Dor torácica;Dor ao respirar</sintomas>
+      <textoAdicional>OBS: Antes de imobilizar o local machucado, evite a movimentação. Jamais tente “endireitar” uma fratura, pois, através desta manobra, você poderá aumentar os danos.</textoAdicional>
+      <atendimento>Avaliação física;Observar também cianose, agitação e palidez;Imobilizar a vítima;Encaminhar para emergência</atendimento>
+      <anexo>Não</anexo>
+   </topico>
+   <topico>
+      <titulo>Trauma Abdominal</titulo>
+      <definicao>O trauma abdominal é mais bem categorizado pelo mecanismo como lesões abdominais contusas e penetrantes</definicao>
+      <sintomas>Palidez;Sudorese fria;Pulso rápido e fino ou ausente;Cianose de extremidades;Hipotensão arterial</sintomas>
+      <textoAdicional>Pode-se destacar como lesões mais frequentes: a ruptura de baço ou fígado, lesão renal, lesão da coluna lombar, lesão pancreática e lesão de grandes vasos abdominais. É importante saber se a paciente está grávida.</textoAdicional>
+      <atendimento>Observar ferimentos e escoriações;Realizar a palpação e percussão no abdomen da vítima;Avaliar o períneo reto, pênis e a vagina da vítima, a procura de sangramentos.</atendimento>
+      <anexo>Não</anexo>
+   </topico>
+   <topico>
+      <titulo>Trauma Músculo Esquelético</titulo>
+      <definicao>O trauma é o resultado de uma força externa composta de um impacto negativo sobre o corpo. Algumas lesões podem ser resultadas de certas condições clínicas o no processo de envelhecimento do corpo.
+				As lesões músculo esquelética podem ser classificadas em muitos tipos diferentes, porém os primeiros socorros são similares.</definicao>
+      <sintomas>Dor local intensa;Dificuldade em movimentar a região afetada;Hematoma;Deformidade da articulação;Inchaço.</sintomas>
+      <textoAdicional>Os tipos de lesões musculo esqueléticas são chamados de: entorse (Separação momentânea das superfícies ósseas articulares, provocando o estiramento ou rompimento dos ligamentos), fratura (Rompimento total ou parcial de qualquer osso, podendo ser exposta ou fechada), distensão (Rompimento ou estiramento anormal de um músculo ou tendão) e luxação (Perda de contato permanente entre duas extremidades ósseas numa articulação).</textoAdicional>
+      <atendimento>Manipular o mínimo possível o local afetado;Não colocar o osso no lugar;Proteger ferimentos com panos limpos e controlar sangramentos nas lesões expostas;Imobilizar a área afetada antes de remover a vítima;Se possível, aplicar bolsa de gelo no local afetado;Encaminhar para atendimento hospitalar.</atendimento>
+      <anexo>Não</anexo>
+   </topico>
+   <topico>
+      <titulo>Animais Peçonhentos (Cobras)</titulo>
+      <definicao>A ação do veneno pode provocar reação hemolítica (destruição das hemácias no sangue), coagulante (causa deficiência na coagulação sanguínea), proteolítica (necrose tecidual ou morte do tecido lesado devido à decomposição das proteínas) e neurotóxica (ação no sistema nervoso causando queda palpebral, formigamento no local afetado, alterações da consciência e perturbações visuais).</definicao>
+      <sintomas>Inchaço;Palidez;Dificuldade em respirar;Vômitos;Aumento da pressão arterial;Fraqueza muscular;Febre.</sintomas>
+      <textoAdicional>Medidas Preventivas: Usar botas de cano longo e perneiras, proteger as mãos com luvas de raspa ou vaqueta, combater os ratos, preservar os predadores, conservar o meio ambiente. A aplicação de uma atadura de imobilização por pressão, com pressão entre 40 e 70 mmHg na extremidade superior e 55 e 70 mmHg na extremidade inferior, em torno de toda a extensão da extremidade picada, é uma maneira eficaz e segura de retardar o fluxo linfático e, por conseguinte, a disseminação do veneno. </textoAdicional>
+      <atendimento>Manter a vítima deitada. Evite que ela se movimente para não favorecer a absorção de veneno;Se a picada for na perna ou braço, mantenha-os em posição mais baixa que o coração;Lavar a picada com água abundante;Remover anéis, relógios, prevenindo assim complicações decorrentes do inchaço;Encaminhar a vítima imediatamente ao serviço de saúde mais próximo;Não fazer torniquete e não cortar ou perfurar o local da picada;Se há condições de segurança, leve a cobra (viva ou morta) ao serviço de atendimento de emergência (assim será mais fácil descobrir o soro adequado para tratar a vítima).</atendimento>
+      <anexo>Sim</anexo>
+   </topico>
+   <topico>
+      <titulo>Animais Peçonhentos (Aranhas e Insetos)</titulo>
+      <definicao>Comumente essas picadas são cometidas por abelha, Viúva negra, aranha marrom, escorpião e carrapato.</definicao>
+      <sintomas>Dor;Eritema;Inchaço;Febre;Dor de cabeça.</sintomas>
+      <textoAdicional>A aplicação de uma atadura de imobilização por pressão, com pressão entre 40 e 70 mmHg na extremidade superior e 55 e 70 mmHg na extremidade inferior, em torno de toda a extensão da extremidade picada, é uma maneira eficaz e segura de retardar o fluxo linfático e, por conseguinte, a disseminação do veneno. </textoAdicional>
+      <atendimento>Manter a vítima deitada. Evite que ela se movimente para não favorecer a absorção de veneno;Se a picada for na perna ou braço, mantenha-os em posição mais baixa que o coração;Lavar a picada com água abundante;Remover anéis, relógios, prevenindo assim complicações decorrentes do inchaço;Encaminhar a vítima imediatamente ao serviço de saúde mais próximo, para avaliar a necessidade de soro específico;Não fazer torniquete e não cortar ou perfurar o local da picada;</atendimento>
+      <anexo>Sim</anexo>
+   </topico>
+   <topico>
+      <titulo>Técnicas para remoção e transporte de acidentados (Uma pessoa)</titulo>
+      <definicao>O transporte de acidentados deve ser feito por equipe especializada em resgate(Corpo de Bombeiros, Anjos do Asfalto, outros). O transporte realizado de forma imprópria poderá agravar as lesões, provocando sequelas irreversíveis ao acidentado. A vítima somente deverá ser transportada com técnica e meios próprios, nos casos onde não é possível contar com equipes especializadas em resgate.</definicao>
+      <textoAdicional>OBS: É imprescindível a avaliação das condições da vítima para fazer o transporte seguro(número de pessoas para realizar o transporte). A remoção ou transporte só é possível quando não há suspeita de lesões na coluna vertebral.</textoAdicional>
+      <atendimento>Passe um dos braços da vítima ao redor do seu pescoço;Passe o seu braço em torno da cintura da vítima e o braço da vítima ao redor do seu pescoço;Dê as costas para a vítima, passe os braços dela ao redor de seu pescoço, incline-a para a frente e levante-a.</atendimento>
+      <anexo>Não</anexo>
+   </topico>
+   <topico>
+      <titulo>Técnicas para remoção e transporte de acidentados (Duas Pessoas)</titulo>
+      <definicao>O transporte de acidentados deve ser feito por equipe especializada em resgate(Corpo de Bombeiros, Anjos do Asfalto, outros). O transporte realizado de forma imprópria poderá agravar as lesões, provocando sequelas irreversíveis ao acidentado. A vítima somente deverá ser transportada com técnica e meios próprios, nos casos onde não é possível contar com equipes especializadas em resgate.</definicao>
+      <textoAdicional>OBS: É imprescindível a avaliação das condições da vítima para fazer o transporte seguro(número de pessoas para realizar o transporte). A remoção ou transporte só é possível quando não há suspeita de lesões na coluna vertebral.</textoAdicional>
+      <atendimento>Faça a cadeirinha. Passe os braços da vítima ao redor do seu pescoço e levante a vítima;Uma segura a vítima pelas axilas, enquanto a outra segura pelas pernas abertas e ambas devem erguer a vítima simultaneamente.</atendimento>
+      <anexo>Não</anexo>
+   </topico>
+   <topico>
+      <titulo>Técnicas para remoção e transporte de acidentados (Três Pessoas)</titulo>
+      <definicao>O transporte de acidentados deve ser feito por equipe especializada em resgate(Corpo de Bombeiros, Anjos do Asfalto, outros). O transporte realizado de forma imprópria poderá agravar as lesões, provocando sequelas irreversíveis ao acidentado. A vítima somente deverá ser transportada com técnica e meios próprios, nos casos onde não é possível contar com equipes especializadas em resgate.</definicao>
+      <textoAdicional>OBS: É imprescindível a avaliação das condições da vítima para fazer o transporte seguro(número de pessoas para realizar o transporte). A remoção ou transporte só é possível quando não há suspeita de lesões na coluna vertebral.</textoAdicional>
+      <atendimento>Enquanto uma segura a cabeça e costas, a outra segura a cintura e a parte superior das coxas;A terceira segura a parte inferior das coxas e pernas;Os movimentos das três pessoas devem ser simultâneos, para impedir deslocamentos da cabeça, coluna, coxas e pernas.</atendimento>
+      <anexo>Não</anexo>
+   </topico>
+   <topico>
+      <titulo>Técnicas para remoção e transporte de acidentados (Quatro Pessoas)</titulo>
+      <definicao>O transporte de acidentados deve ser feito por equipe especializada em resgate(Corpo de Bombeiros, Anjos do Asfalto, outros). O transporte realizado de forma imprópria poderá agravar as lesões, provocando sequelas irreversíveis ao acidentado. A vítima somente deverá ser transportada com técnica e meios próprios, nos casos onde não é possível contar com equipes especializadas em resgate.</definicao>
+      <textoAdicional>OBS: É imprescindível a avaliação das condições da vítima para fazer o transporte seguro(número de pessoas para realizar o transporte). A remoção ou transporte só é possível quando não há suspeita de lesões na coluna vertebral.</textoAdicional>
+      <atendimento>Semelhante ao de três pessoas, a quarta pessoa imobiliza a cabeça da vítima impedindo qualquer tipo de deslocamento.</atendimento>
+      <anexo>Não</anexo>
+   </topico>
+</totais>
