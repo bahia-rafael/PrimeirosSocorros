@@ -23,4 +23,12 @@ export class AppComponent {
       this.splashScreen.hide();
     });
   }
+
+  private setAndroidBackButtonBehavior(): void {
+    this.platform.backButton.subscribe(() => {
+      if (window.location.pathname == "/home") {
+        navigator['app'].exitApp();
+      }
+    });
+  }
 }

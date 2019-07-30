@@ -220,6 +220,14 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       "clobbers": [
         "cordova.plugins.fileOpener2"
       ]
+    },
+    {
+      "id": "mx.ferreyra.callnumber.CallNumber",
+      "file": "plugins/mx.ferreyra.callnumber/www/CallNumber.js",
+      "pluginId": "mx.ferreyra.callnumber",
+      "clobbers": [
+        "call"
+      ]
     }
   ];
   module.exports.metadata = {
@@ -230,6 +238,7 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
     "cordova-plugin-ionic-webview": "4.1.1",
     "cordova-plugin-ionic-keyboard": "2.1.3",
     "cordova-plugin-file": "6.0.2",
-    "cordova-plugin-file-opener2": "2.2.1"
+    "cordova-plugin-file-opener2": "2.2.1",
+    "mx.ferreyra.callnumber": "0.0.2"
   };
 });

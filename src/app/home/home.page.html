@@ -1,7 +1,8 @@
 <ion-header translucent>
   <ion-toolbar>
-
-    <ion-title style="text-align: center;font-size: 15px;padding-right: 0px;font-family: 'Comic Sans MS', cursive, sans-serif;">
+    <ion-icon style="width: 40px;height: 30px;margin-left: 10px" slot="start" name="medkit"></ion-icon>
+    <ion-title
+      style="text-align: center;font-size: 15px;padding-right: 0px;font-family: 'Comic Sans MS', cursive, sans-serif;">
       <strong>FIQUE CALMO! PEÇA AJUDA - 192</strong>
     </ion-title>
     <ion-icon (click)="openBusca()" name="search" slot="end" style="width: 40px;height: 30px;margin-right: 10px">
@@ -27,5 +28,13 @@
       </ion-col>
     </ion-row>
   </ion-grid>
+
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="callEmergencia()" style="--background: red">
+        <ion-icon name="call"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
 
 </ion-content>

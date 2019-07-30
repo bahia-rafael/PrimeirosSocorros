@@ -1,7 +1,10 @@
+import { ExitPage } from './../exit/exit.page';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { ActionSheetController, Platform } from '@ionic/angular';
 import { File } from '@ionic-native/File/ngx';
+
+import { CallNumber } from '@ionic-native/call-number/ngx';
 
 @Component({
   selector: 'app-home',
@@ -16,18 +19,25 @@ export class HomePage {
 
   isItemAvailable = false; // initialize the items with false
 
-  constructor(private platform: Platform, private file: File, private router: Router, public actionSheetController: ActionSheetController) {
+  constructor(private callNumber: CallNumber, private platform: Platform, private file: File, private router: Router, public actionSheetController: ActionSheetController) {
 
     this.getList();
 
     HomePage.topicosTotais = this.topicosApp;
 
     this.platform.backButton.subscribe(() => {
-      this.router.navigate(['/exit']);
+      navigator['app'].exitApp();
     });
 
   }
 
+  callEmergencia() {
+
+    this.callNumber.callNumber("192", true)
+      .then(res => console.log('Launched dialer!', res))
+      .catch(err => console.log('Error launching dialer', err));
+
+  }
   openTopico(titulo: string, icone: string) {
     this.router.navigate(['/blank', { name: titulo, icon: icone }]);
   }
@@ -55,7 +65,7 @@ export class HomePage {
       {
         "id": 1,
         "titulo": "Animais Peçonhentos (Aranhas)",
-        "icon": "assets/img/Animais Peçonhentos (Aranhas e Insetos).PNG"
+        "icon": "assets/img/Aranhas.png"
       },
       {
         "id": 2,
@@ -85,12 +95,12 @@ export class HomePage {
       {
         "id": 7,
         "titulo": "Insolação",
-        "icon": "assets/img/Emergências relacionadas ao calor (Insolação).png"
+        "icon": "assets/img/Insolacao.PNG"
       },
       {
         "id": 8,
         "titulo": "Intermação",
-        "icon": "assets/img/Intermação.PNG"
+        "icon": "assets/img/Intermacao.png"
       },
       {
         "id": 9,

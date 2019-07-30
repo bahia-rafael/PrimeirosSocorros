@@ -12,6 +12,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { File } from '@ionic-native/File/ngx';
 import { HttpClientModule } from '@angular/common/http';
+import { CallNumber } from '@ionic-native/call-number/ngx';
 
 @NgModule({
   declarations: [AppComponent],
@@ -21,6 +22,7 @@ import { HttpClientModule } from '@angular/common/http';
     StatusBar,
     File,
     SplashScreen,
+    CallNumber,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]

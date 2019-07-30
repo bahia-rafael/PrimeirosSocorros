@@ -58,7 +58,7 @@ var SearchPageModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header translucent>\r\n  <ion-toolbar >\r\n    <ion-buttons style=\"margin-top: 20px\" slot=\"start\">\r\n      <ion-back-button defaultHref=\"/\"></ion-back-button>\r\n    </ion-buttons>\r\n    <ion-input placeholder=\"Busca\" style=\"--placeholder-color: rgb(65, 65, 65);margin-top: 10px;background-color: beige;width: 90%;border-radius: 10px\" id=\"busca\" (ionChange)=\"getItems($event)\"></ion-input>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n  <ion-list>\r\n    <ion-item *ngFor=\"let item of items\" (click)=\"openTopico(item)\">\r\n      {{ item }}\r\n    </ion-item>\r\n  </ion-list>\r\n</ion-content>"
+module.exports = "<ion-header translucent>\r\n  <ion-toolbar >\r\n    <ion-buttons style=\"margin-top: 20px\" slot=\"start\">\r\n      <ion-back-button defaultHref=\"/\"></ion-back-button>\r\n    </ion-buttons>\r\n    <ion-input placeholder=\"Busca\" style=\"color:black;--placeholder-color: rgb(65, 65, 65);margin-top: 10px;background-color: beige;width: 90%;border-radius: 10px\" id=\"busca\" (ionChange)=\"getItems($event)\"></ion-input>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n  <ion-list>\r\n    <ion-item *ngFor=\"let item of items\" (click)=\"openTopico(item)\">\r\n      {{ item }}\r\n    </ion-item>\r\n  </ion-list>\r\n</ion-content>"
 
 /***/ }),
 
