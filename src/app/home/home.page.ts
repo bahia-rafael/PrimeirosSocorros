@@ -33,7 +33,7 @@ export class HomePage {
 
   callEmergencia() {
 
-    this.callNumber.callNumber("192", true)
+    this.callNumber.callNumber("192", false)
       .then(res => console.log('Launched dialer!', res))
       .catch(err => console.log('Error launching dialer', err));
 

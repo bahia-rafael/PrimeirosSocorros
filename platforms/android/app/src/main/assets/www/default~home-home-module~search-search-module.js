@@ -1,62 +1,5 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["default~home-home-module~search-search-module"],{
 
-/***/ "./src/app/exit/exit.page.html":
-/*!*************************************!*\
-  !*** ./src/app/exit/exit.page.html ***!
-  \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = ""
-
-/***/ }),
-
-/***/ "./src/app/exit/exit.page.scss":
-/*!*************************************!*\
-  !*** ./src/app/exit/exit.page.scss ***!
-  \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2V4aXQvZXhpdC5wYWdlLnNjc3MifQ== */"
-
-/***/ }),
-
-/***/ "./src/app/exit/exit.page.ts":
-/*!***********************************!*\
-  !*** ./src/app/exit/exit.page.ts ***!
-  \***********************************/
-/*! exports provided: ExitPage */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ExitPage", function() { return ExitPage; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-
-
-var ExitPage = /** @class */ (function () {
-    function ExitPage() {
-        navigator['app'].exitApp();
-    }
-    ExitPage.prototype.ngOnInit = function () {
-    };
-    ExitPage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-exit',
-            template: __webpack_require__(/*! ./exit.page.html */ "./src/app/exit/exit.page.html"),
-            styles: [__webpack_require__(/*! ./exit.page.scss */ "./src/app/exit/exit.page.scss")]
-        }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
-    ], ExitPage);
-    return ExitPage;
-}());
-
-
-
-/***/ }),
-
 /***/ "./src/app/home/home.page.html":
 /*!*************************************!*\
   !*** ./src/app/home/home.page.html ***!
@@ -75,7 +18,7 @@ module.exports = "<ion-header translucent>\r\n  <ion-toolbar>\r\n    <ion-icon s
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "ion-toolbar {\n  --color: #FFFF;\n  --background: rgb(248, 63, 63);\n  height: 70px; }\n\nion-card-content {\n  overflow: hidden;\n  white-space: normal; }\n\nion-card-title {\n  text-overflow: ellipsis;\n  font-family: \"Comic Sans MS\", cursive, sans-serif; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaG9tZS9DOlxcVXNlcnNcXFJBRkFFTERFT0xJVkVJUkFCQUhJXFxEb2N1bWVudHNcXEdpdEh1YlxcUHJpbWVpcm9zU29jb3Jyb3Mvc3JjXFxhcHBcXGhvbWVcXGhvbWUucGFnZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsY0FBUTtFQUNSLDhCQUFhO0VBQ2IsWUFBWSxFQUFBOztBQUlkO0VBQ0UsZ0JBQWdCO0VBQ2hCLG1CQUFtQixFQUFBOztBQUdyQjtFQUNFLHVCQUF1QjtFQUN2QixpREFBaUQsRUFBQSIsImZpbGUiOiJzcmMvYXBwL2hvbWUvaG9tZS5wYWdlLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJpb24tdG9vbGJhciB7XHJcbiAgLS1jb2xvcjogI0ZGRkY7XHJcbiAgLS1iYWNrZ3JvdW5kOiByZ2IoMjQ4LCA2MywgNjMpO1xyXG4gIGhlaWdodDogNzBweDtcclxufVxyXG5cclxuXHJcbmlvbi1jYXJkLWNvbnRlbnQge1xyXG4gIG92ZXJmbG93OiBoaWRkZW47XHJcbiAgd2hpdGUtc3BhY2U6IG5vcm1hbDtcclxufVxyXG5cclxuaW9uLWNhcmQtdGl0bGUge1xyXG4gIHRleHQtb3ZlcmZsb3c6IGVsbGlwc2lzO1xyXG4gIGZvbnQtZmFtaWx5OiBcIkNvbWljIFNhbnMgTVNcIiwgY3Vyc2l2ZSwgc2Fucy1zZXJpZjtcclxuXHJcbn0iXX0= */"
+module.exports = "ion-toolbar {\n  --color: #FFFF;\n  --background: rgb(248, 63, 63);\n  height: 70px; }\n\nion-card-content {\n  overflow: hidden;\n  white-space: normal; }\n\nion-card-title {\n  text-overflow: ellipsis;\n  font-family: \"Comic Sans MS\", cursive, sans-serif; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaG9tZS9DOlxcVXNlcnNcXFJhZmFcXERvY3VtZW50c1xcR2l0SHViXFxQcmltZWlyb3NTb2NvcnJvcy9zcmNcXGFwcFxcaG9tZVxcaG9tZS5wYWdlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxjQUFRO0VBQ1IsOEJBQWE7RUFDYixZQUFZLEVBQUE7O0FBSWQ7RUFDRSxnQkFBZ0I7RUFDaEIsbUJBQW1CLEVBQUE7O0FBR3JCO0VBQ0UsdUJBQXVCO0VBQ3ZCLGlEQUFpRCxFQUFBIiwiZmlsZSI6InNyYy9hcHAvaG9tZS9ob21lLnBhZ2Uuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbImlvbi10b29sYmFyIHtcclxuICAtLWNvbG9yOiAjRkZGRjtcclxuICAtLWJhY2tncm91bmQ6IHJnYigyNDgsIDYzLCA2Myk7XHJcbiAgaGVpZ2h0OiA3MHB4O1xyXG59XHJcblxyXG5cclxuaW9uLWNhcmQtY29udGVudCB7XHJcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcclxuICB3aGl0ZS1zcGFjZTogbm9ybWFsO1xyXG59XHJcblxyXG5pb24tY2FyZC10aXRsZSB7XHJcbiAgdGV4dC1vdmVyZmxvdzogZWxsaXBzaXM7XHJcbiAgZm9udC1mYW1pbHk6IFwiQ29taWMgU2FucyBNU1wiLCBjdXJzaXZlLCBzYW5zLXNlcmlmO1xyXG5cclxufSJdfQ== */"
 
 /***/ }),
 
@@ -90,13 +33,11 @@ module.exports = "ion-toolbar {\n  --color: #FFFF;\n  --background: rgb(248, 63,
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomePage", function() { return HomePage; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _exit_exit_page__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../exit/exit.page */ "./src/app/exit/exit.page.ts");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
-/* harmony import */ var _ionic_native_File_ngx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @ionic-native/File/ngx */ "./node_modules/@ionic-native/File/ngx/index.js");
-/* harmony import */ var _ionic_native_call_number_ngx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @ionic-native/call-number/ngx */ "./node_modules/@ionic-native/call-number/ngx/index.js");
-
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+/* harmony import */ var _ionic_native_File_ngx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic-native/File/ngx */ "./node_modules/@ionic-native/File/ngx/index.js");
+/* harmony import */ var _ionic_native_call_number_ngx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @ionic-native/call-number/ngx */ "./node_modules/@ionic-native/call-number/ngx/index.js");
 
 
 
@@ -115,12 +56,12 @@ var HomePage = /** @class */ (function () {
         this.getList();
         HomePage_1.topicosTotais = this.topicosApp;
         this.platform.backButton.subscribe(function () {
-            new _exit_exit_page__WEBPACK_IMPORTED_MODULE_1__["ExitPage"]();
+            navigator['app'].exitApp();
         });
     }
     HomePage_1 = HomePage;
     HomePage.prototype.callEmergencia = function () {
-        this.callNumber.callNumber("192", true)
+        this.callNumber.callNumber("192", false)
             .then(function (res) { return console.log('Launched dialer!', res); })
             .catch(function (err) { return console.log('Error launching dialer', err); });
     };
@@ -348,12 +289,12 @@ var HomePage = /** @class */ (function () {
     };
     var HomePage_1;
     HomePage = HomePage_1 = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"])({
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-home',
             template: __webpack_require__(/*! ./home.page.html */ "./src/app/home/home.page.html"),
             styles: [__webpack_require__(/*! ./home.page.scss */ "./src/app/home/home.page.scss")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_native_call_number_ngx__WEBPACK_IMPORTED_MODULE_6__["CallNumber"], _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["Platform"], _ionic_native_File_ngx__WEBPACK_IMPORTED_MODULE_5__["File"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"], _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["ActionSheetController"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_native_call_number_ngx__WEBPACK_IMPORTED_MODULE_5__["CallNumber"], _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["Platform"], _ionic_native_File_ngx__WEBPACK_IMPORTED_MODULE_4__["File"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"], _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["ActionSheetController"]])
     ], HomePage);
     return HomePage;
 }());
