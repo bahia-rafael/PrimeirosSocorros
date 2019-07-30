@@ -69,7 +69,7 @@ module.exports = "<ion-header translucent>\r\n  <ion-toolbar >\r\n    <ion-butto
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "ion-toolbar {\n  font-family: \"Arial Black\", Gadget, sans-serif;\n  --color: #FFFF;\n  --background: rgb(248, 63, 63);\n  height: 70px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc2VhcmNoL0M6XFxVc2Vyc1xcUmFmYVxcRG9jdW1lbnRzXFxHaXRIdWJcXFByaW1laXJvc1NvY29ycm9zL3NyY1xcYXBwXFxzZWFyY2hcXHNlYXJjaC5wYWdlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSw4Q0FBOEM7RUFDOUMsY0FBUTtFQUNSLDhCQUFhO0VBQ2IsWUFBWSxFQUFBIiwiZmlsZSI6InNyYy9hcHAvc2VhcmNoL3NlYXJjaC5wYWdlLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJpb24tdG9vbGJhciB7XHJcbiAgZm9udC1mYW1pbHk6IFwiQXJpYWwgQmxhY2tcIiwgR2FkZ2V0LCBzYW5zLXNlcmlmO1xyXG4gIC0tY29sb3I6ICNGRkZGO1xyXG4gIC0tYmFja2dyb3VuZDogcmdiKDI0OCwgNjMsIDYzKTtcclxuICBoZWlnaHQ6IDcwcHg7XHJcbn0iXX0= */"
+module.exports = "ion-toolbar {\n  font-family: \"Arial Black\", Gadget, sans-serif;\n  --color: #FFFF;\n  --background: rgb(248, 63, 63);\n  height: 70px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc2VhcmNoL0M6XFxVc2Vyc1xcUkFGQUVMREVPTElWRUlSQUJBSElcXERvY3VtZW50c1xcR2l0SHViXFxQcmltZWlyb3NTb2NvcnJvcy9zcmNcXGFwcFxcc2VhcmNoXFxzZWFyY2gucGFnZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsOENBQThDO0VBQzlDLGNBQVE7RUFDUiw4QkFBYTtFQUNiLFlBQVksRUFBQSIsImZpbGUiOiJzcmMvYXBwL3NlYXJjaC9zZWFyY2gucGFnZS5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiaW9uLXRvb2xiYXIge1xyXG4gIGZvbnQtZmFtaWx5OiBcIkFyaWFsIEJsYWNrXCIsIEdhZGdldCwgc2Fucy1zZXJpZjtcclxuICAtLWNvbG9yOiAjRkZGRjtcclxuICAtLWJhY2tncm91bmQ6IHJnYigyNDgsIDYzLCA2Myk7XHJcbiAgaGVpZ2h0OiA3MHB4O1xyXG59Il19 */"
 
 /***/ }),
 

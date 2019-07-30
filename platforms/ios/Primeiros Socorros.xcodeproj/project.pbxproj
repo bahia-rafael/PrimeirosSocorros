@@ -28,6 +28,7 @@
 		CCDFC4B09B584382948C7E3C /* CDVViewController+SplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D463B49339F495FB4E4F661 /* CDVViewController+SplashScreen.m */; };
 		F552DF9E944C44A1AE527921 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A9ECC1773140A799083E32 /* CDVStatusBar.m */; };
 		BA3E9BA1A3B94B529C8AD1C3 /* CFCallNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 19738ADB50FA40969B58124A /* CFCallNumber.m */; };
+		68335EB5795F4F59914B0700 /* ExitApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 67E3D78FBD37487DA9DD9683 /* ExitApp.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +105,8 @@
 		7CF44D2A2AC84387929BF61D /* CDVStatusBar.h */ = {isa = PBXFileReference; name = "CDVStatusBar.h"; path = "cordova-plugin-statusbar/CDVStatusBar.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		19738ADB50FA40969B58124A /* CFCallNumber.m */ = {isa = PBXFileReference; name = "CFCallNumber.m"; path = "mx.ferreyra.callnumber/CFCallNumber.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		6741F21627EB4880AC9A6BD3 /* CFCallNumber.h */ = {isa = PBXFileReference; name = "CFCallNumber.h"; path = "mx.ferreyra.callnumber/CFCallNumber.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		67E3D78FBD37487DA9DD9683 /* ExitApp.m */ = {isa = PBXFileReference; name = "ExitApp.m"; path = "kr.co.joycorp.cordova.exitapp/ExitApp/ExitApp.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		A500691BA05F4B70ADA88B38 /* ExitApp.h */ = {isa = PBXFileReference; name = "ExitApp.h"; path = "kr.co.joycorp.cordova.exitapp/ExitApp/ExitApp.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,6 +241,8 @@
 				7CF44D2A2AC84387929BF61D /* CDVStatusBar.h */,
 				19738ADB50FA40969B58124A /* CFCallNumber.m */,
 				6741F21627EB4880AC9A6BD3 /* CFCallNumber.h */,
+				67E3D78FBD37487DA9DD9683 /* ExitApp.m */,
+				A500691BA05F4B70ADA88B38 /* ExitApp.h */,
 			);
 			name = Plugins;
 			path = "Primeiros Socorros/Plugins";
@@ -376,6 +381,7 @@
 				CCDFC4B09B584382948C7E3C /* CDVViewController+SplashScreen.m in Sources */,
 				F552DF9E944C44A1AE527921 /* CDVStatusBar.m in Sources */,
 				BA3E9BA1A3B94B529C8AD1C3 /* CFCallNumber.m in Sources */,
+				68335EB5795F4F59914B0700 /* ExitApp.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

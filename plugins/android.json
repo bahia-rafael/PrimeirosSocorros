@@ -35,6 +35,9 @@
     },
     "mx.ferreyra.callnumber": {
       "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "kr.co.joycorp.cordova.exitapp": {
+      "PACKAGE_NAME": "io.ionic.starter"
     }
   },
   "dependent_plugins": {}

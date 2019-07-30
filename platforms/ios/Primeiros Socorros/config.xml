@@ -136,4 +136,7 @@ A ideia foi desenvolvida por Andréia Sousa - professora do ensino básico ( red
     <feature name="CallNumber">
         <param name="ios-package" value="CFCallNumber" />
     </feature>
+    <feature name="ExitApp">
+        <param name="ios-package" value="ExitApp" />
+    </feature>
 </widget>

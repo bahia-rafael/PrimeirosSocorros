@@ -72,5 +72,13 @@
     },
     "is_top_level": true,
     "variables": {}
+  },
+  "kr.co.joycorp.cordova.exitapp": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-exitapp2"
+    },
+    "is_top_level": true,
+    "variables": {}
   }
 }

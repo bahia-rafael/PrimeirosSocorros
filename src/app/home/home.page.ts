@@ -33,9 +33,13 @@ export class HomePage {
 
   callEmergencia() {
 
-    this.callNumber.callNumber("192", false)
-      .then(res => console.log('Launched dialer!', res))
-      .catch(err => console.log('Error launching dialer', err));
+    var mobileNumber = '192';
+
+    window.open("tel:" + mobileNumber);
+    
+    // this.callNumber.callNumber("192", false)
+    //   .then(res => console.log('Launched dialer!', res))
+    //   .catch(err => console.log('Error launching dialer', err));
 
   }
   openTopico(titulo: string, icone: string) {

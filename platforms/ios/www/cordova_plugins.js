@@ -236,6 +236,22 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       "clobbers": [
         "call"
       ]
+    },
+    {
+      "id": "kr.co.joycorp.cordova.exitapp.exitApp",
+      "file": "plugins/kr.co.joycorp.cordova.exitapp/www/ExitApp.js",
+      "pluginId": "kr.co.joycorp.cordova.exitapp",
+      "merges": [
+        "navigator.app"
+      ]
+    },
+    {
+      "id": "kr.co.joycorp.cordova.exitapp.ExitApp",
+      "file": "plugins/kr.co.joycorp.cordova.exitapp/www/ExitApp.js",
+      "pluginId": "kr.co.joycorp.cordova.exitapp",
+      "clobbers": [
+        "navigator.app"
+      ]
     }
   ];
   module.exports.metadata = {
@@ -247,6 +263,7 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
     "cordova-plugin-splashscreen": "5.0.2",
     "cordova-plugin-statusbar": "2.4.2",
     "cordova-plugin-whitelist": "1.3.3",
-    "mx.ferreyra.callnumber": "0.0.2"
+    "mx.ferreyra.callnumber": "0.0.2",
+    "kr.co.joycorp.cordova.exitapp": "1.0.0"
   };
 });

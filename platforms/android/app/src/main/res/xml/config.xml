@@ -35,6 +35,9 @@
     <feature name="Keyboard">
         <param name="android-package" onload="true" value="io.ionic.keyboard.IonicKeyboard" />
     </feature>
+    <feature name="ExitApp">
+        <param name="android-package" value="kr.co.joycorp.cordova.exitapp" />
+    </feature>
     <name>Primeiros Socorros</name>
     <description>Público alvo: crianças e adolescentes 
 
