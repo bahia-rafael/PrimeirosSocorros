@@ -79,7 +79,7 @@ export class HomePage {
       {
         "id": 2,
         "titulo": "Animais Peçonhentos",
-        "icon": "assets/img/Aranhas.PNG"
+        "icon": "assets/img/Aranhas.png"
       },
       {
         "id": 3,
@@ -114,12 +114,12 @@ export class HomePage {
       {
         "id": 9,
         "titulo": "Hemorragias",
-        "icon": "assets/img/hemorragia_interna.PNG"
+        "icon": "assets/img/hemorragia_interna.png"
       },
       {
         "id": 10,
         "titulo": "Intoxicações e Envenenamentos",
-        "icon": "assets/img/veneno.PNG"
+        "icon": "assets/img/veneno.png"
       },
       {
         "id": 11,
@@ -134,7 +134,7 @@ export class HomePage {
       {
         "id": 13,
         "titulo": "Queimaduras Elétricas",
-        "icon": "assets/img/Queimaduras Elétricas.png"
+        "icon": "assets/img/Queimaduras Elétricas.PNG"
       },
       {
         "id": 14,
@@ -144,7 +144,7 @@ export class HomePage {
       {
         "id": 15,
         "titulo": "Traumas",
-        "icon": "assets/img/Trauma Músculo Esquelético.PNG"
+        "icon": "assets/img/Trauma Músculo Esquelético.png"
       }
     ];
   }

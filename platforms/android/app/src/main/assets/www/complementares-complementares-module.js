@@ -103,7 +103,7 @@ var ComplementaresPage = /** @class */ (function () {
             {
                 "id": 19,
                 "titulo": "2° Grau (Superficial)",
-                "icon": "assets/img/Queimaduras de 2° Grau (Superficial).PNG"
+                "icon": "assets/img/Queimaduras de 2° Grau (Superficial).png"
             },
             {
                 "id": 18,
@@ -120,17 +120,17 @@ var ComplementaresPage = /** @class */ (function () {
             {
                 "id": 13,
                 "titulo": "Aspiração",
-                "icon": "assets/img/Intoxicações e Envenenamentos (Aspiração).PNG"
+                "icon": "assets/img/Intoxicações e Envenenamentos (Aspiração).png"
             },
             {
                 "id": 14,
                 "titulo": "Ingestão",
-                "icon": "assets/img/veneno.PNG"
+                "icon": "assets/img/veneno.png"
             },
             {
                 "id": 15,
                 "titulo": "Pele",
-                "icon": "assets/img/Intoxicações e Envenenamentos (Pele).PNG"
+                "icon": "assets/img/Intoxicações e Envenenamentos (Pele).png"
             }
         ];
         this.calor = [
@@ -149,17 +149,17 @@ var ComplementaresPage = /** @class */ (function () {
             {
                 "id": 10,
                 "titulo": "Hemorragia Externa",
-                "icon": "assets/img/Hemorragia Externa.PNG"
+                "icon": "assets/img/Hemorragia Externa.png"
             },
             {
                 "id": 11,
                 "titulo": "Hemorragia Interna",
-                "icon": "assets/img/hemorragia_interna.PNG"
+                "icon": "assets/img/hemorragia_interna.png"
             },
             {
                 "id": 12,
                 "titulo": "Hemorragia Nasal",
-                "icon": "assets/img/hemorragia_nasal.PNG"
+                "icon": "assets/img/hemorragia_nasal.png"
             }
         ];
         this.traumas = [
@@ -176,12 +176,12 @@ var ComplementaresPage = /** @class */ (function () {
             {
                 "id": 28,
                 "titulo": "Trauma Músculo Esquelético",
-                "icon": "assets/img/Trauma Músculo Esquelético.PNG"
+                "icon": "assets/img/Trauma Músculo Esquelético.png"
             },
             {
                 "id": 29,
                 "titulo": "Trauma Ocular",
-                "icon": "assets/img/trauma_ocular.PNG"
+                "icon": "assets/img/trauma_ocular.png"
             },
             {
                 "id": 30,
@@ -191,7 +191,7 @@ var ComplementaresPage = /** @class */ (function () {
             {
                 "id": 31,
                 "titulo": "Trauma Torácico",
-                "icon": "assets/img/Trauma Torácico.PNG"
+                "icon": "assets/img/Trauma Torácico.png"
             },
             {
                 "id": 32,
@@ -203,12 +203,12 @@ var ComplementaresPage = /** @class */ (function () {
             {
                 "id": 1,
                 "titulo": "Aranhas e insetos",
-                "icon": "assets/img/Aranhas.PNG"
+                "icon": "assets/img/Aranhas.png"
             },
             {
                 "id": 2,
                 "titulo": "Cobras",
-                "icon": "assets/img/Animais Peçonhentos (Cobras).PNG"
+                "icon": "assets/img/Animais Peçonhentos (Cobras).png"
             },
         ];
         this.transporte = [
