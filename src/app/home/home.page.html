@@ -15,7 +15,7 @@
     <ion-row>
       <ion-col size='6' *ngFor="let topico of topicosApp" (click)="openTopico(topico.titulo, topico.icon)">
         <ion-card style="height: 175px;padding-top: 0px;">
-          <ion-img style="margin-top: 10px;width: 165px;height: 100px; margin-left: auto; margin-right: auto;"
+          <ion-img style="width: 165px;height: 100px; margin-left: auto; margin-right: auto;"
             [src]="topico.icon"></ion-img>
 
           <ion-card-header style="padding-top: 5px;">

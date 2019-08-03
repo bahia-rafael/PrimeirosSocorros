@@ -222,14 +222,6 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       ]
     },
     {
-      "id": "cordova-plugin-statusbar.statusbar",
-      "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
-      "pluginId": "cordova-plugin-statusbar",
-      "clobbers": [
-        "window.StatusBar"
-      ]
-    },
-    {
       "id": "mx.ferreyra.callnumber.CallNumber",
       "file": "plugins/mx.ferreyra.callnumber/www/CallNumber.js",
       "pluginId": "mx.ferreyra.callnumber",
@@ -252,6 +244,14 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       "clobbers": [
         "navigator.app"
       ]
+    },
+    {
+      "id": "cordova-plugin-statusbar.statusbar",
+      "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
+      "pluginId": "cordova-plugin-statusbar",
+      "clobbers": [
+        "window.StatusBar"
+      ]
     }
   ];
   module.exports.metadata = {
@@ -261,9 +261,9 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
     "cordova-plugin-ionic-keyboard": "2.1.3",
     "cordova-plugin-ionic-webview": "4.1.1",
     "cordova-plugin-splashscreen": "5.0.2",
-    "cordova-plugin-statusbar": "2.4.2",
     "cordova-plugin-whitelist": "1.3.3",
     "mx.ferreyra.callnumber": "0.0.2",
-    "kr.co.joycorp.cordova.exitapp": "1.0.0"
+    "kr.co.joycorp.cordova.exitapp": "1.0.0",
+    "cordova-plugin-statusbar": "2.4.3"
   };
 });

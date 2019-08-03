@@ -58,7 +58,7 @@ var SearchPageModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header translucent>\r\n  <ion-toolbar >\r\n    <ion-buttons style=\"margin-top: 20px\" slot=\"start\">\r\n      <ion-back-button defaultHref=\"/\"></ion-back-button>\r\n    </ion-buttons>\r\n    <ion-input #searchInput placeholder=\"Busca\" style=\"color:black;--placeholder-color: rgb(65, 65, 65);margin-top: 10px;background-color: beige;width: 90%;border-radius: 10px\" id=\"busca\" (ionChange)=\"getItems($event)\"></ion-input>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n  <ion-list>\r\n    <ion-item *ngFor=\"let item of items\" (click)=\"openTopico(item)\">\r\n      {{ item }}\r\n    </ion-item>\r\n  </ion-list>\r\n</ion-content>"
+module.exports = "<ion-header translucent>\r\n  <ion-toolbar >\r\n    <ion-buttons style=\"margin-top: 20px\" slot=\"start\">\r\n      <ion-back-button defaultHref=\"/\"></ion-back-button>\r\n    </ion-buttons>\r\n    <ion-input #searchInput (keypress)=\"onChange($event.keyCode)\" placeholder=\"Busca\" style=\"color:black;--placeholder-color: rgb(65, 65, 65);margin-top: 10px;background-color: beige;width: 90%;border-radius: 10px\" id=\"busca\" (ionChange)=\"getItems($event)\"></ion-input>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n  <ion-list>\r\n    <ion-item *ngFor=\"let item of items\" (click)=\"openTopico(item)\">\r\n      {{ item }}\r\n    </ion-item>\r\n  </ion-list>\r\n</ion-content>"
 
 /***/ }),
 
@@ -88,19 +88,28 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+/* harmony import */ var _ionic_native_keyboard_ngx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @ionic-native/keyboard/ngx */ "./node_modules/@ionic-native/keyboard/ngx/index.js");
+
 
 
 
 
 
 var SearchPage = /** @class */ (function () {
-    function SearchPage(router) {
+    function SearchPage(keyboard, router) {
+        var _this = this;
+        this.keyboard = keyboard;
         this.router = router;
         this.searchQuery = '';
         this.initializeItems();
-        this.inputElement.setFocus();
+        setTimeout(function () {
+            _this.inputElement.setFocus();
+        }, 1500);
     }
     SearchPage.prototype.ngOnInit = function () {
+    };
+    SearchPage.prototype.onChange = function (keyCode) {
+        this.keyboard.hide();
     };
     SearchPage.prototype.initializeItems = function () {
         this.items = [
@@ -164,7 +173,7 @@ var SearchPage = /** @class */ (function () {
             template: __webpack_require__(/*! ./search.page.html */ "./src/app/search/search.page.html"),
             styles: [__webpack_require__(/*! ./search.page.scss */ "./src/app/search/search.page.scss")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_native_keyboard_ngx__WEBPACK_IMPORTED_MODULE_5__["Keyboard"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]])
     ], SearchPage);
     return SearchPage;
 }());

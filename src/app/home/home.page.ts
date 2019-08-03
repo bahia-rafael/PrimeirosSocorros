@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { ActionSheetController, Platform } from '@ionic/angular';
 import { File } from '@ionic-native/File/ngx';
 
+import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { CallNumber } from '@ionic-native/call-number/ngx';
 
 @Component({
@@ -19,7 +20,9 @@ export class HomePage {
 
   isItemAvailable = false; // initialize the items with false
 
-  constructor(private callNumber: CallNumber, private platform: Platform, private file: File, private router: Router, public actionSheetController: ActionSheetController) {
+  constructor(private statusBar: StatusBar, private callNumber: CallNumber, private platform: Platform, private file: File, private router: Router, public actionSheetController: ActionSheetController) {
+
+    this.statusBar.backgroundColorByHexString('#b6000b');
 
     this.getList();
 
@@ -36,11 +39,6 @@ export class HomePage {
     var mobileNumber = '192';
 
     window.open("tel:" + mobileNumber);
-
-    // this.callNumber.callNumber("192", false)
-    //   .then(res => console.log('Launched dialer!', res))
-    //   .catch(err => console.log('Error launching dialer', err));
-
   }
   
   openTopico(titulo: string, icone: string) {

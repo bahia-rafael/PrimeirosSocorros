@@ -58,7 +58,7 @@ var ComplementaresPageModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header translucent>\n  <ion-toolbar>\n    <ion-buttons slot=\"start\">\n      <ion-back-button defaultHref=\"/\"></ion-back-button>\n    </ion-buttons>\n    <h1 style=\"font-family: 'Comic Sans MS', cursive, sans-serif;text-align: center;font-size: 17px;\">\n      <div><strong>{{tituloPage}}</strong></div>\n    </h1>\n    <ion-icon (click)=\"openBusca()\" name=\"search\" slot=\"end\" style=\"width: 40px;height: 30px;margin-right: 15px\">\n    </ion-icon>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-grid>\n    <ion-row>\n      <ion-col size='6' *ngFor=\"let topico of topicosApp\" (click)=\"openTopico(topico.titulo, topico.icon)\">\n        <ion-card style=\"height: 175px;padding-top: 0px;\">\n          <ion-img style=\"margin-top: 10px;width: 165px;height: 100px; margin-left: auto; margin-right: auto;\"\n            [src]=\"topico.icon\"></ion-img>\n\n          <ion-card-header style=\"padding-top: 5px;\">\n            <ion-card-title\n              style=\"text-align: center;font-size: 15px;font-family: 'Comic Sans MS', cursive, sans-serif;\">\n              <strong>{{topico.titulo}}</strong>\n            </ion-card-title>\n          </ion-card-header>\n        </ion-card>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n\n\n  <ion-fab vertical=\"bottom\" horizontal=\"end\" slot=\"fixed\">\n    <ion-fab-button (click)=\"callEmergencia()\" style=\"--background: red\">\n      <ion-icon name=\"call\"></ion-icon>\n    </ion-fab-button>\n  </ion-fab>\n</ion-content>"
+module.exports = "<ion-header translucent>\n  <ion-toolbar>\n    <ion-buttons slot=\"start\">\n      <ion-back-button defaultHref=\"/\"></ion-back-button>\n    </ion-buttons>\n    <h1 style=\"font-family: 'Comic Sans MS', cursive, sans-serif;text-align: center;font-size: 17px;\">\n      <div><strong>{{tituloPage}}</strong></div>\n    </h1>\n    <ion-icon (click)=\"openBusca()\" name=\"search\" slot=\"end\" style=\"width: 40px;height: 30px;margin-right: 15px\">\n    </ion-icon>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-grid>\n    <ion-row>\n      <ion-col size='6' *ngFor=\"let topico of topicosApp\" (click)=\"openTopico(topico.titulo, topico.icon)\">\n        <ion-card style=\"height: 175px;padding-top: 0px;\">\n          <ion-img style=\"width: 165px;height: 100px; margin-left: auto; margin-right: auto;\"\n            [src]=\"topico.icon\"></ion-img>\n\n          <ion-card-header style=\"padding-top: 5px;\">\n            <ion-card-title\n              style=\"text-align: center;font-size: 15px;font-family: 'Comic Sans MS', cursive, sans-serif;\">\n              <strong>{{topico.titulo}}</strong>\n            </ion-card-title>\n          </ion-card-header>\n        </ion-card>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n\n\n  <ion-fab vertical=\"bottom\" horizontal=\"end\" slot=\"fixed\">\n    <ion-fab-button (click)=\"callEmergencia()\" style=\"--background: red\">\n      <ion-icon name=\"call\"></ion-icon>\n    </ion-fab-button>\n  </ion-fab>\n</ion-content>"
 
 /***/ }),
 
@@ -142,7 +142,7 @@ var ComplementaresPage = /** @class */ (function () {
             {
                 "id": 8,
                 "titulo": "Intermação",
-                "icon": "assets/img/Intermacao.PNG"
+                "icon": "assets/img/Intermacao.png"
             }
         ];
         this.hemorragias = [

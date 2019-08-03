@@ -2,6 +2,7 @@ import { HomePage } from './../home/home.page';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { IonInput } from '@ionic/angular';
+import { Keyboard } from '@ionic-native/keyboard/ngx';
 
 @Component({
   selector: 'app-search',
@@ -17,10 +18,16 @@ export class SearchPage implements OnInit {
   }
 
 
-  constructor(private router: Router) {
+  constructor(private keyboard: Keyboard, private router: Router) {
     this.initializeItems();
 
-    this.inputElement.setFocus();
+    setTimeout( () => { 
+      this.inputElement.setFocus();
+     }, 1500 );
+  }
+
+  onChange(keyCode) {
+    this.keyboard.hide();
   }
 
   searchQuery: string = '';
