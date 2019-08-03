@@ -36,14 +36,19 @@ export class HomePage {
     var mobileNumber = '192';
 
     window.open("tel:" + mobileNumber);
-    
+
     // this.callNumber.callNumber("192", false)
     //   .then(res => console.log('Launched dialer!', res))
     //   .catch(err => console.log('Error launching dialer', err));
 
   }
+  
   openTopico(titulo: string, icone: string) {
-    this.router.navigate(['/blank', { name: titulo, icon: icone }]);
+    if (titulo == 'Queimaduras' || titulo == 'Traumas' || titulo == 'Transporte de acidentados' || titulo == 'Animais Peçonhentos' || titulo == 'Emergências relacionadas ao calor' || titulo == 'Hemorragias' || titulo == 'Intoxicações e Envenenamentos') {
+      this.router.navigate(['/complementares', { name: titulo }]);
+    } else {
+      this.router.navigate(['/blank', { name: titulo, icon: icone }]);
+    }
   }
 
   public static searchTopico(titulo: string): string {
@@ -68,13 +73,13 @@ export class HomePage {
     this.topicosApp = [
       {
         "id": 1,
-        "titulo": "Animais Peçonhentos (Aranhas)",
-        "icon": "assets/img/Aranhas.png"
+        "titulo": "Afogamento",
+        "icon": "assets/img/afogamento.png"
       },
       {
         "id": 2,
-        "titulo": "Animais Peçonhentos (Cobras)",
-        "icon": "assets/img/Animais Peçonhentos (Cobras).png"
+        "titulo": "Animais Peçonhentos",
+        "icon": "assets/img/Aranhas.PNG"
       },
       {
         "id": 3,
@@ -98,173 +103,49 @@ export class HomePage {
       },
       {
         "id": 7,
-        "titulo": "Insolação",
+        "titulo": "Emergências relacionadas ao calor",
         "icon": "assets/img/Insolacao.PNG"
       },
       {
         "id": 8,
-        "titulo": "Intermação",
-        "icon": "assets/img/Intermacao.png"
-      },
-      {
-        "id": 9,
         "titulo": "Epilepsia",
         "icon": "assets/img/Epilepsia.PNG"
       },
       {
+        "id": 9,
+        "titulo": "Hemorragias",
+        "icon": "assets/img/hemorragia_interna.PNG"
+      },
+      {
         "id": 10,
-        "titulo": "Hemorragia Externa",
-        "icon": "assets/img/Hemorragia Externa.png"
+        "titulo": "Intoxicações e Envenenamentos",
+        "icon": "assets/img/veneno.PNG"
       },
       {
         "id": 11,
-        "titulo": "Hemorragia Interna",
-        "icon": "assets/img/hemorragia_interna.png"
-      },
-      {
-        "id": 12,
-        "titulo": "Hemorragia Nasal",
-        "icon": "assets/img/hemorragia_nasal.png"
-      },
-      {
-        "id": 13,
-        "titulo": "Intoxicações e Envenenamentos (Aspiração)",
-        "icon": "assets/img/Intoxicações e Envenenamentos (Aspiração).png"
-      },
-      {
-        "id": 14,
-        "titulo": "Intoxicãções e Envenenamentos (Ingestão)",
-        "icon": "assets/img/veneno.png"
-      },
-      {
-        "id": 15,
-        "titulo": "Intoxicações e Envenenamentos (Pele)",
-        "icon": "assets/img/Intoxicações e Envenenamentos (Pele).png"
-      },
-      {
-        "id": 16,
         "titulo": "Parada Cardíaca",
         "icon": "assets/img/parada_cardiaca.PNG"
       },
       {
-        "id": 17,
-        "titulo": "Queimaduras: 1° Grau",
-        "icon": "assets/img/Queimaduras de 1° Grau.PNG"
-      },
-      {
-        "id": 19,
-        "titulo": "Queimaduras: 2° Grau (Superficial)",
-        "icon": "assets/img/Queimaduras de 2° Grau (Superficial).png"
-      },
-      {
-        "id": 18,
-        "titulo": "Queimaduras: 2° Grau (Profunda)",
-        "icon": "assets/img/Queimaduras de 2° Grau (Profunda).PNG"
-      },
-      {
-        "id": 20,
-        "titulo": "Queimaduras: 3° Grau",
+        "id": 12,
+        "titulo": "Queimaduras",
         "icon": "assets/img/Queimaduras de 3° Grau.PNG"
       },
       {
-        "id": 21,
+        "id": 13,
         "titulo": "Queimaduras Elétricas",
-        "icon": "assets/img/Queimaduras Elétricas.PNG"
+        "icon": "assets/img/Queimaduras Elétricas.png"
       },
       {
-        "id": 25,
-        "titulo": "Transporte de acidentados (Uma pessoa)",
-        "icon": "assets/img/uma_pessoa.PNG"
+        "id": 14,
+        "titulo": "Transporte de acidentados",
+        "icon": "assets/img/transporte.png"
       },
       {
-        "id": 22,
-        "titulo": "Transporte de acidentados (Duas Pessoas)",
-        "icon": "assets/img/duas_pessoas.PNG"
-      },
-      {
-        "id": 24,
-        "titulo": "Transporte de acidentados (Três Pessoas)",
-        "icon": "assets/img/tres_pessoas.PNG"
-      },
-      {
-        "id": 23,
-        "titulo": "Transporte de acidentados (Quatro Pessoas)",
-        "icon": "assets/img/quatro_pessoas.PNG"
-      },
-      {
-        "id": 26,
-        "titulo": "Trauma Abdominal",
-        "icon": "assets/img/Trauma Abdominal.PNG"
-      },
-      {
-        "id": 27,
-        "titulo": "Trauma de Face",
-        "icon": "assets/img/trauma_face.PNG"
-      },
-      {
-        "id": 28,
-        "titulo": "Trauma Músculo Esquelético",
-        "icon": "assets/img/Trauma Músculo Esquelético.png"
-      },
-      {
-        "id": 29,
-        "titulo": "Trauma Ocular",
-        "icon": "assets/img/trauma_ocular.png"
-      },
-      {
-        "id": 30,
-        "titulo": "Trauma Raquimedular",
-        "icon": "assets/img/Trauma Raquimedular.PNG"
-      },
-      {
-        "id": 31,
-        "titulo": "Trauma Torácico",
-        "icon": "assets/img/Trauma Torácico.png"
-      },
-      {
-        "id": 32,
-        "titulo": "Traumatismo Cranio encefálico",
-        "icon": "assets/img/Traumatismo Cranio encefálico.PNG"
+        "id": 15,
+        "titulo": "Traumas",
+        "icon": "assets/img/Trauma Músculo Esquelético.PNG"
       }
     ];
-  }
-
-
-  async presentActionOptions() {
-    const actionSheet = await this.actionSheetController.create({
-      header: 'Opções',
-      buttons: [{
-        text: 'Editar',
-        role: 'destructive',
-        icon: 'create',
-        handler: () => {
-
-        }
-      }, {
-        text: 'Excluir',
-        icon: 'trash',
-        handler: () => {
-
-        }
-      }]
-    });
-    await actionSheet.present();
-  }
-
-  liberarSubMenus() {
-
-  }
-
-  // gera uma cor aleatória em hexadecimal
-  gera_cor() {
-    var hexadecimais = '0123456789ABCDEF';
-    var cor = '#';
-
-    // Pega um número aleatório no array acima
-    for (var i = 0; i < 6; i++) {
-      //E concatena à variável cor
-      cor += hexadecimais[Math.floor(Math.random() * 16)];
-    }
-    return cor;
   }
 }

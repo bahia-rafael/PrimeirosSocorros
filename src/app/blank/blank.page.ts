@@ -88,25 +88,25 @@ export class BlankPage implements OnInit {
       case "Corpo Estranho nos Olhos":
         indice = 6;
         break;
-      case "Intoxicações e Envenenamentos (Pele)":
+      case "Pele":
         indice = 7;
         break;
-      case "Intoxicações e Envenenamentos (Aspiração)":
+      case "Aspiração":
         indice = 8;
         break;
-      case "Intoxicãções e Envenenamentos (Ingestão)":
+      case "Ingestão":
         indice = 9;
         break;
-      case "Queimaduras: 1° Grau":
+      case "1° Grau":
         indice = 10;
         break;
-      case "Queimaduras: 2° Grau (Superficial)":
+      case "2° Grau (Superficial)":
         indice = 11;
         break;
-      case "Queimaduras: 2° Grau (Profunda)":
+      case "2° Grau (Profunda)":
         indice = 12;
         break;
-      case "Queimaduras: 3° Grau":
+      case "3° Grau":
         indice = 13;
         break;
       case "Queimaduras Elétricas":
@@ -148,22 +148,22 @@ export class BlankPage implements OnInit {
       case "Trauma Músculo Esquelético":
         indice = 26;
         break;
-      case "Animais Peçonhentos (Cobras)":
+      case "Cobras":
         indice = 27;
         break;
-      case "Animais Peçonhentos (Aranhas)":
+      case "Aranhas e insetos":
         indice = 28;
         break;
-      case "Transporte de acidentados (Uma pessoa)":
+      case "Uma pessoa":
         indice = 29;
         break;
-      case "Transporte de acidentados (Duas Pessoas)":
+      case "Duas Pessoas":
         indice = 30;
         break;
-      case "Transporte de acidentados (Três Pessoas)":
+      case "Três Pessoas":
         indice = 31;
         break;
-      case "Transporte de acidentados (Quatro Pessoas)":
+      case "Quatro Pessoas":
         indice = 32;
         break;
     }

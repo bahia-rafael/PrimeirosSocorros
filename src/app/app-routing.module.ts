@@ -6,6 +6,7 @@ const routes: Routes = [
   { path: 'home', loadChildren: './home/home.module#HomePageModule' },  { path: 'search', loadChildren: './search/search.module#SearchPageModule' },
   { path: 'blank', loadChildren: './blank/blank.module#BlankPageModule' },
   { path: 'exit', loadChildren: './exit/exit.module#ExitPageModule' },
+  { path: 'complementares', loadChildren: './complementares/complementares.module#ComplementaresPageModule' },
 
 ];
 

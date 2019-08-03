@@ -438,19 +438,21 @@ var map = {
 		"./src/app/blank/blank.module.ts",
 		"blank-blank-module"
 	],
+	"./complementares/complementares.module": [
+		"./src/app/complementares/complementares.module.ts",
+		"complementares-complementares-module"
+	],
 	"./exit/exit.module": [
 		"./src/app/exit/exit.module.ts",
 		"exit-exit-module"
 	],
 	"./home/home.module": [
 		"./src/app/home/home.module.ts",
-		"default~home-home-module~search-search-module",
 		"common",
 		"home-home-module"
 	],
 	"./search/search.module": [
 		"./src/app/search/search.module.ts",
-		"default~home-home-module~search-search-module",
 		"common",
 		"search-search-module"
 	]
@@ -499,6 +501,7 @@ var routes = [
     { path: 'search', loadChildren: './search/search.module#SearchPageModule' },
     { path: 'blank', loadChildren: './blank/blank.module#BlankPageModule' },
     { path: 'exit', loadChildren: './exit/exit.module#ExitPageModule' },
+    { path: 'complementares', loadChildren: './complementares/complementares.module#ComplementaresPageModule' },
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {

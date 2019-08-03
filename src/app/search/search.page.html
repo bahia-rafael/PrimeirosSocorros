@@ -3,7 +3,7 @@
     <ion-buttons style="margin-top: 20px" slot="start">
       <ion-back-button defaultHref="/"></ion-back-button>
     </ion-buttons>
-    <ion-input placeholder="Busca" style="color:black;--placeholder-color: rgb(65, 65, 65);margin-top: 10px;background-color: beige;width: 90%;border-radius: 10px" id="busca" (ionChange)="getItems($event)"></ion-input>
+    <ion-input #searchInput placeholder="Busca" style="color:black;--placeholder-color: rgb(65, 65, 65);margin-top: 10px;background-color: beige;width: 90%;border-radius: 10px" id="busca" (ionChange)="getItems($event)"></ion-input>
   </ion-toolbar>
 </ion-header>
 

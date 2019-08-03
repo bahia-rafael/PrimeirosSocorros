@@ -1,6 +1,7 @@
 import { HomePage } from './../home/home.page';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
+import { IonInput } from '@ionic/angular';
 
 @Component({
   selector: 'app-search',
@@ -10,12 +11,16 @@ import { Router } from '@angular/router';
 
 export class SearchPage implements OnInit {
 
+  @ViewChild('searchInput') inputElement: IonInput;
+
   ngOnInit() {
   }
 
 
   constructor(private router: Router) {
     this.initializeItems();
+
+    this.inputElement.setFocus();
   }
 
   searchQuery: string = '';
