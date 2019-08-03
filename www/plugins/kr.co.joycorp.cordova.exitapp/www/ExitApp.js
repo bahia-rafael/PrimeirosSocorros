@@ -1,4 +1,4 @@
-cordova.define("kr.co.joycorp.cordova.exitapp.exitApp", function(require, exports, module) {
+cordova.define("kr.co.joycorp.cordova.exitapp.ExitApp", function(require, exports, module) {
 var exec = require('cordova/exec');
 
 module.exports = {

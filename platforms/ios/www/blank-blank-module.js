@@ -58,7 +58,7 @@ var BlankPageModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header translucent>\n  <ion-toolbar>\n    <ion-buttons slot=\"start\">\n      <ion-back-button defaultHref=\"/\"></ion-back-button>\n    </ion-buttons>\n    <h1\n      style=\"font-family: 'Comic Sans MS', cursive, sans-serif;text-align: center;font-size: 17px;\">\n      <div><strong>{{topicoEscolhido.titulo}}</strong></div>\n    </h1>\n    <ion-icon (click)=\"openBusca()\" name=\"search\" slot=\"end\" style=\"color: darkslategray;width: 40px;height: 30px;margin-right: 15px\">\n    </ion-icon>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-card>\n    <img style=\"width: 165px;height: 100px;margin: 5px auto\" src=\"{{icon}}\" />\n    <ion-card-header>\n      <ion-card-title>Definição</ion-card-title>\n    </ion-card-header>\n    <ion-card-content name=\"definicao\" style=\"text-align: justify;\">\n      {{topicoEscolhido.definicao}}\n    </ion-card-content>\n    <ion-card-header>\n      <ion-card-title>Sintomas</ion-card-title>\n    </ion-card-header>\n    <ion-card-content name=\"sintomas\" style=\"text-align: justify;\">\n    </ion-card-content>\n    <ion-card-header>\n      <ion-card-title>Atendimento</ion-card-title>\n    </ion-card-header>\n    <ion-card-content name=\"atendimento\" style=\"text-align: justify;\">\n      {{topicoEscolhido.textoAdicional}}\n    </ion-card-content>\n  </ion-card>\n</ion-content>"
+module.exports = "<ion-header translucent>\n  <ion-toolbar>\n    <ion-buttons slot=\"start\">\n      <ion-back-button defaultHref=\"/\"></ion-back-button>\n    </ion-buttons>\n    <h1\n      style=\"font-family: 'Comic Sans MS', cursive, sans-serif;text-align: center;font-size: 17px;\">\n      <div><strong>{{topicoEscolhido.titulo}}</strong></div>\n    </h1>\n    <ion-icon (click)=\"openBusca()\" name=\"search\" slot=\"end\" style=\"width: 40px;height: 30px;margin-right: 15px\">\n    </ion-icon>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-card>\n    <img style=\"width: 165px;height: 100px;margin: 5px auto\" src=\"{{icon}}\" />\n    <ion-card-header>\n      <ion-card-title>Definição</ion-card-title>\n    </ion-card-header>\n    <ion-card-content name=\"definicao\" style=\"text-align: justify;\">\n      {{topicoEscolhido.definicao}}\n    </ion-card-content>\n    <ion-card-header>\n      <ion-card-title>Sintomas</ion-card-title>\n    </ion-card-header>\n    <ion-card-content name=\"sintomas\" style=\"text-align: justify;\">\n    </ion-card-content>\n    <ion-card-header>\n      <ion-card-title>Atendimento</ion-card-title>\n    </ion-card-header>\n    <ion-card-content name=\"atendimento\" style=\"text-align: justify;\">\n      {{topicoEscolhido.textoAdicional}}\n    </ion-card-content>\n  </ion-card>\n</ion-content>"
 
 /***/ }),
 
@@ -153,25 +153,25 @@ var BlankPage = /** @class */ (function () {
             case "Corpo Estranho nos Olhos":
                 indice = 6;
                 break;
-            case "Intoxicações e Envenenamentos (Pele)":
+            case "Pele":
                 indice = 7;
                 break;
-            case "Intoxicações e Envenenamentos (Aspiração)":
+            case "Aspiração":
                 indice = 8;
                 break;
-            case "Intoxicãções e Envenenamentos (Ingestão)":
+            case "Ingestão":
                 indice = 9;
                 break;
-            case "Queimaduras: 1° Grau":
+            case "1° Grau":
                 indice = 10;
                 break;
-            case "Queimaduras: 2° Grau (Superficial)":
+            case "2° Grau (Superficial)":
                 indice = 11;
                 break;
-            case "Queimaduras: 2° Grau (Profunda)":
+            case "2° Grau (Profunda)":
                 indice = 12;
                 break;
-            case "Queimaduras: 3° Grau":
+            case "3° Grau":
                 indice = 13;
                 break;
             case "Queimaduras Elétricas":
@@ -213,22 +213,22 @@ var BlankPage = /** @class */ (function () {
             case "Trauma Músculo Esquelético":
                 indice = 26;
                 break;
-            case "Animais Peçonhentos (Cobras)":
+            case "Cobras":
                 indice = 27;
                 break;
-            case "Animais Peçonhentos (Aranhas)":
+            case "Aranhas e insetos":
                 indice = 28;
                 break;
-            case "Transporte de acidentados (Uma pessoa)":
+            case "Uma pessoa":
                 indice = 29;
                 break;
-            case "Transporte de acidentados (Duas Pessoas)":
+            case "Duas Pessoas":
                 indice = 30;
                 break;
-            case "Transporte de acidentados (Três Pessoas)":
+            case "Três Pessoas":
                 indice = 31;
                 break;
-            case "Transporte de acidentados (Quatro Pessoas)":
+            case "Quatro Pessoas":
                 indice = 32;
                 break;
         }

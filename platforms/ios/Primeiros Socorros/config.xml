@@ -44,6 +44,12 @@
         <param name="ios-package" value="CDVStatusBar" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="CallNumber">
+        <param name="ios-package" value="CFCallNumber" />
+    </feature>
+    <feature name="ExitApp">
+        <param name="ios-package" value="ExitApp" />
+    </feature>
     <name>Primeiros Socorros</name>
     <description>Público alvo: crianças e adolescentes 
 
@@ -133,10 +139,4 @@ A ideia foi desenvolvida por Andréia Sousa - professora do ensino básico ( red
     <preference name="SplashShowOnlyFirstTime" value="false" />
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="3000" />
-    <feature name="CallNumber">
-        <param name="ios-package" value="CFCallNumber" />
-    </feature>
-    <feature name="ExitApp">
-        <param name="ios-package" value="ExitApp" />
-    </feature>
 </widget>

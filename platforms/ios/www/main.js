@@ -438,15 +438,21 @@ var map = {
 		"./src/app/blank/blank.module.ts",
 		"blank-blank-module"
 	],
+	"./complementares/complementares.module": [
+		"./src/app/complementares/complementares.module.ts",
+		"complementares-complementares-module"
+	],
+	"./exit/exit.module": [
+		"./src/app/exit/exit.module.ts",
+		"exit-exit-module"
+	],
 	"./home/home.module": [
 		"./src/app/home/home.module.ts",
-		"default~home-home-module~search-search-module",
 		"common",
 		"home-home-module"
 	],
 	"./search/search.module": [
 		"./src/app/search/search.module.ts",
-		"default~home-home-module~search-search-module",
 		"common",
 		"search-search-module"
 	]
@@ -494,6 +500,8 @@ var routes = [
     { path: 'home', loadChildren: './home/home.module#HomePageModule' },
     { path: 'search', loadChildren: './search/search.module#SearchPageModule' },
     { path: 'blank', loadChildren: './blank/blank.module#BlankPageModule' },
+    { path: 'exit', loadChildren: './exit/exit.module#ExitPageModule' },
+    { path: 'complementares', loadChildren: './complementares/complementares.module#ComplementaresPageModule' },
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
@@ -558,6 +566,13 @@ var AppComponent = /** @class */ (function () {
             _this.splashScreen.hide();
         });
     };
+    AppComponent.prototype.setAndroidBackButtonBehavior = function () {
+        this.platform.backButton.subscribe(function () {
+            if (window.location.pathname == "/home") {
+                navigator['app'].exitApp();
+            }
+        });
+    };
     AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-root',
@@ -595,6 +610,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
 /* harmony import */ var _ionic_native_File_ngx__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @ionic-native/File/ngx */ "./node_modules/@ionic-native/File/ngx/index.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _ionic_native_call_number_ngx__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @ionic-native/call-number/ngx */ "./node_modules/@ionic-native/call-number/ngx/index.js");
+
 
 
 
@@ -618,6 +635,7 @@ var AppModule = /** @class */ (function () {
                 _ionic_native_status_bar_ngx__WEBPACK_IMPORTED_MODULE_6__["StatusBar"],
                 _ionic_native_File_ngx__WEBPACK_IMPORTED_MODULE_9__["File"],
                 _ionic_native_splash_screen_ngx__WEBPACK_IMPORTED_MODULE_5__["SplashScreen"],
+                _ionic_native_call_number_ngx__WEBPACK_IMPORTED_MODULE_11__["CallNumber"],
                 { provide: _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouteReuseStrategy"], useClass: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicRouteStrategy"] }
             ],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"]]
