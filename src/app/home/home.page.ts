@@ -29,7 +29,8 @@ export class HomePage {
     HomePage.topicosTotais = this.topicosApp;
 
     this.platform.backButton.subscribe(() => {
-      navigator['app'].exitApp();
+      this.router.navigate(['/exit']);
+      
     });
 
   }
@@ -77,7 +78,7 @@ export class HomePage {
       {
         "id": 2,
         "titulo": "Animais Peçonhentos",
-        "icon": "assets/img/Aranhas.png"
+        "icon": "assets/img/animais_principal.png"
       },
       {
         "id": 3,

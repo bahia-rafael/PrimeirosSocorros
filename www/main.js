@@ -440,6 +440,8 @@ var map = {
 	],
 	"./complementares/complementares.module": [
 		"./src/app/complementares/complementares.module.ts",
+		"default~complementares-complementares-module~search-search-module",
+		"common",
 		"complementares-complementares-module"
 	],
 	"./exit/exit.module": [
@@ -453,6 +455,7 @@ var map = {
 	],
 	"./search/search.module": [
 		"./src/app/search/search.module.ts",
+		"default~complementares-complementares-module~search-search-module",
 		"common",
 		"search-search-module"
 	]

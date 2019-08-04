@@ -424,6 +424,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var HomePage = /** @class */ (function () {
     function HomePage(statusBar, callNumber, platform, file, router, actionSheetController) {
+        var _this = this;
         this.statusBar = statusBar;
         this.callNumber = callNumber;
         this.platform = platform;
@@ -436,7 +437,7 @@ var HomePage = /** @class */ (function () {
         this.getList();
         HomePage_1.topicosTotais = this.topicosApp;
         this.platform.backButton.subscribe(function () {
-            navigator['app'].exitApp();
+            _this.router.navigate(['/exit']);
         });
     }
     HomePage_1 = HomePage;
@@ -474,7 +475,7 @@ var HomePage = /** @class */ (function () {
             {
                 "id": 2,
                 "titulo": "Animais Peçonhentos",
-                "icon": "assets/img/Aranhas.png"
+                "icon": "assets/img/animais_principal.png"
             },
             {
                 "id": 3,

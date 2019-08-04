@@ -1,3 +1,4 @@
+import { ComplementaresPage } from './../complementares/complementares.page';
 import { HomePage } from './../home/home.page';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
@@ -21,9 +22,9 @@ export class SearchPage implements OnInit {
   constructor(private keyboard: Keyboard, private router: Router) {
     this.initializeItems();
 
-    setTimeout( () => { 
+    setTimeout(() => {
       this.inputElement.setFocus();
-     }, 1500 );
+    }, 1500);
   }
 
   onChange(keyCode) {
@@ -35,7 +36,8 @@ export class SearchPage implements OnInit {
 
   initializeItems() {
     this.items = [
-      'Animais Peçonhentos (Aranhas)',
+      'Afogamento',
+      'Animais Peçonhentos (Aranhas e insetos)',
       'Animais Peçonhentos (Cobras)',
       'Convulsão',
       'Corpo Estranho nos Olhos',
@@ -48,7 +50,7 @@ export class SearchPage implements OnInit {
       'Hemorragia Interna',
       'Hemorragia Nasal',
       'Intoxicações e Envenenamentos (Aspiração)',
-      'Intoxicãções e Envenenamentos (Ingestão)',
+      'Intoxicações e Envenenamentos (Ingestão)',
       'Intoxicações e Envenenamentos (Pele)',
       'Parada Cardíaca',
       'Queimaduras: 1° Grau',
@@ -56,10 +58,10 @@ export class SearchPage implements OnInit {
       'Queimaduras: 2° Grau (Superficial)',
       'Queimaduras: 3° Grau',
       'Queimaduras Elétricas',
-      'Transporte de acidentados (Duas Pessoas)',
-      'Transporte de acidentados (Quatro Pessoas)',
-      'Transporte de acidentados (Três Pessoas)',
       'Transporte de acidentados (Uma pessoa)',
+      'Transporte de acidentados (Duas Pessoas)',
+      'Transporte de acidentados (Três Pessoas)',
+      'Transporte de acidentados (Quatro Pessoas)',
       'Trauma Abdominal',
       'Trauma de Face',
       'Trauma Músculo Esquelético',
@@ -71,7 +73,36 @@ export class SearchPage implements OnInit {
   }
 
   openTopico(titulo: string) {
-    var icone = HomePage.searchTopico(titulo);
+
+    var icone;
+
+    if (titulo.includes('Queimaduras: ')) {
+
+      titulo = titulo.replace("Queimaduras: ", "");
+      icone = ComplementaresPage.searchTopico(titulo);
+
+    } else if (titulo.includes("Intoxicações e Envenenamentos (")) {
+
+      titulo = titulo.replace("Intoxicações e Envenenamentos (", "").replace(")", "");
+      icone = ComplementaresPage.searchTopico(titulo);
+
+    } else if (titulo.includes('Animais Peçonhentos (')) {
+
+      titulo = titulo.replace('Animais Peçonhentos (', "").replace(")", "");
+      icone = ComplementaresPage.searchTopico(titulo);
+
+    } else if (titulo.includes("Transporte de acidentados (")) {
+
+      titulo = titulo.replace("Transporte de acidentados (", "").replace(")", "");
+      icone = ComplementaresPage.searchTopico(titulo);
+
+    } else {
+      icone = HomePage.searchTopico(titulo);
+
+      if (icone == null) {
+        icone = ComplementaresPage.searchTopico(titulo);
+      }
+    }
 
     this.router.navigate(['/blank', { name: titulo, icon: icone }]);
   }
