@@ -499,7 +499,7 @@ var HomePage = /** @class */ (function () {
             {
                 "id": 7,
                 "titulo": "Emergências relacionadas ao calor",
-                "icon": "assets/img/Insolacao.PNG"
+                "icon": "assets/img/calor_principal.png"
             },
             {
                 "id": 8,
@@ -509,12 +509,12 @@ var HomePage = /** @class */ (function () {
             {
                 "id": 9,
                 "titulo": "Hemorragias",
-                "icon": "assets/img/hemorragia_interna.png"
+                "icon": "assets/img/hemorragia_principal.png"
             },
             {
                 "id": 10,
                 "titulo": "Intoxicações e Envenenamentos",
-                "icon": "assets/img/veneno.png"
+                "icon": "assets/img/veneno_principal.png"
             },
             {
                 "id": 11,
@@ -524,7 +524,7 @@ var HomePage = /** @class */ (function () {
             {
                 "id": 12,
                 "titulo": "Queimaduras",
-                "icon": "assets/img/Queimaduras de 3° Grau.PNG"
+                "icon": "assets/img/queimadura_principal.png"
             },
             {
                 "id": 13,
@@ -539,7 +539,7 @@ var HomePage = /** @class */ (function () {
             {
                 "id": 15,
                 "titulo": "Traumas",
-                "icon": "assets/img/Trauma Músculo Esquelético.png"
+                "icon": "assets/img/trauma_principal.png"
             }
         ];
     };
