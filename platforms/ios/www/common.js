@@ -383,7 +383,7 @@ var blockedTags = ['script', 'style', 'iframe', 'meta', 'link', 'object', 'embed
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header translucent>\r\n  <ion-toolbar>\r\n    <ion-icon style=\"width: 40px;height: 30px;margin-left: 10px\" slot=\"start\" name=\"medkit\"></ion-icon>\r\n    <ion-title\r\n      style=\"text-align: center;font-size: 15px;padding-right: 0px;font-family: 'Comic Sans MS', cursive, sans-serif;\">\r\n      <strong>FIQUE CALMO! PEÇA AJUDA - 192</strong>\r\n    </ion-title>\r\n    <ion-icon (click)=\"openBusca()\" name=\"search\" slot=\"end\" style=\"width: 40px;height: 30px;margin-right: 10px\">\r\n    </ion-icon>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n  <ion-grid>\r\n    <ion-row>\r\n      <ion-col size='6' *ngFor=\"let topico of topicosApp\" (click)=\"openTopico(topico.titulo, topico.icon)\">\r\n        <ion-card style=\"height: 175px;padding-top: 0px;\">\r\n          <ion-img style=\"margin-top: 10px;width: 165px;height: 100px; margin-left: auto; margin-right: auto;\"\r\n            [src]=\"topico.icon\"></ion-img>\r\n\r\n          <ion-card-header style=\"padding-top: 5px;\">\r\n            <ion-card-title\r\n              style=\"text-align: center;font-size: 15px;font-family: 'Comic Sans MS', cursive, sans-serif;\">\r\n              <strong>{{topico.titulo}}</strong>\r\n            </ion-card-title>\r\n          </ion-card-header>\r\n        </ion-card>\r\n      </ion-col>\r\n    </ion-row>\r\n  </ion-grid>\r\n\r\n\r\n  <ion-fab vertical=\"bottom\" horizontal=\"end\" slot=\"fixed\">\r\n    <ion-fab-button (click)=\"callEmergencia()\" style=\"--background: red\">\r\n        <ion-icon name=\"call\"></ion-icon>\r\n    </ion-fab-button>\r\n  </ion-fab>\r\n\r\n\r\n</ion-content>"
+module.exports = "<ion-header translucent>\r\n  <ion-toolbar>\r\n    <ion-icon style=\"width: 40px;height: 30px;margin-left: 10px\" slot=\"start\" name=\"medkit\"></ion-icon>\r\n    <ion-title\r\n      style=\"text-align: center;font-size: 15px;padding-right: 0px;font-family: 'Comic Sans MS', cursive, sans-serif;\">\r\n      <strong>FIQUE CALMO!<br>PEÇA AJUDA - 192</strong>\r\n    </ion-title>\r\n    <ion-icon (click)=\"openBusca()\" name=\"search\" slot=\"end\" style=\"width: 40px;height: 30px;margin-right: 10px\">\r\n    </ion-icon>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n  <ion-grid>\r\n    <ion-row>\r\n      <ion-col size='6' *ngFor=\"let topico of topicosApp\" (click)=\"openTopico(topico.titulo, topico.icon)\">\r\n        <ion-card style=\"height: 175px;padding-top: 0px;\">\r\n          <ion-img style=\"width: 165px;height: 100px; margin-left: auto; margin-right: auto;\"\r\n            [src]=\"topico.icon\"></ion-img>\r\n\r\n          <ion-card-header style=\"padding-top: 5px;\">\r\n            <ion-card-title\r\n              style=\"text-align: center;font-size: 15px;font-family: 'Comic Sans MS', cursive, sans-serif;\">\r\n              <strong>{{topico.titulo}}</strong>\r\n            </ion-card-title>\r\n          </ion-card-header>\r\n        </ion-card>\r\n      </ion-col>\r\n    </ion-row>\r\n  </ion-grid>\r\n\r\n\r\n  <ion-fab vertical=\"bottom\" horizontal=\"end\" slot=\"fixed\">\r\n    <ion-fab-button (click)=\"callEmergencia()\" style=\"--background: red\">\r\n        <ion-icon name=\"call\"></ion-icon>\r\n    </ion-fab-button>\r\n  </ion-fab>\r\n\r\n\r\n</ion-content>"
 
 /***/ }),
 
@@ -413,7 +413,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
 /* harmony import */ var _ionic_native_File_ngx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic-native/File/ngx */ "./node_modules/@ionic-native/File/ngx/index.js");
-/* harmony import */ var _ionic_native_call_number_ngx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @ionic-native/call-number/ngx */ "./node_modules/@ionic-native/call-number/ngx/index.js");
+/* harmony import */ var _ionic_native_status_bar_ngx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @ionic-native/status-bar/ngx */ "./node_modules/@ionic-native/status-bar/ngx/index.js");
+/* harmony import */ var _ionic_native_call_number_ngx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @ionic-native/call-number/ngx */ "./node_modules/@ionic-native/call-number/ngx/index.js");
+
 
 
 
@@ -421,7 +423,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var HomePage = /** @class */ (function () {
-    function HomePage(callNumber, platform, file, router, actionSheetController) {
+    function HomePage(statusBar, callNumber, platform, file, router, actionSheetController) {
+        var _this = this;
+        this.statusBar = statusBar;
         this.callNumber = callNumber;
         this.platform = platform;
         this.file = file;
@@ -429,19 +433,17 @@ var HomePage = /** @class */ (function () {
         this.actionSheetController = actionSheetController;
         this.topicosApp = [];
         this.isItemAvailable = false; // initialize the items with false
+        this.statusBar.backgroundColorByHexString('#b6000b');
         this.getList();
         HomePage_1.topicosTotais = this.topicosApp;
         this.platform.backButton.subscribe(function () {
-            navigator['app'].exitApp();
+            _this.router.navigate(['/exit']);
         });
     }
     HomePage_1 = HomePage;
     HomePage.prototype.callEmergencia = function () {
         var mobileNumber = '192';
         window.open("tel:" + mobileNumber);
-        // this.callNumber.callNumber("192", false)
-        //   .then(res => console.log('Launched dialer!', res))
-        //   .catch(err => console.log('Error launching dialer', err));
     };
     HomePage.prototype.openTopico = function (titulo, icone) {
         if (titulo == 'Queimaduras' || titulo == 'Traumas' || titulo == 'Transporte de acidentados' || titulo == 'Animais Peçonhentos' || titulo == 'Emergências relacionadas ao calor' || titulo == 'Hemorragias' || titulo == 'Intoxicações e Envenenamentos') {
@@ -473,7 +475,7 @@ var HomePage = /** @class */ (function () {
             {
                 "id": 2,
                 "titulo": "Animais Peçonhentos",
-                "icon": "assets/img/Aranhas.PNG"
+                "icon": "assets/img/animais_principal.png"
             },
             {
                 "id": 3,
@@ -498,7 +500,7 @@ var HomePage = /** @class */ (function () {
             {
                 "id": 7,
                 "titulo": "Emergências relacionadas ao calor",
-                "icon": "assets/img/Insolacao.PNG"
+                "icon": "assets/img/calor_principal.png"
             },
             {
                 "id": 8,
@@ -508,12 +510,12 @@ var HomePage = /** @class */ (function () {
             {
                 "id": 9,
                 "titulo": "Hemorragias",
-                "icon": "assets/img/hemorragia_interna.PNG"
+                "icon": "assets/img/hemorragia_principal.png"
             },
             {
                 "id": 10,
                 "titulo": "Intoxicações e Envenenamentos",
-                "icon": "assets/img/veneno.PNG"
+                "icon": "assets/img/veneno_principal.png"
             },
             {
                 "id": 11,
@@ -523,12 +525,12 @@ var HomePage = /** @class */ (function () {
             {
                 "id": 12,
                 "titulo": "Queimaduras",
-                "icon": "assets/img/Queimaduras de 3° Grau.PNG"
+                "icon": "assets/img/queimadura_principal.png"
             },
             {
                 "id": 13,
                 "titulo": "Queimaduras Elétricas",
-                "icon": "assets/img/Queimaduras Elétricas.png"
+                "icon": "assets/img/Queimaduras Elétricas.PNG"
             },
             {
                 "id": 14,
@@ -538,7 +540,7 @@ var HomePage = /** @class */ (function () {
             {
                 "id": 15,
                 "titulo": "Traumas",
-                "icon": "assets/img/Trauma Músculo Esquelético.PNG"
+                "icon": "assets/img/trauma_principal.png"
             }
         ];
     };
@@ -549,7 +551,7 @@ var HomePage = /** @class */ (function () {
             template: __webpack_require__(/*! ./home.page.html */ "./src/app/home/home.page.html"),
             styles: [__webpack_require__(/*! ./home.page.scss */ "./src/app/home/home.page.scss")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_native_call_number_ngx__WEBPACK_IMPORTED_MODULE_5__["CallNumber"], _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["Platform"], _ionic_native_File_ngx__WEBPACK_IMPORTED_MODULE_4__["File"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"], _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["ActionSheetController"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_native_status_bar_ngx__WEBPACK_IMPORTED_MODULE_5__["StatusBar"], _ionic_native_call_number_ngx__WEBPACK_IMPORTED_MODULE_6__["CallNumber"], _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["Platform"], _ionic_native_File_ngx__WEBPACK_IMPORTED_MODULE_4__["File"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"], _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["ActionSheetController"]])
     ], HomePage);
     return HomePage;
 }());

@@ -58,7 +58,7 @@ var SearchPageModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header translucent>\r\n  <ion-toolbar >\r\n    <ion-buttons style=\"margin-top: 20px\" slot=\"start\">\r\n      <ion-back-button defaultHref=\"/\"></ion-back-button>\r\n    </ion-buttons>\r\n    <ion-input #searchInput placeholder=\"Busca\" style=\"color:black;--placeholder-color: rgb(65, 65, 65);margin-top: 10px;background-color: beige;width: 90%;border-radius: 10px\" id=\"busca\" (ionChange)=\"getItems($event)\"></ion-input>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n  <ion-list>\r\n    <ion-item *ngFor=\"let item of items\" (click)=\"openTopico(item)\">\r\n      {{ item }}\r\n    </ion-item>\r\n  </ion-list>\r\n</ion-content>"
+module.exports = "<ion-header translucent>\r\n  <ion-toolbar >\r\n    <ion-buttons style=\"margin-top: 20px\" slot=\"start\">\r\n      <ion-back-button defaultHref=\"/\"></ion-back-button>\r\n    </ion-buttons>\r\n    <ion-input #searchInput (keypress)=\"onChange($event.keyCode)\" placeholder=\"Busca\" style=\"color:black;--placeholder-color: rgb(65, 65, 65);margin-top: 10px;background-color: beige;width: 90%;border-radius: 10px\" id=\"busca\" (ionChange)=\"getItems($event)\"></ion-input>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n  <ion-list>\r\n    <ion-item *ngFor=\"let item of items\" (click)=\"openTopico(item)\">\r\n      {{ item }}\r\n    </ion-item>\r\n  </ion-list>\r\n</ion-content>"
 
 /***/ }),
 
@@ -84,27 +84,39 @@ module.exports = "ion-toolbar {\n  font-family: \"Arial Black\", Gadget, sans-se
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SearchPage", function() { return SearchPage; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _home_home_page__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../home/home.page */ "./src/app/home/home.page.ts");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+/* harmony import */ var _complementares_complementares_page__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../complementares/complementares.page */ "./src/app/complementares/complementares.page.ts");
+/* harmony import */ var _home_home_page__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../home/home.page */ "./src/app/home/home.page.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+/* harmony import */ var _ionic_native_keyboard_ngx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @ionic-native/keyboard/ngx */ "./node_modules/@ionic-native/keyboard/ngx/index.js");
+
+
 
 
 
 
 
 var SearchPage = /** @class */ (function () {
-    function SearchPage(router) {
+    function SearchPage(keyboard, router) {
+        var _this = this;
+        this.keyboard = keyboard;
         this.router = router;
         this.searchQuery = '';
         this.initializeItems();
-        this.inputElement.setFocus();
+        setTimeout(function () {
+            _this.inputElement.setFocus();
+        }, 1500);
     }
     SearchPage.prototype.ngOnInit = function () {
     };
+    SearchPage.prototype.onChange = function (keyCode) {
+        this.keyboard.hide();
+    };
     SearchPage.prototype.initializeItems = function () {
         this.items = [
-            'Animais Peçonhentos (Aranhas)',
+            'Afogamento',
+            'Animais Peçonhentos (Aranhas e insetos)',
             'Animais Peçonhentos (Cobras)',
             'Convulsão',
             'Corpo Estranho nos Olhos',
@@ -117,7 +129,7 @@ var SearchPage = /** @class */ (function () {
             'Hemorragia Interna',
             'Hemorragia Nasal',
             'Intoxicações e Envenenamentos (Aspiração)',
-            'Intoxicãções e Envenenamentos (Ingestão)',
+            'Intoxicações e Envenenamentos (Ingestão)',
             'Intoxicações e Envenenamentos (Pele)',
             'Parada Cardíaca',
             'Queimaduras: 1° Grau',
@@ -125,10 +137,10 @@ var SearchPage = /** @class */ (function () {
             'Queimaduras: 2° Grau (Superficial)',
             'Queimaduras: 3° Grau',
             'Queimaduras Elétricas',
-            'Transporte de acidentados (Duas Pessoas)',
-            'Transporte de acidentados (Quatro Pessoas)',
-            'Transporte de acidentados (Três Pessoas)',
             'Transporte de acidentados (Uma pessoa)',
+            'Transporte de acidentados (Duas Pessoas)',
+            'Transporte de acidentados (Três Pessoas)',
+            'Transporte de acidentados (Quatro Pessoas)',
             'Trauma Abdominal',
             'Trauma de Face',
             'Trauma Músculo Esquelético',
@@ -139,7 +151,29 @@ var SearchPage = /** @class */ (function () {
         ];
     };
     SearchPage.prototype.openTopico = function (titulo) {
-        var icone = _home_home_page__WEBPACK_IMPORTED_MODULE_1__["HomePage"].searchTopico(titulo);
+        var icone;
+        if (titulo.includes('Queimaduras: ')) {
+            titulo = titulo.replace("Queimaduras: ", "");
+            icone = _complementares_complementares_page__WEBPACK_IMPORTED_MODULE_1__["ComplementaresPage"].searchTopico(titulo);
+        }
+        else if (titulo.includes("Intoxicações e Envenenamentos (")) {
+            titulo = titulo.replace("Intoxicações e Envenenamentos (", "").replace(")", "");
+            icone = _complementares_complementares_page__WEBPACK_IMPORTED_MODULE_1__["ComplementaresPage"].searchTopico(titulo);
+        }
+        else if (titulo.includes('Animais Peçonhentos (')) {
+            titulo = titulo.replace('Animais Peçonhentos (', "").replace(")", "");
+            icone = _complementares_complementares_page__WEBPACK_IMPORTED_MODULE_1__["ComplementaresPage"].searchTopico(titulo);
+        }
+        else if (titulo.includes("Transporte de acidentados (")) {
+            titulo = titulo.replace("Transporte de acidentados (", "").replace(")", "");
+            icone = _complementares_complementares_page__WEBPACK_IMPORTED_MODULE_1__["ComplementaresPage"].searchTopico(titulo);
+        }
+        else {
+            icone = _home_home_page__WEBPACK_IMPORTED_MODULE_2__["HomePage"].searchTopico(titulo);
+            if (icone == null) {
+                icone = _complementares_complementares_page__WEBPACK_IMPORTED_MODULE_1__["ComplementaresPage"].searchTopico(titulo);
+            }
+        }
         this.router.navigate(['/blank', { name: titulo, icon: icone }]);
     };
     SearchPage.prototype.getItems = function (ev) {
@@ -155,16 +189,16 @@ var SearchPage = /** @class */ (function () {
         }
     };
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewChild"])('searchInput'),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonInput"])
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewChild"])('searchInput'),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", _ionic_angular__WEBPACK_IMPORTED_MODULE_5__["IonInput"])
     ], SearchPage.prototype, "inputElement", void 0);
     SearchPage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"])({
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["Component"])({
             selector: 'app-search',
             template: __webpack_require__(/*! ./search.page.html */ "./src/app/search/search.page.html"),
             styles: [__webpack_require__(/*! ./search.page.scss */ "./src/app/search/search.page.scss")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_native_keyboard_ngx__WEBPACK_IMPORTED_MODULE_6__["Keyboard"], _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"]])
     ], SearchPage);
     return SearchPage;
 }());

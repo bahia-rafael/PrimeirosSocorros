@@ -46,6 +46,10 @@
     <feature name="ExitApp">
         <param name="ios-package" value="ExitApp" />
     </feature>
+    <feature name="StatusBar">
+        <param name="ios-package" value="CDVStatusBar" />
+        <param name="onload" value="true" />
+    </feature>
     <name>Primeiros Socorros</name>
     <description>Público alvo: crianças e adolescentes 
 
@@ -126,6 +130,8 @@ A ideia foi desenvolvida por Andréia Sousa - professora do ensino básico ( red
     <preference name="PaginationMode" value="unpaginated" />
     <preference name="deployment-target" value="11.0" />
     <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
+    <preference name="StatusBarOverlaysWebView" value="true" />
+    <preference name="StatusBarStyle" value="lightcontent" />
     <preference name="ScrollEnabled" value="false" />
     <preference name="android-minSdkVersion" value="19" />
     <preference name="SplashMaintainAspectRatio" value="true" />
@@ -133,10 +139,4 @@ A ideia foi desenvolvida por Andréia Sousa - professora do ensino básico ( red
     <preference name="SplashShowOnlyFirstTime" value="false" />
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="3000" />
-    <feature name="StatusBar">
-        <param name="ios-package" value="CDVStatusBar" />
-        <param name="onload" value="true" />
-    </feature>
-    <preference name="StatusBarOverlaysWebView" value="true" />
-    <preference name="StatusBarStyle" value="lightcontent" />
 </widget>

@@ -9,30 +9,6 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       ]
     },
     {
-      "id": "cordova-plugin-splashscreen.SplashScreen",
-      "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
-      "pluginId": "cordova-plugin-splashscreen",
-      "clobbers": [
-        "navigator.splashscreen"
-      ]
-    },
-    {
-      "id": "cordova-plugin-ionic-webview.IonicWebView",
-      "file": "plugins/cordova-plugin-ionic-webview/src/www/util.js",
-      "pluginId": "cordova-plugin-ionic-webview",
-      "clobbers": [
-        "Ionic.WebView"
-      ]
-    },
-    {
-      "id": "cordova-plugin-ionic-keyboard.keyboard",
-      "file": "plugins/cordova-plugin-ionic-keyboard/www/android/keyboard.js",
-      "pluginId": "cordova-plugin-ionic-keyboard",
-      "clobbers": [
-        "window.Keyboard"
-      ]
-    },
-    {
       "id": "cordova-plugin-file.DirectoryEntry",
       "file": "plugins/cordova-plugin-file/www/DirectoryEntry.js",
       "pluginId": "cordova-plugin-file",
@@ -183,8 +159,8 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       "runs": true
     },
     {
-      "id": "cordova-plugin-file.androidFileSystem",
-      "file": "plugins/cordova-plugin-file/www/android/FileSystem.js",
+      "id": "cordova-plugin-file.iosFileSystem",
+      "file": "plugins/cordova-plugin-file/www/ios/FileSystem.js",
       "pluginId": "cordova-plugin-file",
       "merges": [
         "FileSystem"
@@ -214,6 +190,38 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       ]
     },
     {
+      "id": "cordova-plugin-ionic-keyboard.keyboard",
+      "file": "plugins/cordova-plugin-ionic-keyboard/www/ios/keyboard.js",
+      "pluginId": "cordova-plugin-ionic-keyboard",
+      "clobbers": [
+        "window.Keyboard"
+      ]
+    },
+    {
+      "id": "cordova-plugin-ionic-webview.IonicWebView",
+      "file": "plugins/cordova-plugin-ionic-webview/src/www/util.js",
+      "pluginId": "cordova-plugin-ionic-webview",
+      "clobbers": [
+        "Ionic.WebView"
+      ]
+    },
+    {
+      "id": "cordova-plugin-ionic-webview.ios-wkwebview-exec",
+      "file": "plugins/cordova-plugin-ionic-webview/src/www/ios/ios-wkwebview-exec.js",
+      "pluginId": "cordova-plugin-ionic-webview",
+      "clobbers": [
+        "cordova.exec"
+      ]
+    },
+    {
+      "id": "cordova-plugin-splashscreen.SplashScreen",
+      "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
+      "pluginId": "cordova-plugin-splashscreen",
+      "clobbers": [
+        "navigator.splashscreen"
+      ]
+    },
+    {
       "id": "mx.ferreyra.callnumber.CallNumber",
       "file": "plugins/mx.ferreyra.callnumber/www/CallNumber.js",
       "pluginId": "mx.ferreyra.callnumber",
@@ -230,6 +238,14 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       ]
     },
     {
+      "id": "kr.co.joycorp.cordova.exitapp.ExitApp",
+      "file": "plugins/kr.co.joycorp.cordova.exitapp/www/ExitApp.js",
+      "pluginId": "kr.co.joycorp.cordova.exitapp",
+      "clobbers": [
+        "navigator.app"
+      ]
+    },
+    {
       "id": "cordova-plugin-statusbar.statusbar",
       "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
       "pluginId": "cordova-plugin-statusbar",
@@ -239,13 +255,13 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
     }
   ];
   module.exports.metadata = {
-    "cordova-plugin-whitelist": "1.3.3",
     "cordova-plugin-device": "2.0.2",
-    "cordova-plugin-splashscreen": "5.0.2",
-    "cordova-plugin-ionic-webview": "4.1.1",
-    "cordova-plugin-ionic-keyboard": "2.1.3",
     "cordova-plugin-file": "6.0.2",
     "cordova-plugin-file-opener2": "2.2.1",
+    "cordova-plugin-ionic-keyboard": "2.1.3",
+    "cordova-plugin-ionic-webview": "4.1.1",
+    "cordova-plugin-splashscreen": "5.0.2",
+    "cordova-plugin-whitelist": "1.3.3",
     "mx.ferreyra.callnumber": "0.0.2",
     "kr.co.joycorp.cordova.exitapp": "1.0.0",
     "cordova-plugin-statusbar": "2.4.3"
