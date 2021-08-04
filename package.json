@@ -40,7 +40,7 @@
     "core-js": "^2.5.4",
     "rxjs": "~6.5.1",
     "tslib": "^1.9.0",
-    "xmldom": "^0.1.27",
+    "xmldom": "^0.6.0",
     "zone.js": "~0.8.29"
   },
   "devDependencies": {
